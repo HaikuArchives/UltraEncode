@@ -1,0 +1,29 @@
+	UltraEncode is a CD audio and extraction program.  It is designed to allow the quick and easy extraction of CD Audio tracks and compression of audio tracks.  UltraEncode currently allows compression of files using MPEG Layer 3 encoding.
+
+	When you launch UltraEncode, you will see the main window.  Here is displayed information about the currently loaded CD, the status of track and total CD extraction, a list of tracks on the CD and several buttons that control the application.
+
+	If you have a CD in your computer's CD-ROM drive, the Tracks section of the window should be displaying a list of all the tracks and the CD.  If you are connected to the Internet, try clicking the CDDB button.  This queries the CDDB online CD database to get information about the CD.  If the query is successful, you will notice that all of the track names will have changed from "Untitled" to the name of the track and that the Info box will now be displaying info about the CD.
+
+	There is a check box to the very left of each item in the Tracks list.  By click on the check box, you can toggle the state of the track.  If the box is checked, the track will be extracted form the CD and compressed when you press the Start button.
+
+	You can also double click on the Track list item to the right of the check box.  A dialog box will be displayed.  If the CDDB query was successful, many of these fields will be filled.  This information will be saved in the encoded MP3 files as ID3 tags.  UltraEncode currently used ID3v1 tags, but will be updated to the ID3v2 standard as soon as it is finalized.
+
+	You can use the keyboard to select all or deselect all items.  Just use the alt-a and alt-d keys.  You can also used the arrow keys and the space bar to toggle the check boxes on or off.  Pressing the Enter key will open the ID3 Track Info dialog box.
+
+	When you have selected the tracks you wish to extract and have filled in the Track Info for those tracks you can configure the compression.  By clicking the Settings button, you will display the Settings dialog.
+
+	This dialog allows you to set encoding parameters, the location of where files will be extracted and encoded to, file naming options and some additional options, such as audio alerts when various processes are done.
+
+	If you have multiple CD drives, you can select the drive to be used for extraction here.
+
+	When you are done configuring the program, press OK or Cancel to return to the main screen.
+	Now you can press start.  You will see the text in the Tracks list change.  The item that is currently being extracted is now blue and the status text has changed.  This text will change to reflect the current status of the track.  You can also see individual and total CD status displayed on the indicator bars to the left of the Track list.
+
+	When a file is done being extracted, it is put in the Encoder Queue.  By clicking the Queue button, you will display the Encoder Queue.
+
+	The Encoder Queue displays a list of all tracks queue for encoding.  You can add and delete tracks and start and stop the encoder.  You are free to add any legal audio files to the queue.  This is helpful when you have additional audio file to be compressed.
+
+	When the file is done being encoded, attributes are set based on the ID3 tags.  This allows you to create and modify queries based on Tracker attributes.
+
+	Please report any bugs, problems and feature requests to ultraencode@mediapede.com.
+ 
