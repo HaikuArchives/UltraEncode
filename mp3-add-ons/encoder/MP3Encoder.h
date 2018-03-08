@@ -1,7 +1,7 @@
 #ifndef _MP3_ENCODER_H
 #define _MP3_ENCODER_H
 
-#include <Encoder.h>
+#include <private/media/EncoderPlugin.h>
 #include <unistd.h>
 #include <stdio.h>
 
@@ -15,6 +15,8 @@ class MP3Encoder : public Encoder
 		~MP3Encoder();
 	
 		status_t	GetCodecInfo(media_codec_info *mci) const;
+		status_t	AcceptedFormat(const media_format* proposedInputFormat,
+									media_format* _acceptedInputFormat);
 		status_t	Sniff(media_file_format *mfi, media_format *in_fmt,
 						  media_format *out_fmt, media_codec_info *ei);
 		status_t	SetFormat(media_file_format *mfi,

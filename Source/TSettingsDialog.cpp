@@ -20,6 +20,7 @@
 #include <Menu.h>
 #include <MenuItem.h>
 #include <Path.h>
+#include <Roster.h>
 #include <StringView.h>
 #include <Volume.h>
 #include <VolumeRoster.h>

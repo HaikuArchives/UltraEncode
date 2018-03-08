@@ -1,6 +1,10 @@
 #ifndef __ID3REN_H__
 #define __ID3REN_H__
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct
 {
 	//	Log normal output to a file
@@ -43,6 +47,9 @@ typedef struct
 	short ulcase;
 } FLAGS_struct;
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* __ID3REN_H__ */
 

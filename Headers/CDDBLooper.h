@@ -81,7 +81,7 @@ class CDDBLooper : public BLooper
 		// Performs a query command
 		void CDDBQuery(unsigned long discID, int32 numTracks, cddb_toc *cdtoc);
 		// Performs a read command
-		void CDDBRead(const char *category, char *discid);
+		void CDDBRead(const char *category, const char *discid);
 		// Performs a sites command
 		void CDDBSites();
 		// Performs a write command

@@ -23,12 +23,14 @@
 #include <TimeCode.h>
 #include <MediaFile.h>
 #include <MediaTrack.h>
+#include <Roster.h>
 #include <ScrollBar.h>
 #include <Screen.h>
 #include <Bitmap.h>
 #include <NodeInfo.h>
 #include <TextControl.h>
 #include <SimpleGameSound.h>
+#include <Window.h>
 
 #include "DebugBuild.h"
 

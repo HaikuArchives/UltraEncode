@@ -9,6 +9,8 @@
 
 #include <Application.h>
 
+#include <string.h>
+
 //	Class Definition
 class RipperApp : public BApplication
 { 

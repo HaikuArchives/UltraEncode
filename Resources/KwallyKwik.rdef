@@ -1,0 +1,3621 @@
+
+resource file_types message;
+
+resource(8, "CDDBSettings") #'ARCV' archive BWindow {
+	"_prio" = 15,
+	"_port_cap" = 100,
+	"_title" = "CDDB Settings",
+	"_wlook" = 1,
+	"_sizel" = 32.0000,
+	"_sizel" = 32.0000,
+	"_sizel" = 10000.0,
+	"_sizel" = 10000.0,
+	"ID" = 22,
+	"_flags" = 16492,
+	"_type" = 1,
+	"_wfeel" = 0,
+	"_name" = "CDDB Settings",
+	"_frame" = rect { 165.000, 94.0000, 435.000, 184.000 },
+	"minWidth" = 32.0000,
+	"maxWidth" = 10000.0,
+	"minHeight" = 32.0000,
+	"maxHeight" = 10000.0,
+	"_views" = archive BView {
+		"_name" = "BackgroundView",
+		"_frame" = rect { 0.00000, 0.00000, 270.000, 90.0000 },
+		"_resize_mode" = 4660,
+		"_flags" = 536870912,
+		"_color" = 255,
+		"_color" = -1,
+		"_color" = -656877313,
+		"_views" = archive BTextControl {
+			"_name" = "ServerTextControl",
+			"_frame" = rect { 10.0000, 10.0000, 260.000, 29.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 603979776,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 10.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive _BTextInput_ {
+				"_name" = "_input_",
+				"_frame" = rect { 43.0000, 3.00000, 247.000, 16.0000 },
+				"_resize_mode" = 4628,
+				"_flags" = 910163968,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_ploc" = point { 1.00000, 10.0000 },
+				"_text" = "",
+				"_tab" = 28.0000,
+				"_max" = 2147483647,
+				"_trect" = rect { 0.00000, 0.00000, 2252.00, 13.0000 },
+				"_sel" = 0,
+				"_sel" = 0,
+				"_col_sp" = 4,
+				"_runs" = array {
+					$"416C692100000000000000010000000053776973373231204254000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"00000000000000000000000000000000526F6D616E0000000000000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"000000000000000000000000000000004120000042B400000000000000FF0000"
+				}
+			},
+			"_label" = "Server:",
+			"_a_label" = 0,
+			"_a_text" = 0,
+			"_divide" = 37.0000
+		},
+		"_views" = archive BButton {
+			"_name" = "",
+			"_frame" = rect { 48.0000, 51.0000, 114.000, 75.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 570425344,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_color" = 0,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_msg" = message('cncl'),
+			"_label" = "Cancel"
+		},
+		"_views" = archive BButton {
+			"_name" = "OK",
+			"_frame" = rect { 160.000, 46.0000, 232.000, 76.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 570425344,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_color" = 0,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_msg" = message('ok__'),
+			"_label" = "OK",
+			"_default" = true
+		}
+	},
+	"designfsize" = 11.9873
+};
+
+resource(6, "AlbumInfo") #'ARCV' archive BWindow {
+	"_prio" = 15,
+	"_port_cap" = 100,
+	"_title" = "Disc Info",
+	"_wlook" = 1,
+	"_sizel" = 310.000,
+	"_sizel" = 130.000,
+	"_sizel" = 310.000,
+	"_sizel" = 130.000,
+	"ID" = 32,
+	"_flags" = 16460,
+	"_type" = 0,
+	"_wfeel" = 1,
+	"_name" = "Disc Info",
+	"_frame" = rect { 200.000, 100.000, 510.000, 230.000 },
+	"minWidth" = 310.000,
+	"maxWidth" = 310.000,
+	"minHeight" = 130.000,
+	"maxHeight" = 130.000,
+	"_views" = archive BView {
+		"_name" = "Background",
+		"_frame" = rect { 0.00000, 0.00000, 310.000, 130.000 },
+		"_resize_mode" = 4626,
+		"_flags" = 536870912,
+		"_color" = 255,
+		"_color" = -1,
+		"_color" = -656877313,
+		"_views" = archive BTextControl {
+			"_name" = "ArtistTextControl",
+			"_frame" = rect { 5.00000, 30.0000, 305.000, 49.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 603979776,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 10.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive _BTextInput_ {
+				"_name" = "_input_",
+				"_frame" = rect { 41.0000, 3.00000, 297.000, 16.0000 },
+				"_resize_mode" = 4628,
+				"_flags" = 910163968,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_ploc" = point { 1.00000, 10.0000 },
+				"_text" = "",
+				"_tab" = 28.0000,
+				"_max" = 2147483647,
+				"_trect" = rect { 0.00000, 0.00000, 2304.00, 13.0000 },
+				"_sel" = 0,
+				"_sel" = 0,
+				"_col_sp" = 4,
+				"_runs" = array {
+					$"416C692100000000000000010000000053776973373231204254000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"00000000000000000000000000000000526F6D616E0000000000000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"000000000000000000000000000000004120000042B400000000000000FF0000"
+				}
+			},
+			"_label" = "Artist:",
+			"_a_label" = 0,
+			"_a_text" = 0,
+			"_divide" = 35.0000
+		},
+		"_views" = archive BTextControl {
+			"_name" = "YearTextControl",
+			"_frame" = rect { 5.00000, 55.0000, 77.0000, 74.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 603979776,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 10.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive _BTextInput_ {
+				"_name" = "_input_",
+				"_frame" = rect { 41.0000, 3.00000, 69.0000, 16.0000 },
+				"_resize_mode" = 4628,
+				"_flags" = 910163968,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_ploc" = point { 1.00000, 10.0000 },
+				"_text" = "",
+				"_tab" = 28.0000,
+				"_max" = 2147483647,
+				"_trect" = rect { 0.00000, 0.00000, 2076.00, 13.0000 },
+				"_sel" = 0,
+				"_sel" = 0,
+				"_col_sp" = 4,
+				"_runs" = array {
+					$"416C692100000000000000010000000053776973373231204254000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"00000000000000000000000000000000526F6D616E0000000000000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"000000000000000000000000000000004120000042B400000000000000FF0000"
+				}
+			},
+			"_label" = "Year:",
+			"_a_label" = 0,
+			"_a_text" = 0,
+			"_divide" = 35.0000
+		},
+		"_views" = archive BMenuField {
+			"_name" = "GenreMenuField",
+			"_frame" = rect { 90.0000, 52.0000, 290.000, 74.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 570425344,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 10.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive _BMCMenuBar_ {
+				"_name" = "_mc_mb_",
+				"_frame" = rect { 41.0000, 3.00000, 89.0000, 19.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 603979776,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = -1.00000,
+				"_fflt" = -1.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_rsize_to_fit" = true,
+				"_maxwidth" = 143.000,
+				"_items" = archive _BMCItem_ {
+					"_label" = "Select",
+					"_submenu" = archive BPopUpMenu {
+						"_name" = "Select",
+						"_frame" = rect { 0.00000, 0.00000, 0.00000, 0.00000 },
+						"_flags" = 536870912,
+						"_fname" = "Swis721 BT",
+						"_fname" = "Roman",
+						"_fflt" = 10.0000,
+						"_fflt" = -1.00000,
+						"_fflt" = -1.00000,
+						"_color" = 255,
+						"_color" = -656877313,
+						"_color" = -656877313,
+						"_layout" = 1,
+						"_rsize_to_fit" = true,
+						"_radio" = true,
+						"_dyn_label" = true
+					}
+				},
+				"_border" = 1
+			},
+			"_label" = "Genre:",
+			"_align" = 0,
+			"_divide" = 39.0000
+		},
+		"_views" = archive BButton {
+			"_name" = "",
+			"_frame" = rect { 66.0000, 94.0000, 132.000, 118.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 570425344,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_color" = 0,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_msg" = message('cncl'),
+			"_label" = "Cancel"
+		},
+		"_views" = archive BButton {
+			"_name" = "OK",
+			"_frame" = rect { 178.000, 89.0000, 250.000, 119.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 570425344,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_color" = 0,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_msg" = message('ok__'),
+			"_label" = "OK",
+			"_default" = true
+		},
+		"_views" = archive BTextControl {
+			"_name" = "AlbumTextControl",
+			"_frame" = rect { 5.00000, 5.00000, 305.000, 24.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 603979776,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 10.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive _BTextInput_ {
+				"_name" = "_input_",
+				"_frame" = rect { 41.0000, 3.00000, 297.000, 16.0000 },
+				"_resize_mode" = 4628,
+				"_flags" = 910163968,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_ploc" = point { 1.00000, 10.0000 },
+				"_text" = "",
+				"_tab" = 28.0000,
+				"_max" = 2147483647,
+				"_trect" = rect { 0.00000, 0.00000, 2304.00, 13.0000 },
+				"_sel" = 0,
+				"_sel" = 0,
+				"_col_sp" = 4,
+				"_runs" = array {
+					$"416C692100000000000000010000000053776973373231204254000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"00000000000000000000000000000000526F6D616E0000000000000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"000000000000000000000000000000004120000042B400000000000000FF0000"
+				}
+			},
+			"_label" = "Album:",
+			"_a_label" = 0,
+			"_a_text" = 0,
+			"_divide" = 35.0000
+		}
+	},
+	"designfsize" = 11.9873
+};
+
+resource(2, "SettingsWindow") #'ARCV' archive BWindow {
+	"_prio" = 15,
+	"_port_cap" = 100,
+	"_title" = "Preferences",
+	"_wlook" = 1,
+	"_sizel" = 359.000,
+	"_sizel" = 275.000,
+	"_sizel" = 359.000,
+	"_sizel" = 275.000,
+	"ID" = 332,
+	"_flags" = 16492,
+	"_type" = 1,
+	"_wfeel" = 0,
+	"_name" = "Preferences",
+	"_frame" = rect { 208.000, 300.000, 567.000, 575.000 },
+	"minWidth" = 359.000,
+	"maxWidth" = 359.000,
+	"minHeight" = 275.000,
+	"maxHeight" = 275.000,
+	"_views" = archive BView {
+		"_name" = "BackgroundView",
+		"_frame" = rect { 0.00000, 0.00000, 360.000, 275.000 },
+		"_resize_mode" = 4660,
+		"_flags" = 536870912,
+		"_color" = 255,
+		"_color" = -1,
+		"_color" = -656877313,
+		"_views" = archive BBox {
+			"_name" = "EncodingBox",
+			"_frame" = rect { 5.00000, 5.00000, 155.000, 125.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 738197504,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Bold",
+			"_fflt" = 11.0000,
+			"_fflt" = 90.0000,
+			"_fflt" = 0.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_ploc" = point { 59.0000, 9.29590 },
+			"_views" = archive BMenuField {
+				"_name" = "ModeMenu",
+				"_frame" = rect { 5.00000, 15.0000, 145.000, 37.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = -1.00000,
+				"_fflt" = -1.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_views" = archive _BMCMenuBar_ {
+					"_name" = "_mc_mb_",
+					"_frame" = rect { 37.0000, 3.00000, 87.0000, 19.0000 },
+					"_resize_mode" = 4626,
+					"_flags" = 603979776,
+					"_fname" = "Swis721 BT",
+					"_fname" = "Roman",
+					"_fflt" = 10.0000,
+					"_fflt" = -1.00000,
+					"_fflt" = -1.00000,
+					"_color" = 255,
+					"_color" = -656877313,
+					"_color" = -656877313,
+					"_rsize_to_fit" = true,
+					"_maxwidth" = 87.0000,
+					"_items" = archive _BMCItem_ {
+						"_label" = "Stereo",
+						"_submenu" = archive BPopUpMenu {
+							"_name" = "Select",
+							"_frame" = rect { 0.00000, 0.00000, 0.00000, 0.00000 },
+							"_flags" = 536870912,
+							"_fname" = "Swis721 BT",
+							"_fname" = "Roman",
+							"_fflt" = 10.0000,
+							"_fflt" = -1.00000,
+							"_fflt" = -1.00000,
+							"_color" = 255,
+							"_color" = -656877313,
+							"_color" = -656877313,
+							"_layout" = 1,
+							"_rsize_to_fit" = true,
+							"_radio" = true,
+							"_dyn_label" = true,
+							"_items" = archive BMenuItem {
+								"_label" = "Stereo",
+								"_marked" = true,
+								"_msg" = message('s_St')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "Joint Stereo",
+								"_msg" = message('s_Js')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "Mono",
+								"_msg" = message('s_Mo')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "Force",
+								"_msg" = message('s_Fo')
+							}
+						}
+					},
+					"_border" = 1
+				},
+				"_label" = "Mode:",
+				"_align" = 0,
+				"_divide" = 35.0000
+			},
+			"_views" = archive BMenuField {
+				"_name" = "DeemphasisMenu",
+				"_frame" = rect { 5.00000, 65.0000, 145.000, 87.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = -1.00000,
+				"_fflt" = -1.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_views" = archive _BMCMenuBar_ {
+					"_name" = "_mc_mb_",
+					"_frame" = rect { 71.0000, 3.00000, 113.000, 19.0000 },
+					"_resize_mode" = 4626,
+					"_flags" = 603979776,
+					"_fname" = "Swis721 BT",
+					"_fname" = "Roman",
+					"_fflt" = 10.0000,
+					"_fflt" = -1.00000,
+					"_fflt" = -1.00000,
+					"_color" = 255,
+					"_color" = -656877313,
+					"_color" = -656877313,
+					"_rsize_to_fit" = true,
+					"_maxwidth" = 53.0000,
+					"_items" = archive _BMCItem_ {
+						"_label" = "None",
+						"_submenu" = archive BPopUpMenu {
+							"_name" = "Select",
+							"_frame" = rect { 0.00000, 0.00000, 0.00000, 0.00000 },
+							"_flags" = 536870912,
+							"_fname" = "Swis721 BT",
+							"_fname" = "Roman",
+							"_fflt" = 10.0000,
+							"_fflt" = -1.00000,
+							"_fflt" = -1.00000,
+							"_color" = 255,
+							"_color" = -656877313,
+							"_color" = -656877313,
+							"_layout" = 1,
+							"_rsize_to_fit" = true,
+							"_radio" = true,
+							"_dyn_label" = true,
+							"_items" = archive BMenuItem {
+								"_label" = "None",
+								"_marked" = true,
+								"_msg" = message('d_No')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "50/15",
+								"_msg" = message('d_50')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "ccit j.17",
+								"_msg" = message('d_Cc')
+							}
+						}
+					},
+					"_border" = 1
+				},
+				"_label" = "De-emphasis:",
+				"_align" = 0,
+				"_divide" = 69.0000
+			},
+			"_views" = archive BMenuField {
+				"_name" = "FlagsMenu",
+				"_frame" = rect { 5.00000, 90.0000, 145.000, 112.000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = -1.00000,
+				"_fflt" = -1.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_views" = archive _BMCMenuBar_ {
+					"_name" = "_mc_mb_",
+					"_frame" = rect { 37.0000, 3.00000, 89.0000, 19.0000 },
+					"_resize_mode" = 4626,
+					"_flags" = 603979776,
+					"_fname" = "Swis721 BT",
+					"_fname" = "Roman",
+					"_fflt" = 10.0000,
+					"_fflt" = -1.00000,
+					"_fflt" = -1.00000,
+					"_color" = 255,
+					"_color" = -656877313,
+					"_color" = -656877313,
+					"_rsize_to_fit" = true,
+					"_maxwidth" = 87.0000,
+					"_items" = archive _BMCItem_ {
+						"_label" = "Private",
+						"_submenu" = archive BPopUpMenu {
+							"_name" = "Select",
+							"_frame" = rect { 0.00000, 0.00000, 0.00000, 0.00000 },
+							"_flags" = 536870912,
+							"_fname" = "Swis721 BT",
+							"_fname" = "Roman",
+							"_fflt" = 10.0000,
+							"_fflt" = -1.00000,
+							"_fflt" = -1.00000,
+							"_color" = 255,
+							"_color" = -656877313,
+							"_color" = -656877313,
+							"_layout" = 1,
+							"_rsize_to_fit" = true,
+							"_radio" = true,
+							"_dyn_label" = true,
+							"_items" = archive BMenuItem {
+								"_label" = "Private",
+								"_marked" = true,
+								"_msg" = message('f_Pv')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "Protection",
+								"_msg" = message('f_Pr')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "Copyright",
+								"_msg" = message('f_Co')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "Original",
+								"_msg" = message('f_Co')
+							}
+						}
+					},
+					"_border" = 1
+				},
+				"_label" = "Flags:",
+				"_align" = 0,
+				"_divide" = 35.0000
+			},
+			"_views" = archive BMenuField {
+				"_name" = "BitRateMenu",
+				"_frame" = rect { 5.00000, 40.0000, 145.000, 62.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = -1.00000,
+				"_fflt" = -1.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_views" = archive _BMCMenuBar_ {
+					"_name" = "_mc_mb_",
+					"_frame" = rect { 49.0000, 3.00000, 79.0000, 19.0000 },
+					"_resize_mode" = 4626,
+					"_flags" = 603979776,
+					"_fname" = "Swis721 BT",
+					"_fname" = "Roman",
+					"_fflt" = 10.0000,
+					"_fflt" = -1.00000,
+					"_fflt" = -1.00000,
+					"_color" = 255,
+					"_color" = -656877313,
+					"_color" = -656877313,
+					"_rsize_to_fit" = true,
+					"_maxwidth" = 75.0000,
+					"_items" = archive _BMCItem_ {
+						"_label" = "32",
+						"_submenu" = archive BPopUpMenu {
+							"_name" = "Select",
+							"_frame" = rect { 0.00000, 0.00000, 0.00000, 0.00000 },
+							"_flags" = 536870912,
+							"_fname" = "Swis721 BT",
+							"_fname" = "Roman",
+							"_fflt" = 10.0000,
+							"_fflt" = -1.00000,
+							"_fflt" = -1.00000,
+							"_color" = 255,
+							"_color" = -656877313,
+							"_color" = -656877313,
+							"_layout" = 1,
+							"_rsize_to_fit" = true,
+							"_radio" = true,
+							"_dyn_label" = true,
+							"_items" = archive BMenuItem {
+								"_label" = "32",
+								"_marked" = true,
+								"_msg" = message('b_32')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "48",
+								"_msg" = message('b_48')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "54",
+								"_msg" = message('b_54')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "56",
+								"_msg" = message('b_56')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "64",
+								"_msg" = message('b_64')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "80",
+								"_msg" = message('b_80')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "96",
+								"_msg" = message('b_96')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "112",
+								"_msg" = message('b112')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "128",
+								"_msg" = message('b128')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "160",
+								"_msg" = message('b160')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "192",
+								"_msg" = message('b192')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "224",
+								"_msg" = message('b224')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "256",
+								"_msg" = message('b256')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "320",
+								"_msg" = message('b320')
+							},
+							"_items" = archive BMenuItem {
+								"_label" = "384",
+								"_msg" = message('b384')
+							}
+						}
+					},
+					"_border" = 1
+				},
+				"_label" = "Bit Rate:",
+				"_align" = 0,
+				"_divide" = 47.0000
+			},
+			"_label" = "Encoding"
+		},
+		"_views" = archive BBox {
+			"_name" = "FilesBox",
+			"_frame" = rect { 160.000, 5.00000, 355.000, 125.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 738197504,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Bold",
+			"_fflt" = 11.0000,
+			"_fflt" = 90.0000,
+			"_fflt" = 0.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_ploc" = point { 36.0000, 9.29590 },
+			"_views" = archive BCheckBox {
+				"_name" = "DeleteCheckBox",
+				"_frame" = rect { 5.00000, 15.0000, 167.000, 33.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_label" = "Delete Source After Encoding"
+			},
+			"_views" = archive BMenuField {
+				"_name" = "ExtractFromMenu",
+				"_frame" = rect { 5.00000, 35.0000, 190.000, 57.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = -1.00000,
+				"_fflt" = -1.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_views" = archive _BMCMenuBar_ {
+					"_name" = "_mc_mb_",
+					"_frame" = rect { 75.0000, 3.00000, 91.0000, 19.0000 },
+					"_resize_mode" = 4626,
+					"_flags" = 603979776,
+					"_fname" = "Swis721 BT",
+					"_fname" = "Roman",
+					"_fflt" = 10.0000,
+					"_fflt" = -1.00000,
+					"_fflt" = -1.00000,
+					"_color" = 255,
+					"_color" = -606348544,
+					"_color" = -606348544,
+					"_rsize_to_fit" = true,
+					"_maxwidth" = 94.0000,
+					"_items" = archive BMenuItem {
+						"_label" = "",
+						"_submenu" = archive BPopUpMenu {
+							"_name" = "",
+							"_frame" = rect { 0.00000, 0.00000, 0.00000, 0.00000 },
+							"_flags" = 536870912,
+							"_fname" = "Swis721 BT",
+							"_fname" = "Roman",
+							"_fflt" = 10.0000,
+							"_fflt" = -1.00000,
+							"_fflt" = -1.00000,
+							"_color" = 255,
+							"_color" = -606348544,
+							"_color" = -606348544,
+							"_layout" = 1,
+							"_rsize_to_fit" = true,
+							"_radio" = true,
+							"_dyn_label" = true
+						}
+					},
+					"_border" = 1
+				},
+				"_label" = "Extract From:",
+				"_align" = 0,
+				"_divide" = 73.0000
+			},
+			"_views" = archive BButton {
+				"_name" = "ExtractToButton",
+				"_frame" = rect { 5.00000, 60.0000, 71.0000, 84.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 0,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_msg" = message('exTB'),
+				"_label" = "Extract To..."
+			},
+			"_views" = archive BStringView {
+				"_name" = "ExtractToString",
+				"_frame" = rect { 10.0000, 90.0000, 190.000, 104.000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_text" = "Path",
+				"_align" = 0
+			},
+			"_label" = "Files"
+		},
+		"_views" = archive BButton {
+			"_name" = "",
+			"_frame" = rect { 93.0000, 242.000, 159.000, 266.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 570425344,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_color" = 0,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_msg" = message('cncl'),
+			"_label" = "Cancel"
+		},
+		"_views" = archive BButton {
+			"_name" = "OK",
+			"_frame" = rect { 202.000, 238.000, 274.000, 268.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 570425344,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_color" = 0,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_msg" = message('ok__'),
+			"_label" = "OK",
+			"_default" = true
+		},
+		"_views" = archive BBox {
+			"_name" = "FilesBox",
+			"_frame" = rect { 5.00000, 130.000, 155.000, 230.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 738197504,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Bold",
+			"_fflt" = 11.0000,
+			"_fflt" = 90.0000,
+			"_fflt" = 0.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_ploc" = point { 36.0000, 9.29590 },
+			"_views" = archive BCheckBox {
+				"_name" = "AutostartCheckBox",
+				"_frame" = rect { 5.00000, 15.0000, 115.000, 33.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_ploc" = point { 106.629, 15.9873 },
+				"_msg" = message('auSt'),
+				"_label" = "Autostart Encoder",
+				"_val" = 1
+			},
+			"_views" = archive BCheckBox {
+				"_name" = "TrackBeepCheckBox",
+				"_frame" = rect { 5.00000, 35.0000, 133.000, 53.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_ploc" = point { 106.629, 15.9873 },
+				"_msg" = message('aTEX'),
+				"_label" = "Track Extraction Beep",
+				"_val" = 1
+			},
+			"_views" = archive BCheckBox {
+				"_name" = "CDBeepCheckBox",
+				"_frame" = rect { 5.00000, 55.0000, 120.000, 73.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_ploc" = point { 106.629, 15.9873 },
+				"_msg" = message('aCDE'),
+				"_label" = "CD Extraction Beep",
+				"_val" = 1
+			},
+			"_views" = archive BCheckBox {
+				"_name" = "EncodeBeepCheckBox",
+				"_frame" = rect { 5.00000, 75.0000, 119.000, 93.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_ploc" = point { 106.629, 15.9873 },
+				"_msg" = message('aTEB'),
+				"_label" = "Track Encode Beep",
+				"_val" = 1
+			},
+			"_label" = "Other"
+		},
+		"_views" = archive BBox {
+			"_name" = "NamingBox",
+			"_frame" = rect { 160.000, 130.000, 355.000, 230.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 738197504,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Bold",
+			"_fflt" = 11.0000,
+			"_fflt" = 90.0000,
+			"_fflt" = 0.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_ploc" = point { 36.0000, 9.29590 },
+			"_views" = archive BCheckBox {
+				"_name" = "MP3CheckBox",
+				"_frame" = rect { 5.00000, 15.0000, 131.000, 33.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_ploc" = point { 181.629, 15.9873 },
+				"_label" = "Add Default Extension",
+				"_val" = 1
+			},
+			"_views" = archive BCheckBox {
+				"_name" = "AlbumCheckBox",
+				"_frame" = rect { 5.00000, 55.0000, 107.000, 73.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_ploc" = point { 99.6289, 15.9873 },
+				"_msg" = message('aALB'),
+				"_label" = "Add Album Name"
+			},
+			"_views" = archive BCheckBox {
+				"_name" = "ArtistCheckBox",
+				"_frame" = rect { 5.00000, 35.0000, 105.000, 53.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_ploc" = point { 97.6289, 15.9873 },
+				"_msg" = message('aART'),
+				"_label" = "Add Artist Name"
+			},
+			"_views" = archive BCheckBox {
+				"_name" = "TrackCheckBox",
+				"_frame" = rect { 5.00000, 75.0000, 115.000, 93.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_ploc" = point { 107.629, 15.9873 },
+				"_msg" = message('aTRN'),
+				"_label" = "Add Track Number"
+			},
+			"_label" = "Naming"
+		}
+	},
+	"designfsize" = 11.9873
+};
+
+resource(1, "InfoWindow") #'ARCV' archive BWindow {
+	"_prio" = 15,
+	"_port_cap" = 100,
+	"_title" = "UltraEncode",
+	"_wlook" = 1,
+	"_sizel" = 495.000,
+	"_sizel" = 175.000,
+	"_sizel" = 495.000,
+	"_sizel" = 585.000,
+	"ID" = 387,
+	"_flags" = 76,
+	"_type" = 1,
+	"_wfeel" = 0,
+	"_name" = "UltraEncode",
+	"_frame" = rect { 63.0000, 189.000, 558.000, 364.000 },
+	"minWidth" = 495.000,
+	"maxWidth" = 495.000,
+	"minHeight" = 175.000,
+	"maxHeight" = 585.000,
+	"_views" = archive BView {
+		"_name" = "BackgroundView",
+		"_frame" = rect { 0.00000, 20.0000, 500.000, 585.000 },
+		"_resize_mode" = 4626,
+		"_flags" = 536870912,
+		"_color" = 255,
+		"_color" = -1,
+		"_color" = -656877313,
+		"_views" = archive BBox {
+			"_name" = "InfoBox",
+			"_frame" = rect { 5.00000, 5.00000, 235.000, 85.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 738197504,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Bold",
+			"_fflt" = 11.0000,
+			"_fflt" = 90.0000,
+			"_fflt" = 0.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_ploc" = point { 32.0000, 9.77734 },
+			"_views" = archive BStringView {
+				"_name" = "AlbumString",
+				"_frame" = rect { 7.00000, 13.0000, 41.0000, 27.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_text" = "Album:",
+				"_align" = 0
+			},
+			"_views" = archive BStringView {
+				"_name" = "ArtistString",
+				"_frame" = rect { 9.00000, 28.0000, 41.0000, 42.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_text" = "Artist:",
+				"_align" = 0
+			},
+			"_views" = archive BStringView {
+				"_name" = "TracksString",
+				"_frame" = rect { 3.00000, 44.0000, 41.0000, 58.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_text" = "Tracks:",
+				"_align" = 0
+			},
+			"_views" = archive BStringView {
+				"_name" = "AlbumUserString",
+				"_frame" = rect { 45.0000, 13.0000, 225.000, 27.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_text" = "Album name here",
+				"_align" = 0
+			},
+			"_views" = archive BStringView {
+				"_name" = "ArtistUserString",
+				"_frame" = rect { 45.0000, 28.0000, 225.000, 42.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_text" = "Artist name here",
+				"_align" = 0
+			},
+			"_views" = archive BStringView {
+				"_name" = "TracksUserString",
+				"_frame" = rect { 45.0000, 44.0000, 225.000, 58.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_text" = "Number of tracks here",
+				"_align" = 0
+			},
+			"_views" = archive BStringView {
+				"_name" = "CDDBString",
+				"_frame" = rect { 6.00000, 60.0000, 39.0000, 74.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_text" = "CDDB:",
+				"_align" = 0
+			},
+			"_views" = archive BStringView {
+				"_name" = "CDDBUserString",
+				"_frame" = rect { 45.0000, 60.0000, 225.000, 74.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_text" = "Waiting...",
+				"_align" = 0
+			},
+			"_label" = "Info"
+		},
+		"_views" = archive BBox {
+			"_name" = "ExtractorBox",
+			"_frame" = rect { 5.00000, 155.000, 490.000, 345.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 738197504,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Bold",
+			"_fflt" = 11.0000,
+			"_fflt" = 90.0000,
+			"_fflt" = 0.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_ploc" = point { 45.0000, 9.29590 },
+			"_views" = archive BView {
+				"_name" = "ExtractListTitle",
+				"_frame" = rect { 10.0000, 15.0000, 459.000, 30.0000 },
+				"_resize_mode" = 4628,
+				"_flags" = 603979776,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = 65280
+			},
+			"_views" = archive BView {
+				"_name" = "ScrollView",
+				"_frame" = rect { 11.0000, 31.0000, 459.000, 181.000 },
+				"_resize_mode" = 4628,
+				"_flags" = 536870912,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -256
+			},
+			"_views" = archive BScrollBar {
+				"_name" = "ScrollBar",
+				"_frame" = rect { 460.000, 15.0000, 474.000, 182.000 },
+				"_resize_mode" = 5140,
+				"_flags" = 536870912,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_range" = 0.00000,
+				"_range" = 1000.00,
+				"_steps" = 1.00000,
+				"_steps" = 10.0000,
+				"_val" = 0.00000,
+				"_orient" = 1,
+				"_prop" = 0.00000
+			},
+			"_label" = "Extractor Queue"
+		},
+		"_views" = archive BBox {
+			"_name" = "ControlBox",
+			"_frame" = rect { 5.00000, 90.0000, 235.000, 150.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 738197504,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Bold",
+			"_fflt" = 11.0000,
+			"_fflt" = 90.0000,
+			"_fflt" = 0.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive BButton {
+				"_name" = "CancelButton",
+				"_frame" = rect { 82.0000, 22.0000, 148.000, 46.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_msg" = message('cncl'),
+				"_label" = "Stop"
+			},
+			"_views" = archive BButton {
+				"_name" = "StartButton",
+				"_frame" = rect { 7.00000, 22.0000, 73.0000, 46.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_msg" = message('strt'),
+				"_label" = "Start"
+			},
+			"_views" = archive BButton {
+				"_name" = "CDDBButton",
+				"_frame" = rect { 157.000, 23.0000, 223.000, 47.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_msg" = message('cddb'),
+				"_label" = "CDDB"
+			},
+			"_label" = "Control"
+		},
+		"_views" = archive BBox {
+			"_name" = "ExtractorInfoBox",
+			"_frame" = rect { 240.000, 5.00000, 490.000, 85.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 738197504,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Bold",
+			"_fflt" = 11.0000,
+			"_fflt" = 90.0000,
+			"_fflt" = 0.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive BStatusBar {
+				"_name" = "ExtractTrackStatusBar",
+				"_frame" = rect { 5.00000, 15.0000, 215.000, 47.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_ploc" = point { 268.000, 10.6289 },
+				"_high" = 16.0000,
+				"_bcolor" = 848756480,
+				"_val" = 100.000,
+				"_max" = 100.000,
+				"_text" = "",
+				"_ttext" = "",
+				"_label" = "Waiting...",
+				"_tlabel" = ""
+			},
+			"_views" = archive BStatusBar {
+				"_name" = "ExtractCDStatusBar",
+				"_frame" = rect { 5.00000, 45.0000, 215.000, 77.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_ploc" = point { 268.000, 10.6289 },
+				"_high" = 16.0000,
+				"_bcolor" = 848756480,
+				"_val" = 100.000,
+				"_max" = 100.000,
+				"_text" = "",
+				"_ttext" = "",
+				"_label" = "Waiting...",
+				"_tlabel" = ""
+			},
+			"_views" = archive BView {
+				"_name" = "SliderSwitch01",
+				"_frame" = rect { 224.000, 38.0000, 240.000, 58.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -8388608
+			},
+			"_label" = "Extractor Info"
+		},
+		"_views" = archive BBox {
+			"_name" = "EncoderInfoBox",
+			"_frame" = rect { 240.000, 90.0000, 490.000, 150.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 738197504,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Bold",
+			"_fflt" = 11.0000,
+			"_fflt" = 90.0000,
+			"_fflt" = 0.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive BStatusBar {
+				"_name" = "EncodeStatusBar",
+				"_frame" = rect { 5.00000, 15.0000, 215.000, 47.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_ploc" = point { 268.000, 10.6289 },
+				"_high" = 16.0000,
+				"_bcolor" = 848756480,
+				"_val" = 100.000,
+				"_max" = 100.000,
+				"_text" = "",
+				"_ttext" = "",
+				"_label" = "Waiting...",
+				"_tlabel" = ""
+			},
+			"_views" = archive BView {
+				"_name" = "SliderSwitch02",
+				"_frame" = rect { 223.000, 26.0000, 239.000, 46.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 536870912,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -8388608
+			},
+			"_label" = "Encoder Info"
+		},
+		"_views" = archive BBox {
+			"_name" = "EncoderBox",
+			"_frame" = rect { 5.00000, 350.000, 490.000, 560.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 738197504,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Bold",
+			"_fflt" = 11.0000,
+			"_fflt" = 90.0000,
+			"_fflt" = 0.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive BButton {
+				"_name" = "EncoderStopButton",
+				"_frame" = rect { 180.000, 178.000, 240.000, 202.000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_msg" = message('stop'),
+				"_label" = "Stop"
+			},
+			"_views" = archive BButton {
+				"_name" = "EncoderRemoveButton",
+				"_frame" = rect { 318.000, 178.000, 378.000, 202.000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_msg" = message('remo'),
+				"_label" = "Remove"
+			},
+			"_views" = archive BButton {
+				"_name" = "EncoderAddButton",
+				"_frame" = rect { 249.000, 178.000, 309.000, 202.000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_msg" = message('add '),
+				"_label" = "Add..."
+			},
+			"_views" = archive BButton {
+				"_name" = "EncoderStartButton",
+				"_frame" = rect { 111.000, 178.000, 171.000, 202.000 },
+				"_resize_mode" = 4626,
+				"_flags" = 570425344,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_msg" = message('strE'),
+				"_label" = "Start"
+			},
+			"_views" = archive BView {
+				"_name" = "EncodeListTitle",
+				"_frame" = rect { 10.0000, 15.0000, 459.000, 30.0000 },
+				"_resize_mode" = 4628,
+				"_flags" = 603979776,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = 65280
+			},
+			"_views" = archive BView {
+				"_name" = "EncodeScrollView",
+				"_frame" = rect { 10.0000, 31.0000, 459.000, 171.000 },
+				"_resize_mode" = 4628,
+				"_flags" = 536870912,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -256
+			},
+			"_views" = archive BScrollBar {
+				"_name" = "EncodeScrollBar",
+				"_frame" = rect { 460.000, 15.0000, 474.000, 171.000 },
+				"_resize_mode" = 5140,
+				"_flags" = 536870912,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_range" = 0.00000,
+				"_range" = 1000.00,
+				"_steps" = 1.00000,
+				"_steps" = 10.0000,
+				"_val" = 20.0000,
+				"_orient" = 1,
+				"_prop" = 0.00000
+			},
+			"_label" = "Encoder Queue"
+		}
+	},
+	"designfsize" = 11.9873
+};
+
+resource(4, "ID3Dialog") #'ARCV' archive BWindow {
+	"_prio" = 15,
+	"_port_cap" = 100,
+	"_title" = "Track Info",
+	"_wlook" = 1,
+	"_sizel" = 310.000,
+	"_sizel" = 185.000,
+	"_sizel" = 310.000,
+	"_sizel" = 185.000,
+	"ID" = 220,
+	"_flags" = 16460,
+	"_type" = 0,
+	"_wfeel" = 1,
+	"_name" = "Track Info",
+	"_frame" = rect { 200.000, 100.000, 510.000, 285.000 },
+	"minWidth" = 310.000,
+	"maxWidth" = 310.000,
+	"minHeight" = 185.000,
+	"maxHeight" = 185.000,
+	"_views" = archive BView {
+		"_name" = "Background",
+		"_frame" = rect { 0.00000, 0.00000, 310.000, 185.000 },
+		"_resize_mode" = 4626,
+		"_flags" = 536870912,
+		"_color" = 255,
+		"_color" = -1,
+		"_color" = -656877313,
+		"_views" = archive BTextControl {
+			"_name" = "TitleTextControl",
+			"_frame" = rect { 5.00000, 5.00000, 305.000, 24.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 603979776,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 10.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive _BTextInput_ {
+				"_name" = "_input_",
+				"_frame" = rect { 66.0000, 3.00000, 297.000, 16.0000 },
+				"_resize_mode" = 4628,
+				"_flags" = 910163968,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_ploc" = point { 1.00000, 10.0000 },
+				"_text" = "",
+				"_tab" = 28.0000,
+				"_max" = 2147483647,
+				"_trect" = rect { 0.00000, 0.00000, 2279.00, 13.0000 },
+				"_sel" = 0,
+				"_sel" = 0,
+				"_col_sp" = 4,
+				"_runs" = array {
+					$"416C692100000000000000010000000053776973373231204254000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"00000000000000000000000000000000526F6D616E0000000000000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"000000000000000000000000000000004120000042B400000000000000FF0000"
+				}
+			},
+			"_label" = "Title:",
+			"_a_label" = 0,
+			"_a_text" = 0,
+			"_divide" = 60.0000
+		},
+		"_views" = archive BTextControl {
+			"_name" = "ArtistTextControl",
+			"_frame" = rect { 5.00000, 30.0000, 305.000, 49.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 603979776,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 10.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive _BTextInput_ {
+				"_name" = "_input_",
+				"_frame" = rect { 66.0000, 3.00000, 297.000, 16.0000 },
+				"_resize_mode" = 4628,
+				"_flags" = 910163968,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_ploc" = point { 1.00000, 10.0000 },
+				"_text" = "",
+				"_tab" = 28.0000,
+				"_max" = 2147483647,
+				"_trect" = rect { 0.00000, 0.00000, 2279.00, 13.0000 },
+				"_sel" = 0,
+				"_sel" = 0,
+				"_col_sp" = 4,
+				"_runs" = array {
+					$"416C692100000000000000010000000053776973373231204254000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"00000000000000000000000000000000526F6D616E0000000000000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"000000000000000000000000000000004120000042B400000000000000FF0000"
+				}
+			},
+			"_label" = "Artist:",
+			"_a_label" = 0,
+			"_a_text" = 0,
+			"_divide" = 60.0000
+		},
+		"_views" = archive BTextControl {
+			"_name" = "AlbumTextControl",
+			"_frame" = rect { 5.00000, 55.0000, 305.000, 74.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 603979776,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 10.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive _BTextInput_ {
+				"_name" = "_input_",
+				"_frame" = rect { 66.0000, 3.00000, 297.000, 16.0000 },
+				"_resize_mode" = 4628,
+				"_flags" = 910163968,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_ploc" = point { 1.00000, 10.0000 },
+				"_text" = "",
+				"_tab" = 28.0000,
+				"_max" = 2147483647,
+				"_trect" = rect { 0.00000, 0.00000, 2279.00, 13.0000 },
+				"_sel" = 0,
+				"_sel" = 0,
+				"_col_sp" = 4,
+				"_runs" = array {
+					$"416C692100000000000000010000000053776973373231204254000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"00000000000000000000000000000000526F6D616E0000000000000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"000000000000000000000000000000004120000042B400000000000000FF0000"
+				}
+			},
+			"_label" = "Album:",
+			"_a_label" = 0,
+			"_a_text" = 0,
+			"_divide" = 60.0000
+		},
+		"_views" = archive BTextControl {
+			"_name" = "TrackTextControl",
+			"_frame" = rect { 5.00000, 80.0000, 95.0000, 99.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 603979776,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 10.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive _BTextInput_ {
+				"_name" = "_input_",
+				"_frame" = rect { 66.0000, 3.00000, 87.0000, 16.0000 },
+				"_resize_mode" = 4628,
+				"_flags" = 910163968,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_ploc" = point { 1.00000, 10.0000 },
+				"_text" = "",
+				"_tab" = 28.0000,
+				"_max" = 2147483647,
+				"_trect" = rect { 0.00000, 0.00000, 2069.00, 13.0000 },
+				"_sel" = 0,
+				"_sel" = 0,
+				"_col_sp" = 4,
+				"_runs" = array {
+					$"416C692100000000000000010000000053776973373231204254000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"00000000000000000000000000000000526F6D616E0000000000000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"000000000000000000000000000000004120000042B400000000000000FF0000"
+				}
+			},
+			"_label" = "Track:",
+			"_a_label" = 0,
+			"_a_text" = 0,
+			"_divide" = 60.0000
+		},
+		"_views" = archive BTextControl {
+			"_name" = "YearTextControl",
+			"_frame" = rect { 104.000, 80.0000, 176.000, 99.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 603979776,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 10.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive _BTextInput_ {
+				"_name" = "_input_",
+				"_frame" = rect { 36.0000, 3.00000, 69.0000, 16.0000 },
+				"_resize_mode" = 4628,
+				"_flags" = 910163968,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_ploc" = point { 1.00000, 10.0000 },
+				"_text" = "",
+				"_tab" = 28.0000,
+				"_max" = 2147483647,
+				"_trect" = rect { 0.00000, 0.00000, 2081.00, 13.0000 },
+				"_sel" = 0,
+				"_sel" = 0,
+				"_col_sp" = 4,
+				"_runs" = array {
+					$"416C692100000000000000010000000053776973373231204254000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"00000000000000000000000000000000526F6D616E0000000000000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"000000000000000000000000000000004120000042B400000000000000FF0000"
+				}
+			},
+			"_label" = "Year:",
+			"_a_label" = 0,
+			"_a_text" = 0,
+			"_divide" = 30.0000
+		},
+		"_views" = archive BMenuField {
+			"_name" = "GenreMenuField",
+			"_frame" = rect { 184.000, 79.0000, 304.000, 101.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 570425344,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 10.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive _BMCMenuBar_ {
+				"_name" = "_mc_mb_",
+				"_frame" = rect { 41.0000, 3.00000, 89.0000, 19.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 603979776,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = -1.00000,
+				"_fflt" = -1.00000,
+				"_color" = 255,
+				"_color" = -656877313,
+				"_color" = -656877313,
+				"_rsize_to_fit" = true,
+				"_maxwidth" = 63.0000,
+				"_items" = archive _BMCItem_ {
+					"_label" = "Select",
+					"_submenu" = archive BPopUpMenu {
+						"_name" = "Select",
+						"_frame" = rect { 0.00000, 0.00000, 0.00000, 0.00000 },
+						"_flags" = 536870912,
+						"_fname" = "Swis721 BT",
+						"_fname" = "Roman",
+						"_fflt" = 10.0000,
+						"_fflt" = -1.00000,
+						"_fflt" = -1.00000,
+						"_color" = 255,
+						"_color" = -656877313,
+						"_color" = -656877313,
+						"_layout" = 1,
+						"_rsize_to_fit" = true,
+						"_radio" = true,
+						"_dyn_label" = true
+					}
+				},
+				"_border" = 1
+			},
+			"_label" = "Genre:",
+			"_align" = 0,
+			"_divide" = 39.0000
+		},
+		"_views" = archive BTextControl {
+			"_name" = "CommentsTextControl",
+			"_frame" = rect { 5.00000, 105.000, 305.000, 124.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 603979776,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 10.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_views" = archive _BTextInput_ {
+				"_name" = "_input_",
+				"_frame" = rect { 66.0000, 3.00000, 297.000, 16.0000 },
+				"_resize_mode" = 4628,
+				"_flags" = 910163968,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_ploc" = point { 1.00000, 10.0000 },
+				"_text" = "",
+				"_tab" = 28.0000,
+				"_max" = 2147483647,
+				"_trect" = rect { 0.00000, 0.00000, 2279.00, 13.0000 },
+				"_sel" = 0,
+				"_sel" = 0,
+				"_col_sp" = 4,
+				"_runs" = array {
+					$"416C692100000000000000010000000053776973373231204254000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"00000000000000000000000000000000526F6D616E0000000000000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"000000000000000000000000000000004120000042B400000000000000FF0000"
+				}
+			},
+			"_label" = "Comments:",
+			"_a_label" = 0,
+			"_a_text" = 0,
+			"_divide" = 60.0000
+		},
+		"_views" = archive BButton {
+			"_name" = "",
+			"_frame" = rect { 68.0000, 145.000, 134.000, 169.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 570425344,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_color" = 0,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_msg" = message('cncl'),
+			"_label" = "Cancel"
+		},
+		"_views" = archive BButton {
+			"_name" = "OK",
+			"_frame" = rect { 180.000, 140.000, 252.000, 170.000 },
+			"_resize_mode" = 4626,
+			"_flags" = 570425344,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_color" = 0,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_msg" = message('ok__'),
+			"_label" = "OK",
+			"_default" = true
+		}
+	},
+	"designfsize" = 11.9873
+};
+
+resource(5, "InexactMatchWindow") #'ARCV' archive BWindow {
+	"_prio" = 15,
+	"_port_cap" = 100,
+	"_title" = "Inexact Match",
+	"_wlook" = 1,
+	"_sizel" = 265.000,
+	"_sizel" = 275.000,
+	"_sizel" = 265.000,
+	"_sizel" = 275.000,
+	"ID" = 59,
+	"_flags" = 16448,
+	"_type" = 0,
+	"_wfeel" = 1,
+	"_name" = "Inexact Match",
+	"_frame" = rect { 118.000, 280.000, 383.000, 555.000 },
+	"minWidth" = 265.000,
+	"maxWidth" = 265.000,
+	"minHeight" = 275.000,
+	"maxHeight" = 275.000,
+	"_views" = archive BView {
+		"_name" = "BackgroundView",
+		"_frame" = rect { 0.00000, 0.00000, 265.000, 275.000 },
+		"_resize_mode" = 4660,
+		"_flags" = 536870912,
+		"_color" = 255,
+		"_color" = -1,
+		"_color" = -656877313,
+		"_views" = archive BBox {
+			"_name" = "InfoBox",
+			"_frame" = rect { 5.00000, 5.00000, 255.000, 70.0000 },
+			"_resize_mode" = 4626,
+			"_flags" = 738197504,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Bold",
+			"_fflt" = 11.0000,
+			"_fflt" = 90.0000,
+			"_fflt" = 0.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_ploc" = point { 31.0000, 9.29590 },
+			"_views" = archive BTextView {
+				"_name" = "",
+				"_frame" = rect { 5.00000, 15.0000, 217.000, 59.0000 },
+				"_resize_mode" = 4626,
+				"_flags" = 910163968,
+				"_fname" = "Swis721 BT",
+				"_fname" = "Roman",
+				"_fflt" = 10.0000,
+				"_fflt" = 90.0000,
+				"_fflt" = 0.00000,
+				"_color" = 255,
+				"_color" = -656877568,
+				"_color" = -656877568,
+				"_ploc" = point { 2.00000, 50.0000 },
+				#'CSTR' array "_text" =  array {
+					"An inexact match was found.  \nPlease select the closest match a"
+					"nd hit OK.  \nPress the Cancel button if there is no match.\n\n"
+				},
+				"_tab" = 28.0000,
+				"_max" = 2147483647,
+				"_trect" = rect { 1.00000, 1.00000, 211.000, 66.0000 },
+				"_sel" = 0,
+				"_sel" = 0,
+				"_stylable" = true,
+				"_col_sp" = 4,
+				"_runs" = array {
+					$"416C692100000000000000010000000053776973373231204254000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"00000000000000000000000000000000526F6D616E0000000000000000000000"
+					$"0000000000000000000000000000000000000000000000000000000000000000"
+					$"000000000000000000000000000000004120000042B400000000000000FF0000"
+				}
+			},
+			"_label" = "Info"
+		},
+		"_views" = archive BScrollView {
+			"_name" = "MatchScrollView",
+			"_frame" = rect { 5.00000, 75.0000, 255.000, 225.000 },
+			"_resize_mode" = 4660,
+			"_flags" = 536870912,
+			"_color" = -1734829825,
+			"_color" = -1,
+			"_color" = -1,
+			"_views" = archive BView {
+				"_name" = "child",
+				"_frame" = rect { 2.00000, 2.00000, 234.000, 148.000 },
+				"_resize_mode" = 4660,
+				"_flags" = 536870912,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_views" = archive BListView {
+					"_name" = "MatchListView",
+					"_frame" = rect { 0.00000, 0.00000, 232.000, 146.000 },
+					"_resize_mode" = 4660,
+					"_flags" = 637534208,
+					"_color" = 255,
+					"_color" = -1,
+					"_color" = -1,
+					"_lv_type" = 0
+				}
+			},
+			"_views" = archive BScrollBar {
+				"_name" = "_VSB_",
+				"_frame" = rect { 235.000, 1.00000, 249.000, 149.000 },
+				"_resize_mode" = 5172,
+				"_flags" = 536870912,
+				"_color" = 255,
+				"_color" = -1,
+				"_color" = -1,
+				"_range" = 0.00000,
+				"_range" = 0.00000,
+				"_steps" = 1.00000,
+				"_steps" = 10.0000,
+				"_val" = 0.00000,
+				"_orient" = 1,
+				"_prop" = 0.00000
+			}
+		},
+		"_views" = archive BButton {
+			"_name" = "Cancel",
+			"_frame" = rect { 35.0000, 240.000, 101.000, 264.000 },
+			"_resize_mode" = 13621,
+			"_flags" = 570425344,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_color" = 0,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_msg" = message('cncl'),
+			"_label" = "Cancel"
+		},
+		"_views" = archive BButton {
+			"_name" = "OK",
+			"_frame" = rect { 144.000, 236.000, 216.000, 266.000 },
+			"_resize_mode" = 13621,
+			"_flags" = 570425344,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_color" = 0,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_msg" = message('ok__'),
+			"_label" = "OK",
+			"_default" = true
+		}
+	},
+	"designfsize" = 11.9873
+};
+
+resource(7, "ProgressDialogMenuBar") #'ARCV' archive BMenuBar {
+	"_name" = "",
+	"_frame" = rect { 0.00000, 0.00000, 202.000, 19.0000 },
+	"_resize_mode" = 4628,
+	"_flags" = 536870912,
+	"_fname" = "Swis721 BT",
+	"_fname" = "Roman",
+	"_fflt" = 12.0000,
+	"_fflt" = -1.00000,
+	"_fflt" = -1.00000,
+	"_color" = 255,
+	"_color" = -656877313,
+	"_color" = -656877313,
+	"_rsize_to_fit" = true,
+	"_items" = archive BMenuItem {
+		"_label" = "File",
+		"_submenu" = archive BMenu {
+			"_name" = "File",
+			"_frame" = rect { 0.00000, 0.00000, 0.00000, 0.00000 },
+			"_flags" = 536870912,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 12.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_layout" = 1,
+			"_rsize_to_fit" = true,
+			"_items" = archive BMenuItem {
+				"_label" = "About UltraEncode™…",
+				"_msg" = message('_ABR')
+			},
+			"_items" = archive BSeparatorItem {
+				"_label" = "",
+				"_disable" = true
+			},
+			"_items" = archive BMenuItem {
+				"_label" = "Quit",
+				"_shortcut" = 81,
+				"_mods" = 2,
+				"_msg" = message('_QRQ')
+			}
+		}
+	},
+	"_items" = archive BMenuItem {
+		"_label" = "Settings",
+		"_submenu" = archive BMenu {
+			"_name" = "Settings",
+			"_frame" = rect { 0.00000, 0.00000, 0.00000, 0.00000 },
+			"_flags" = 536870912,
+			"_fname" = "Swis721 BT",
+			"_fname" = "Roman",
+			"_fflt" = 12.0000,
+			"_fflt" = -1.00000,
+			"_fflt" = -1.00000,
+			"_color" = 255,
+			"_color" = -656877313,
+			"_color" = -656877313,
+			"_layout" = 1,
+			"_rsize_to_fit" = true,
+			"_items" = archive BMenuItem {
+				"_label" = "Disc Info...",
+				"_msg" = message('cdIN')
+			},
+			"_items" = archive BSeparatorItem {
+				"_label" = "",
+				"_disable" = true
+			},
+			"_items" = archive BMenuItem {
+				"_label" = "CDDB Info...",
+				"_msg" = message('cdin')
+			},
+			"_items" = archive BSeparatorItem {
+				"_label" = "",
+				"_disable" = true
+			},
+			"_items" = archive BMenuItem {
+				"_label" = "Preferences...",
+				"_msg" = message('optn')
+			}
+		}
+	},
+	"ID" = 51,
+	"designfsize" = 11.9873
+};
+
+resource large_icon array {
+	$"FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+	$"FFFF0803FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0304FFFF"
+	$"FF02050803FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF01070701FF"
+	$"03060C0C04FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF04090D0A04"
+	$"01050A0C03FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF09070C0802"
+	$"FF0704090A07FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF060C0505FF"
+	$"FFFFFF040C0705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF030C070BFFFF"
+	$"FFFFFF08070E0701FFFFFFFF050201010101010208FFFFFFFF020B0C02FFFFFF"
+	$"FFFFFFFF020B0D0803010101040506070707060503010101050B0D0703FFFFFF"
+	$"FFFFFFFF01080D0D0907070708090A0A0A0A0A09080707080B0E0B0407FFFFFF"
+	$"FFFFFFFF02060B0E0C0B0A0A0B0C0D0D0D0D0C0C0B0A0A0B0D0D09020BFFFFFF"
+	$"FFFFFFFF02050A0D0E0C0B0D0E0F0F10100F0F0E0D0C0B0D0E0B08010CFFFFFF"
+	$"FFFFFFFF0105090C0C0C0E0F1011111212121111100E0D0C0C0A07010CFFFFFF"
+	$"FFFFFFFF0105090B0C0E1011121314141414131312100F0D0B0A07020BFFFFFF"
+	$"FFFFFFFF0106090B0D0F111314151616161615141312100E0C0A080403FFFFFF"
+	$"FFFFFF0503070C1215161413161718181818171614131516140F090600FFFFFF"
+	$"FFFFFF01050C191E3F3F1E181518191A1A1A1917161C3F3F3F1D1308010AFFFF"
+	$"FFFFFF0008193F3F1E1E3F3F18171B1C1C1C1A161D3F3F1E3F3F1E100306FFFF"
+	$"FFFFFF000F3F3F180D0B131E1E171C1D1D1D19193F190E0B111C3F190602FFFF"
+	$"FFFFFF00143F1A09040405133F171B1D1D1D181C1C0B040504113F1D0901FFFF"
+	$"FFFFFF00143F1404090A050B1D181A1C1C1C171C1705080A06091C1E0804FFFF"
+	$"FFFFFF00103F12040A0B060B1B17191A1A1A171A1604090B06081C1B0409FFFF"
+	$"FFFFFF03071B180605070410191518181918171618080507040D1E1200FFFFFF"
+	$"FFFFFF0D000E1A1208070D161415171717171614161309070C18160601FFFFFF"
+	$"FFFFFFFF01030C141413131212141010140E131311131313141107000CFFFFFF"
+	$"FFFFFFFFFF0005080B0D0E0F10120E0F120C1111100E0D0C0A070203FFFFFFFF"
+	$"FFFFFFFFFFFF0006080A0C0D0E0F101111110F0F0E0C0B09070300FFFFFFFFFF"
+	$"FFFFFFFFFFFFFF000508090B0C0804070806040B0B0A08070300FFFFFFFFFFFF"
+	$"FFFFFFFFFFFFFFFF0003060809080200000004090807050103FFFFFFFFFFFFFF"
+	$"FFFFFFFFFFFFFFFFFF0500020506080707080706040101FFFFFFFFFFFFFFFFFF"
+	$"FFFFFFFFFFFFFFFFFFFFFF08020101010101010104FFFFFFFFFFFFFFFFFFFFFF"
+	$"FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+};
+
+resource mini_icon array {
+	$"FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+	$"FF0508FFFFFFFFFFFFFFFFFFFF0805FF"
+	$"FF080BFFFFFFFFFFFFFFFFFFFF0B05FF"
+	$"FFFF070AFFFFFFFFFFFFFFFF0D08FFFF"
+	$"FFFF060A05040506070504040907FFFF"
+	$"FFFF050C0C0B0D0E0E0D0B0B0D04FFFF"
+	$"FFFF04090C0F12131312100D0A03FFFF"
+	$"FFFF030D13131517171613130F04FFFF"
+	$"FF0B0B1E1E1D181B1B181B1E3F1106FF"
+	$"FF09171809131B1C1D1B1709121D07FF"
+	$"FF0B170D0509191B1B1A0D05081A09FF"
+	$"FFFF0B13080E1617171711080F10FFFF"
+	$"FFFF050A10111211111211100D03FFFF"
+	$"FFFFFF03050B0C0A0B0B0C0702FFFFFF"
+	$"FFFFFFFF0803050202040405FFFFFFFF"
+	$"FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+};
+
+resource app_signature "application/x-vnd.mediapede-ultraencode";
+
+resource app_version {
+	major  = 1,
+	middle = 0,
+	minor  = 0,
+
+	variety = B_APPV_BETA,
+	internal = 1,
+
+	short_info = "UltraEncode™",
+	long_info = "UltraEncode™, ©1999, Mediapede, Inc."
+};
+
+resource app_flags B_SINGLE_LAUNCH;
+
+resource(0, "Splash") #'bits' array {
+	$"FFD8FFE000104A46494600010100000100010000FFDB00430001010101010101"
+	$"0101010101010101010101010101010101010101010101010101010101010101"
+	$"01010101010101010101010101010101010101010101010101FFDB0043010101"
+	$"0101010101010101010101010101010101010101010101010101010101010101"
+	$"010101010101010101010101010101010101010101010101010101010101FFC0"
+	$"001108013601F903012200021101031101FFC4001F0000010501010101010100"
+	$"000000000000000102030405060708090A0BFFC400B510000201030302040305"
+	$"0504040000017D01020300041105122131410613516107227114328191A10823"
+	$"42B1C11552D1F02433627282090A161718191A25262728292A3435363738393A"
+	$"434445464748494A535455565758595A636465666768696A737475767778797A"
+	$"838485868788898A92939495969798999AA2A3A4A5A6A7A8A9AAB2B3B4B5B6B7"
+	$"B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1"
+	$"F2F3F4F5F6F7F8F9FAFFC4001F01000301010101010101010100000000000001"
+	$"02030405060708090A0BFFC400B5110002010204040304070504040001027700"
+	$"0102031104052131061241510761711322328108144291A1B1C109233352F015"
+	$"6272D10A162434E125F11718191A262728292A35363738393A43444546474849"
+	$"4A535455565758595A636465666768696A737475767778797A82838485868788"
+	$"898A92939495969798999AA2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4"
+	$"C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE2E3E4E5E6E7E8E9EAF2F3F4F5F6F7F8F9"
+	$"FAFFDA000C03010002110311003F00FF003FFA28A2800A28A2800A28A2800A28"
+	$"A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2803F7FBFE0D71F"
+	$"F94EBFEC33FF007733FF00AC79FB4157FAFD57F902FF00C1AE3FF29D7FD867FE"
+	$"EE67FF0058F3F682AFF5FAA0028A28A0028A28A0028A28A0028A28A0028A28A0"
+	$"028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0"
+	$"028A28A0028A28A0028A28A0028A28A0028A28A0009C027D2A02493FC87A54F4"
+	$"981E83F214015C80460D0140EC2AC607A0FC85181E83F214010A9C1F6EF494A7"
+	$"A9FA9FE749401FE01F4514500145145001451450014514500145145001451450"
+	$"0145145001451450014514500145145007EFF7FC1AE3FF0029D7FD867FEEE67F"
+	$"F58F3F682AFF005FAAFF00205FF835C7FE53AFFB0CFF00DDCCFF00EB1E7ED055"
+	$"FEBF540051451400514514005145140051451400514514005145140051451400"
+	$"5145140051451400514514005145140051451400514514005145140051451400"
+	$"514514005145140051451400514514005145140103753F53FCE9295BA9FA9FE7"
+	$"49401FE01F4514500145145001453C472323CAB1BB471941248118A4664DC230"
+	$"EE06D42E55820620B6D6C6706994AE9DECD3B3B3F2764ECFB3B34FD1A7D46E32"
+	$"4A2DC5A525CD16D34A5152945CA2DEEB9A328DD5D73464B74D0514514C414514"
+	$"5007AA59F8623B8F82FAE78B8C63CDD37E23685A224D8018C7A8787F57BA963D"
+	$"C5B2515ED6166555CEF68D8B6062BCAEBED6F0A7868DDFEC4FF1135111912C7F"
+	$"1074ED5E03E59C4ABA74FA2E9F3B070C4168EDAEAEC96DBB804546F919597E29"
+	$"AF95E19CD5E6788E2AA6E7CDFD97C518CCB22BF923432FCB2AB8AF2F695EA7FD"
+	$"BDCCBA34BF7CF1C7801703653E02E2D61D517C77E0470DF1C56A8A3655EBE65C"
+	$"59C6D818CE4FFE7E2C165981BAB27ECDD2934D4D4A451457A2FC42F02CDE003E"
+	$"13D33512CBAEEAFE14D3BC4FABDAB6E074EFEDC96E6E34CB09148DAB71169696"
+	$"B35CA862C93CEF13AA34456BE82AE330F471385C1D4A896271BEDDE1E92D6738"
+	$"61A9AA95EADB754E973D284E7B2A95A8C1EB511F9060386F38CCB25CFF0088B0"
+	$"B849CB26E19FECA866F8F97BB430F89CEF173C265581536B9678DC73C3E3B118"
+	$"7C326A7530996E63888DE184A96F3AA28A2BA8F0828AF61F87BF0E1753D0F5CF"
+	$"893E2E8EE6CBE1D784954DC4E8A239BC51AEC8E89A6F84F487908DD35F5C3A0D"
+	$"4AF2359174EB1134ADB6428C9E4F79702EEEEE6E96082D56E279665B6B58C456"
+	$"F6EB2396582041F762894844C92C55417666258F061B31C362F158DC2E1A5ED9"
+	$"E5F3851C655859D1A58B9C155FA9F3A6F9B134A8CA9D6C4535FC1857A0A4F9AA"
+	$"38C7EB33AE0CCEF87720E19CFF003BA2B2EA7C6387C5665C3B80C4A953CC71F9"
+	$"0617113C0AE23FAB4A2A54725C7E65471B97E518B9BB66788CAF369508AA1838"
+	$"D5AF5A8A28AEF3E4CFDFEFF835C7FE53AFFB0CFF00DDCCFF00EB1E7ED055FEBF"
+	$"55FE40BFF06B8FFCA75FF619FF00BB99FF00D63CFDA0ABFD7EA800A28A2800A2"
+	$"8A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A2"
+	$"8A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A2"
+	$"8A2800A28A2800A28A280206EA7EA7F9D252B753F53FCE92803FC03E8A28A002"
+	$"8A28A00F45F85FE26D23C39E29B68FC51651EA7E0CD754687E2ED3E540E5F45B"
+	$"D91125D42CC904C1AAE8F26CD4B4DBB8B13C53DB9895BCA9E647ED7E3A7C0BD6"
+	$"BE106B16F716EF26BBE04D7E35BDF0B78AEDE267B4BAB5B853341637D2A0315B"
+	$"EA696ED1CA10911DE40EB7368D22ACE90782D7EA97EC91E34D0BE30FC33D73E0"
+	$"9FC42860D764D06D3FD06D75026496EFC2D332C36ED6D31C4B0DD68178E905B5"
+	$"CC0E9716914D60F148190B0FCD78F336CCB835E1F8C70346A63B29A32A583E29"
+	$"CAA1F1D4C0D4A91861738C1B768D3C7602A4BD85572B431785AD4E9E22508E12"
+	$"856A1FDB5F450F0FF827E9291CD7E8DBC5598E1785BC40CCA8661C45E02F1F62"
+	$"53FABE138A30985A98BCF7C3AE238C13AD8CE17E2DC161DE6997AA6A589E1FCF"
+	$"B2EC663328A588AF9FE679766BF95B457D1BFB417ECF1E22F829AE493C51DD6A"
+	$"BE05D46E4AE85E2231AB796640D22695ABF94365B6A5022BAA48CB143A8C7135"
+	$"CDB2A9135BDBFCE55F6D936759671065B85CDB28C5D2C6E03174D54A55A9BD9F"
+	$"DBA5560FDFA35E94AF0AD46A28D4A534E138A68FE60F12FC34E37F0838D73DF0"
+	$"F7C44E1FC6F0D715F0EE2E785CC32EC6D3694E29B787C7607111BD0CC32BC7D2"
+	$"E5C4E5D99612A55C1E3B0B529D7C3D59D39A61457D23E13F850DF107E00F8A7C"
+	$"5DA1DAB49E28F86FE2A9A6BB8611BE4D5BC2BA8697653DDC42251BDAEB49B986"
+	$"4BFB63C97B53A8C2A2491EDD22F9BA8CBB37C1E675B33C361E7FED393E3E7976"
+	$"3E849AF6946B2A54B114A4D27AD3C461ABD2AD4A6B47CD3A77F694AA462F8CBC"
+	$"3AE25E07CB781B3ACE70AD64BE23709E1F8C384F34A519BC266596BC763727CC"
+	$"2846A4A3151C6E519D6599865B8FC337ED20E8D0C524F0B8DC255ABFAD7F0A3C"
+	$"28F73FB116BBA6AA334BAEF863C71AAC20A1CF9BF68BE7B7718452EA8F631B83"
+	$"C8DAA14C802971F9295FBD9F04B408EDFF0067DF03684E3CC8EF7C051799B172"
+	$"5D75CB39AF24C20272CFF6E63B724EE38CE6BF086EEC27B6D4EEB4C58A492E60"
+	$"BE9AC16145324AF3C570D6E225545DD248D22ED5554CB310157240AFC67C1BCE"
+	$"3EBF9EF8A54A534D7FAD95B31A6F457A78BC4661439BB24A182A57E9A9FE97FE"
+	$"D27F0E9F09784FF40AC753C34E157FE25F72FE0CC5C5294E51C5F0F64FC1B9A2"
+	$"A2DEB294E78AE25CC1C53779352E54ECEDF467ECABF080FC56F89568FA8C1E67"
+	$"85BC2460D735FDEADE55DB47301A6E95BC7CA5AF2E97CD9636DC24B3B5BA465C"
+	$"3EE5CAFDAAB5A1ADFC79F1FCC8ECF0D86A36DA4424B2B285D36C2D6DE511ED1B"
+	$"4466E567650092771763B9980FD55FD9A7E14C3F08BE16E99637B0A47E22D6D1"
+	$"7C43E299B60F352F2E6156834E6650CED169167E5DAAA64A9B9FB5CC8AA6E196"
+	$"BF14BC7DABB6BFE38F17EB4D2097FB53C4BADDEAC8ADB95E3B8D46E248D8365B"
+	$"20C654820ED23EEE170074704712BE36F1378AF35C3D4F699370E6534F21CA1A"
+	$"D69CD62F1F0AB8AC6C1DACE58CAD96CA509E9296123868C97BBA78BF4A2F0463"
+	$"F460FA0F7D1FF80F37C1AC17893E3478838CF15FC43534A38CC34B87B852AE07"
+	$"22E17C4A6FDA2A5C3597F1AE1E957C33E7A1473FAF9CD7A52B574E5C957D0DFB"
+	$"3CFC04D67E36F89FCA6FB469DE0DD1A6864F126B8B136369C48BA469D2301149"
+	$"AA5E20031B9858DBBFDB268DD7C9867C6F81BF043C47F1AFC531E95A724B65E1"
+	$"FB078A6F127881A3260D3AD198136F6ECCAD1CDAA5D2065B3B63B80C35C4CBE4"
+	$"C4C1BF52FE2E78A3C31FB2FF00C101A57826DADB4ABE789B42F07D9FCB2DCDC6"
+	$"AF74A5EF75BBC661BEF27B58CCBA8DF5D4BF2C9726DE02504D0443D1F11BC41C"
+	$"46598AC1F05F0A7262F8CF3DA94B0945C5A9D2C929626C9633149466957549CA"
+	$"B51A728B8D1A31963710BD942952C4FC67D0C7E87F9571CE43C43F49AFA40C71"
+	$"1C3FF467F0AF078ECFF328568D4C363BC4DC6E48A53970E646DD4C34E594CB1B"
+	$"0A796E638EA15A15B32CCAB51E19C9E6F1F89C763726F827F6B0F1F688FABE95"
+	$"F067C050DBD8780BE1983686DAC4FF00A3DE788CAB25F49238C9B97B0DF25BBD"
+	$"C48F23CB7D2EA12B12CE5DFE3DA9679E6B99A6B9B891E69EE259279E6918B492"
+	$"CD2B992491D8F2CEEECCCCC792C493C9A8ABF45E1CC8F0FC399360B28C3CE75D"
+	$"E1A9B96271755B957C763ABCE55B1B8FC44E4DCA75F178AA956BD494A5269CD4"
+	$"53E58A4BF8CFC69F15337F1A3C4BE27F10F37C2E1B2C8E738BA74725E1FC0461"
+	$"4B2AE15E17CAF0F4B2CE18E14C9F0F4A14A861B2BE1EC8F0B81CAF094E851A30"
+	$"9C70F2C44A9AAD5AACA4514515EE1F969FBFDFF06B8FFCA75FF619FF00BB99FF"
+	$"00D63CFDA0ABFD7EABFC817FE0D71FF94EBFEC33FF007733FF00AC79FB4157FA"
+	$"FD50014514500145145001451450014514500145145001451450014514500145"
+	$"1450014514500145145001451450014514500145145001451450014514500145"
+	$"1450014514500145145001484E013E94B450047E67B7EBFF00D6A3CCF6FD7FFA"
+	$"D4C618247E5F4A4A00527249F539A4A28A00FF0000FA28A28015559982A82CCC"
+	$"42AAA8259989C0000E4927800724F0295D1E376475647466474752AE8EA48656"
+	$"52015652086520104104669012A43292ACA4156048208390411C820F208E41AF"
+	$"ADBE16F8E7E187C48163E01F8F7A5DBC772EA963E1BF8A3A7F97A5EB962D8F2E"
+	$"D6C3C4B7D6F185D46D462382D752D461BC36EAB0C379B600F771F8B9E66B88C9"
+	$"B08F30A795E2B34C2D0529E3A965EE35331A34229375F0D839F22C7469AE6956"
+	$"A34EBD3C4282BE1E962677A6BF4DF0B380B27F12F8861C218BE3AC8780F3ECD5"
+	$"D1C3F0B63F8C215F09C1D9966B526E11CA73BE24C37D62A70BD4C5B74A965B99"
+	$"E2F2BC5E4F3C4CFD966B8DC9A828E325F2457D7DFB1CFC35D77C6DF115355D23"
+	$"C4377E1BFEC8592C7ED96375F639E67D5ADA6B49A26B8CE1618A097CD29B1CBD"
+	$"C1B620C65031EE3E227EC23E30D2636D53E1AEBB65E34D2DD566874EBE7874CD"
+	$"6CC3294311B79C33691A8AF96FBCCC2E34FDE885E2818BAC63E5BD335DF8A9F0"
+	$"475CBBB6B66D7BC13ACB068AE6D2F6D24B6693682864105D44619805628278C3"
+	$"A15618738423CEC938AF84F8CF095219566597E6B4AB529C31597565158954A7"
+	$"1E5A94F1796E2A31AEA9493709FB5A0E8CD5D29495CFB3F147E8FDF483FA33F1"
+	$"060717C7BC15C5DC038ECBF1F87C5E41C6596CEACF26963F0F5557C163387B8D"
+	$"F20AF5F2A963A8D4853C4E1FEA59A4331C2CBD9D49D2A15396DFB05F1EBF678D"
+	$"1BC2B65A1785BFB46F35DD7FC6777631C56771A95EDD5B6A36B2CF0DC5E5CCC2"
+	$"6965DF6714226B8BC9C42B2DAA24770CE99DCDF987FB44FECE5AEFC15D65AFEC"
+	$"BED1ABF80B53BA75D1B5A285A6B077CBA693ADEC458E2BD8D772DBDCA8583508"
+	$"D3CD8D619BCDB68BF4FBF640F89F73FB4B7C299BC01E2DD6163F8ADE02D4AFB5"
+	$"2F0378B678FCDBF779B175FD9D78C811A6B0D516EEEAC6F2D8ACC9716E65661F"
+	$"688CC8DDB5EEB1E19F1626B9F0C7E24E956DA4EBAD13E9BADF853C401208B525"
+	$"62EA2EF429E670BA85B3B47F68B596D6437D664452B2A621B897E038FB3EE2AE"
+	$"05CEB29CFB2AC9E8E3B82A386961B3EC265F46D89A75A7594BEB75A30828D074"
+	$"69282C1621274252788C3E3254FDAE1A6BFAE7E88BE137809F4ACF0CBC41F09F"
+	$"8FFC46CC385FE9395B3BA59E784FC43C5D9939E4D8ACBB0D96FB1FF5772EAD89"
+	$"AF3AB9A4732CC2A622A712E4F39C734A546194671C374714F019E50A9F0F7FC1"
+	$"3D350121F8A3A1CA434462F0D6A090361A3944A758B3BA2F191B582AADB27CC1"
+	$"81591970013BBE72FDAA7E0B3FC24F8833DC697030F0778B1A7D5B407546F2B4"
+	$"F99A4DDA8E86EDCA86B19DFCDB4071BF4F9EDC0DD2433EDFBB3E07FC06D5FE05"
+	$"7C67F159B479B52F87BE28F0B5CFF636ACE54CDA75ED96ABA7DDC5A4EB24EC55"
+	$"9E3B47BE36D7680A5E45097291482554F50F8ED65F0ABC7DE149BC27E2BF18F8"
+	$"6749BFB6BFB5D4B4CBA9751B29EFF4ABFD36EA269A43691CCD70219A0696C6F2"
+	$"391047E5DC6E71E645195FCBE9F8814B2DF17B139FE472C466DC37C5580CA1E6"
+	$"3470142B622AC292CBE861BEB13C2D284EAD3C665B8AC3D5956A4E0EAAA52C55"
+	$"28C5BAB167F76633E8858FE35FD9D393F84DE2BD3C9BC3EF1ABC02E2AF1163C1"
+	$"B9A71666F9764B9755C5BE2CCD3399651433ECC71185CBB15C35C679066D81A5"
+	$"9763E9E2A3974B1B4722CC2BD682C05782F64F0869DFD91E13F0BE93B767F65F"
+	$"87744D3B6E31B7EC5A6DB5B6DC76DBE5631ED5F9A7F05FE040F117ED2FF11355"
+	$"D5EC49F0BFC3AF186A5A8A248A44577AE5DEA12DF68368438049B68DBFB4EE51"
+	$"54AC461822DCA27859BEF987E347C278E28E31E3DF0E7EEE255205F87C08D06E"
+	$"25BCB4C855524B6C418058AA8E06E7846FFC012B6AB3783F57F0FDECBAE6AB75"
+	$"AE6AA74BD4ECAEEE2EB53B8105A5C5CDCA4333CEAE05BDBDB059547941238542"
+	$"80AB5F9564D9F712F0965FC5F28E599A612A713E0A380FAF55C1E2B0F4F0D396"
+	$"2DD5C455556A4209569612B62A952719734275E3553F715FFBCFC41F0CBC08FA"
+	$"487157D1D2343C41F0EF8AF2EF02B8A2B7144F86B27E2AE1FCF7139C53C370F5"
+	$"3C164F9654C1E03198BE6C152CFF0003906659842BD3F658AC2E5B3C04A9B8E3"
+	$"1CA9D8F889ACA7877C03E35D79CED1A478575ED4010C170D6BA5DD4A9F331007"
+	$"CEABCF24760C700FE12FC26F865E25F89DE237B7D1F45BAD634FD1E27D5FC452"
+	$"A33C71C5A7DBABCD243F68DAFBEFEFBCB782C2D51649AEAE1B0B1B22CACBFB65"
+	$"F1C7C39ABF8C3E17F8A3C29A1CD6D6B7DE2386C7497BEBD9561B2D3AC2E352B3"
+	$"3AADF5D3B7FCB1834D4BB3B015691CA46ACA5B70C1F809F0F7C3B6F6F6BF093E"
+	$"0EA49269F6862B8F885F13AD96392DA2711C6753BE8B5558278753D6A483CC8F"
+	$"4F82D91F4FD2A3090C7221B79843FA278319CE6595E499AE078632E59AF14E7F"
+	$"9CE1A85385655165B94E5980C3D373CDB38AF4EDEC70CA78EC453C3D28CBDB62"
+	$"6B539C69C26E0A9D5FE3FF00DA63E1BF0671E789FC01C51E3971954E02F017C2"
+	$"4F0DF3BCDB1D88CB6A6127C6DE2071BF16E6F89A585F0FFC39CAB17CCB31CEAA"
+	$"50E17C9F199CE3EAD279764996E2A855C76230B4F133C6E074BC07FB38F87AEF"
+	$"E195AFC40F86BAF3F85E45844EBFD917074F0D710246F242F6113476FA93E238"
+	$"AD2EADA48A49255492D6E131182BF945FB56F8D3C65E27F88D1E97E2C9ADB1E1"
+	$"9D26D2C2CADAC0BA583CB2AEFD4354481A69BCAB9D42E53132E542456F0468BB"
+	$"103BFDC1FB657ED15178345B7C3DF84DAACFE1ED23C1AF07867C3D6BA64F018B"
+	$"5092055B8F146BBAE5BB4727DAA467FB15AD8FDA5E44924D42EE658D25B3DC7F"
+	$"27754D535DF17EB72EA1A84D79ACEB5AA5C0048479EE6E2691B11C16F044A4F5"
+	$"3B628214C73855C939FEACA596E4B8ACCD6793CAF0B0CDB2C789C14335961E9D"
+	$"3AAE35695278D742BA6AA55A119BA98673AE94A9D4A78A8534A139CEAFF8058F"
+	$"E36F13321E077E16E1B8F33DAFE1FF001C4725E27C5787F4B38C6633014EAE0B"
+	$"30C72E1B599E5328CB0981CD6B50A784CEA185CB272A78BC1E2B21C4E3255313"
+	$"86C2D0C0E1D15F57785BF655F1347E1EBAF1E7C5AD4E1F85DE07D3ADFED772FA"
+	$"944B3F89EFA3C662B5B0D10C91FD9EEEEDB105B47A8CB0DCB4AE852C665CD7CD"
+	$"FE26BBD02F358BA93C2FA5DCE91A0C6C20D32D6FEECDF6A725B4590B77AA5D28"
+	$"481EFEE89334F1DA4515A5BEE5B6B7568E1134B596711E539D62F1785CA312B3"
+	$"28E01FB3C663708955CBA8627DDB60FEBA9AA35F17CADCEA52C2BAFF00578C57"
+	$"D6A5425528C6AE3C71E0BF885E19E41C3F9EF88792CB82EBF164162F86F86388"
+	$"652C071966B93255154E23970CCA9CB32CA320F6D0861B099867F4F2959C56A9"
+	$"2790D3CD68E0B33AB81C1A28A2BDD3F2A3F7FBFE0D71FF0094EBFEC33FF7733F"
+	$"FAC79FB4157FAFD57F902FFC1AE3FF0029D7FD867FEEE67FF58F3F682AFF005F"
+	$"AA0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A2"
+	$"8A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A2"
+	$"8A0028A28A0028A28A0028A28A00638EFE9C1FA7F9FE751558EB50118247A500"
+	$"251484E013E9505007F80BD1451400515ED3F0E3E17786BE25793A659FC4BD0F"
+	$"C2DE2B958450E85E2EB1BBD3ED35194F08BA5EBD6CF756734B2C85638ECEE61B"
+	$"5BA272D1ACA01DBE9FABFEC4DF1D34D5692CF4DD075C840CC6FA5EBB6C1E51B7"
+	$"76522BE5B36C100ED24E1B2BC8660B5F2D8DE35E16CB31B2CBB34CEB09956322"
+	$"F4A59AAAD96AAB1BD954C3D5C752A1471349BD156C3D4AB49BD39EE7EF1C33F4"
+	$"62F1EB8E38668F18F01F8679FF001FF0ED55FBCC7F00CB2FE369E06AF22A92C2"
+	$"66F97F0B63736CCF25C7C212529E5F9BE0F058D8C5A93A1CAE327DAFECC7FB58"
+	$"DDF8124B1F01FC46BA9EFBC16E52DB48D6DCBCF7DE17918848A1B86772D71A07"
+	$"456403CED33FD6C224B7DF0A7EA46B5E1CF067C42D162875CD2343F15E897F6F"
+	$"1DC5AB5DDB5B6A16D2C13C7BE2B9B2B9C3B47E646FBA3B8B5951F6B128E031CF"
+	$"E18EB1FB3BFC6ED0B1FDA3F0D3C4E01DD86B1B34D593098DC77E932DF2ED5DC0"
+	$"96CED039CE01AF71FD9F7F683F1A7C0DBD87C25F10B47F11C9F0FE69B69B7BFD"
+	$"32FA2D4BC29248CCF2DE69915DC70BBD81690CF7FA673901EE6C556E5A58AEFF"
+	$"000AF11BC38CAF886A55E2EF0E733CBE59E536F158BCBF27CC70CD66328DDCB1"
+	$"7974F0959FB0CCAE9CA74E0E30C6CAF38B8E2DBFACFF00AB9F42FF00A69F1E78"
+	$"3983C0FD1E7E99FC0FC5F43C2DC6429E45C3BC5FE23F076754E7C1F42B2852A1"
+	$"C3BC6186E20CB22F34E0A719C29E171789A75F11C3745C28568D7E1F8D2592FD"
+	$"7F69F0CFC3BFB377C47F0B78ABE1F49A8D8699E29D527D3EF748B8D46E6E61B0"
+	$"B9B5B7FB75B4B652B46D39B72B0CF191A85DCDE4CB244629106ECFE85FC4EF84"
+	$"BE17FDA0FC1D67E2A5B0B39BC416B6A897729447958A5B856B832ABAAAE3C998"
+	$"16924560C2474976B88E4F87FE33EBBA3F88F46F85FAE787F54D3756D2B53F13"
+	$"3DC585EDA4C9347776D2E85A8BB35BCC8C4AB460033C2F199164410CCB0488C5"
+	$"7EE9F809E26BAD37408639A09EFDE5B630DB5A2484F9CF3479805CC4DF22C4E4"
+	$"B3B483748C8A2468487133FE9BE0F6699B66FC0B80C467988C4E2F30A58BCCB0"
+	$"55EAE3799E2DAC362EA538D3C4CAA25527569AFDDCE55B9AABE5B54939267F0D"
+	$"7ED1EE05F0FBC3AFA55F15E55E1664F9270FF07E61C3BC11C4B95E0385DD1864"
+	$"10A99DF0E60B1B571992D3C2549E0B0D81C6D46B1987A5977B3C0A55BDA6169C"
+	$"294E37F89AFBF66DF11179B4C7F11F8ABFB31D5ACDB459FC43ABC9A64D043E52"
+	$"B451D935E18E5863453B44B1875F2638DB3090CBE9BE17FD94EDD60591749016"
+	$"4DB34CE62CF98F2C7107DD32AC73492347144486662AC43CB3482348E7FD3DF0"
+	$"5FC29B9F156A4FABDFD9C6D7177225C982162B691AE52489208C0741B4AAC1E6"
+	$"B6259E591F21BCA0B5F66F84FF0067857448CD880C6230E045201BE0C145C7DC"
+	$"24C1F39720E0E5519373237E9387C261308A6B0B85C3E1955973D4587A34E8AA"
+	$"93DB9E6A9C63CF2B69CD2BBF33F89F38E20CFB88A5839F106779BE7B3CBE8BC3"
+	$"E0279C6658DCCE581A0EF7A1839636B57786A2F9A57A745C21EF3F77567E18CD"
+	$"FB2C409182FA4409B999085863F31492AEEAD853B1BAA328226B604022032425"
+	$"FC7FC53FB29C16F2B5C5AD81B4D412E20717B6B1B595D4971015BAB49E49ED5F"
+	$"CC2239614386676742BBC2B22A2FF4E52FECE81A1C0B100C8154A24640D91840"
+	$"86401D8E6131F930ACAD26F8819DA28656F367F0FF001CFC005586EA4FB02320"
+	$"0F2B136EC408947D9A190ABA306050BBBC6518B94DA550360ED3842A45C2A423"
+	$"38B524E338A945A945C649A9269A946528C9356716D3D1B47974EA54A356957A"
+	$"339D2AF42A42B50AD4E52A7568D6A6EF4EAD2A916A74EA41EB0A9071945EA9A6"
+	$"7F3D1A1FECC3ACEBF75169FADEBBE21F115A3CF6F3793AF6BFA9EAB668639637"
+	$"89C417F74F10942BC5246CF3617CE7F28063BE7FAD3C751F87BF67CF8492F85B"
+	$"C3515AD96A17966B1DF9B4211A311C4C9F65768F398E2591222119A360890C31"
+	$"205446FA9756F0BEA3F0E35392FADEC0CF632381796AC5FCE11AB4FBA4B124C7"
+	$"996D95E68DA378DE178C065D8CCAE9F9EBFB516B175ABC173272D0AC4D3223CA"
+	$"5CAB34480194ECDD101E6244EE232B24BBD83CEC0118E1F0985C1D354B0986C3"
+	$"E16926DAA787A34E8534DDAED4294631BBE55776D6CBB23D3CE73ECF788F19FD"
+	$"A3C439D66D9F661C8A97D7B39CC7199A633D9A6E4A9FD6B1D5ABD7E4526E4A1C"
+	$"FCA9B6ED76CFCC7D03F65AF1FF00C71F13DDF8DFC4DAA47E16F06EA772F73A75"
+	$"D4AFFDA5AD6A360CE1D0D8E9DE624366B2EE65335DC90244E8DE5D9CC88BBFEE"
+	$"CF04FC1CF83DF01743BCD72C34EB0D3FFB2AC66BBD5FC67E21923BCD592DA08C"
+	$"B5C4CFA84B185B28994106D74C86D62958AC6B0492B286EAFE13DCDBC1F0ABC1"
+	$"7752BA5BDBC1E17B29AE2490AC6902C36E5EE5E560760119491A570C54E19C33"
+	$"03B8FC1FF1E3C49F187F68ED487843E15783BC4AFF000D74FB8569355B9B53A2"
+	$"5978AEF627E3537BDD55ACA39746B50CAD636B149219588BD9E2695ACE283F8D"
+	$"330CEF8BFC4CE27CD323CCF3EA1C3BC2194E6389C3E6B5A1569E579661F07431"
+	$"5568AFACCEB568BC76618C54A4E8E1B135EA5275B9EAC6951A34EA4A3FF4B1C1"
+	$"9E177D1E3E843E04F01F8A5C15E13669E32FD23B8FF83322CD78132EAD96E378"
+	$"E78DF38E25CD720CBB1F51E4783CBF03885C27C1FC3D531F4A39966F9365B85C"
+	$"753CB1E1B2EAF98E6399E33050ADF3A7ED23FB42EA9F1A7C43F63D3DE7B1F016"
+	$"897120D0B4B6CC6F7F38DD136B9A9260335D5C212B69049F2D8DAB6C544B89AE"
+	$"9A4F99ABEFBF08FEC05E3CD47CA9FC63E2AD07C3709C992CF4D4B8D7751E3A21"
+	$"702CB4F8B703FEB12E6EB6107F74E304FB5DDFECC9FB32FC15D217C45F1335AB"
+	$"FD5D60DCE8BAFEA7E42EA33440482DB4ED0B448ADAF2F642542F90B25D6436D9"
+	$"D844CC4FECF83F12FC34E13C1E0786786278BCE65874B0D83CB7873015B1F88C"
+	$"4D677729FD626B0F86C56231151BA956AD3AF525527294ED6D17F9A1C47F420F"
+	$"A6F7D20F8938A7C70F1D68641E1AD0CE2ACF39E22E36F1978B72CE12CAB25CB6"
+	$"9A842961FF00B1E854CDB38C8727CA307ECF0797E5F8ACAF05430987A14F0CA4"
+	$"A5794BF28AD2CEF2FE74B5B1B5B9BDB990E23B6B4825B99E43E890C28F239F65"
+	$"5356F58D1357F0FDE7F67EB7A75D6977C22499AD2F62682E52390B0469217C49"
+	$"19628DF2C8AAE3192A0119FAABE20FED44160B8F0D7C0DF0AE99F0AFC307CC82"
+	$"4D574BB1B3B5F15EAB0945872D7B6C84E9713C6B9DB6F2CD7F92AC6FD08287E4"
+	$"69E79AE6692E2E6696E2799DA49A79E479669646396792490B3BBB1E59998B13"
+	$"C926BF4DC931D9EE650FADE6793D2C8B0F38DE8606B631637349293BC678CFAB"
+	$"C2183C1351FF00987A75B1F36E5FBCAB425074E5FC3BE2870AF855C178AFEC0E"
+	$"06F11B1FE2B66F86ADC99B714E5BC3B5385F81294E9AE5AB85E1CFED7C462B89"
+	$"38A294AA371FED9C6E5BC278687B1BE13039A61F114F154FF7E7FE0D71FF0094"
+	$"EBFEC33FF7733FFAC79FB4157FAFD57F902FFC1AE3FF0029D7FD867FEEE67FF5"
+	$"8F3F682AFF005FAAF7CFC8828A28A0028A2B9BF1978CFC1FF0EBC27E24F1EFC4"
+	$"1F15F86BC0BE05F06E89A9F89BC5FE34F196BBA5F863C27E14F0DE8B692EA1AC"
+	$"7883C49E23D6EEAC747D0B44D26C209EF753D5754BCB5B0B0B4865B9BAB88A18"
+	$"DDC00749457C81F0B7FE0A13FB02FC71F1DE85F0B7E0A7EDC3FB207C60F89BE2"
+	$"8FED3FF8467E1D7C2DFDA5BE0BFC40F1DF88BFB1347D43C45ACFF617847C27E3"
+	$"5D5FC41ABFF64787F48D575DD4FF00B3F4FB8FB068FA66A1A9DD7956565733C5"
+	$"F5FD001457CE5F1C3F6C4FD91BF664D4B41D1BF692FDA9BF672FD9F358F14D8D"
+	$"DEA7E18D2BE387C6FF00867F09F52F11E9B61711DADF6A1A0D8F8F7C4FA05D6A"
+	$"F6365752C56D7777A7C5716F6D712C70CD2248EAA7ADF829FB42FC02FDA53C2B"
+	$"A878EBF673F8E3F07FE3F782749F105D784F54F18FC14F897E0BF8A9E15D37C5"
+	$"563A7695AC5F786750F10F8175AD7B48B3F1059E91AEE87AA5D68D71791EA36F"
+	$"A76B3A55F4D6C96DA8D9CB3007B0515F1078B3FE0A6DFF0004DBF0178ABC4DE0"
+	$"5F1D7FC141BF620F05F8DBC17E20D67C27E31F0778B3F6AFF80DE1CF15784FC5"
+	$"5E1CD46E747F10F867C4DE1ED63C7D67ABE83E20D0B57B3BCD2F59D1B54B3B5D"
+	$"474BD46D6E6C6FADA0B9825897EDFA0028A28A0028A28A0028A28A0028A2BE60"
+	$"F8D7FB6EFEC5FF00B35F8AB4FF0002FED19FB5DFECC1F007C6DAB787ED7C59A5"
+	$"F83BE35FC7DF853F0AFC55A97856FB51D5747B1F1369FE1EF1D78B341D5EF3C3"
+	$"F79ABE85AE6976BACDBD9C9A75C6A3A36AB630DCBDCE9D7914201F4FD15F007F"
+	$"C3D8BFE0965FF492CFD803FF001323F675FF00E78D47FC3D8BFE0965FF00492C"
+	$"FD803FF1323F675FFE78D401F7FD15E7FF000B7E2C7C2CF8E3E04D0BE297C14F"
+	$"897F0FFE307C32F147F69FFC233F117E16F8CBC39F103C09E22FEC4D6350F0EE"
+	$"B3FD85E2EF09EA5ABF87F57FEC8F10691AAE85A9FF0067EA171F60D634CD434C"
+	$"BAF2AF6CAE608BD02800A28A2800A28A2800A28A2800A28A2800A28A2800A28A"
+	$"F2DF8C1F1CBE0A7ECF5E0E7F889F1FBE30FC2DF81DF0FE2D4AC74593C75F183E"
+	$"20F84BE19F83A3D6354F3469BA4BF89FC69ABE89A226A5A8982716360D7C2EAE"
+	$"FC997ECF149E5BED00F52A2BE7EF81BFB597ECB3FB4F8F151FD9A3F696FD9FFF"
+	$"00688FF841868A7C6BFF000A33E327C3AF8B7FF087FF00C24A357FF846FF00E1"
+	$"29FF008403C47E20FF00847FFE120FF847F5EFEC4FED6FB27F6AFF00626AFF00"
+	$"60FB47F66DE793EF624240381CFD7FC68026A298AC49C1C74FF0AF80FE207ED2"
+	$"FF00B53F85FF006E2F857FB2C7867F672FD9FF00C45F0CBE2B7C3FF889F18B4A"
+	$"F8C7AEFED63F117C2DE3BD33E167C0EF16FECC3E07F8D775A87C16D3FF00637F"
+	$"17787DBE2069DE20FDA6F467F85BE0FB6F8E12F873E2068FE16D4EFBC59F10BE"
+	$"14DEDFDAE951007DFF0051B2E49231D39FC3FF00AD5FCD4FC6BFF838CB40F831"
+	$"E0FF00DB22C6FF00F642F12EB7FB44FECEFF00B407C6BF00FC0CF80907C66D12"
+	$"C1BF6A7FD9D3E00F8CBF69CF0DFC54FDACB45F184DE009F53F017823E1D69BFB"
+	$"12FED63A87C48F0F47E01F1F2F82F5DF87FE05F0A4FE2BD46E3E2DF87752B2FE"
+	$"965BA1FA1FE54015DBA1FA1FE550558EB4CD83D4FE9FE1401FE02545152450CB"
+	$"3B88E18A49A43D1224691CF2070A80B1E481D3A903A91436926DBB25AB6F64BB"
+	$"B1C6329CA30845CA526A318C5394A5293B28C52BB6DB6924936DBB223AFA97E1"
+	$"0FED67F12BE171B6D32F2E078C7C2B19447D1B5A95DAEED611B14FF656AE03DD"
+	$"5ABA22ED8E1B81776601C7D9D4ED74F12D27E197C45D75A31A47817C597E250C"
+	$"63960D0353303852031170D6CB061491B899063A9E01AF54D23F64DF8FBAC95F"
+	$"2BC017960AC71BB57D434AD2C2AE33BD96EEF63931DB684326463674CFC67146"
+	$"2380F30C154CBF8B31DC3953092BB74733CC3034674E5F0BA942752BD3AF42B4"
+	$"6F655684A1563B2923FA57C0ACA3E965C1DC5183E31FA3F70AF8CF83E20A6E9D"
+	$"38663C0FC21C5198E171B45B8D58E0B35C3E1B2AC5E539AE5D55F2CEA60336A1"
+	$"8AC0564E32A9465EEB3F58BE137ED0BF0DBE305BC71F87F565B0F1008C35D785"
+	$"B5764B4D6216D9BDFECAAC441AA428036E9F4E92E0204266487807DB27B7B7BA"
+	$"8DA1B9821B885BEF453C49346DD47CC922B29E091C8EE6BF223C3FFB0A7C6679"
+	$"6DAF2EF5BF0B786AE2299648E48F55BFBABEB574605278DF4EB3F2D64461B818"
+	$"AEF7A80A50962557F467E12F843E2978334E3A578FBE215878FEDA3455B1BA7D"
+	$"1E6B1D5ED02A28F2AE3517BC98EA5102308F7302DCA8DCD24F36E548FF008BF8"
+	$"FB85F81B28AD5319C1BC6982CC69F3F37F63D4789AF8BA2F995FEA99961B0D2C"
+	$"1E229C6F78C713530F56308E95B133BB3FE99FE891E3B7D29FC42CBF0BC3BF49"
+	$"3FA33F12F06637EAEA97FC446C24724CA720CC52A2EDFEB0F04E759D51E23CA3"
+	$"175F9396AD6C97099BE02B626B35532DC8F0B148E63C39F0CFC49F1E3F69FF00"
+	$"097C14F867E1C86FAFD6EF4BF0E787BC3FA6E9F6F15ACDE21F10B437DAB6A4E6"
+	$"14D9616D6764D66B7F706D5A2B782DAEEE433B493A1FEFC7F623FF008205FC0B"
+	$"F869E00D0F56F8F935FF00C41F1FDDD9433DE5AB4F359F87B4F96506778ECAC2"
+	$"D5ACE42914934B1477172F25D5C2059D9A30E44BFCDB7FC1B79E0AF0EF8CBFE0"
+	$"A93F12F55F165BD8CDA8F84740D72F740B491E37582E2F2FF41D2CDC42259564"
+	$"FB54FA6CB18699638184773B60DF2B4719FDCCFF0083863FE0A97F1F7F66BF16"
+	$"FC33FD903F65AF10C9E01F1EFC43F0CDDF8D7E207C44B7B4F3F58D13C2BE6C96"
+	$"365A4787CBEF823BBD5E42524BA9119608D6E05C4257ECCD2FF69F87F81A5977"
+	$"04F0BE1A8DDA79260315566E4A6EAE271D8786371555CD37CEEAE231156A735D"
+	$"DD496A7FCC67D2E78AF31E33FA4E78ED9D664DC674BC4FE2FC870387F64A8430"
+	$"39270B6718AE19C832EA38750A6B0F470192E5381C2D3A3ECE1282A5FBC5ED1C"
+	$"DBFD40F885FF00048EF81AFA5CF75F06A5BDF879E22B60F2D85BACD2DF683746"
+	$"38FF00756B7DA7DCCCD11121445696D8D8C8252278AE2D1BCC2FF20FC35F82D7"
+	$"1FDA5AE786759D262D3FC59E10D4CE8BE22D3A297CE586E0ACB2E9B7F653B052"
+	$"FA56AF68D24BA6BC91C9968DECE6477B6B843FCF5FFC139FFE0AEBFB6F7ECC3F"
+	$"B53FC2AF02FED05F16BC55F1C7E0C7C63F1868FE0DF1169DE3571A86BBE17D43"
+	$"C40CBA7E89AC68D7A5D2616A9A84E16E74E94C8CA8E665B88CA5D93FDA2F8FB4"
+	$"ED22D7F6BAD1E7B5F25AD7C6DF076E752D782848A333E85AED9AE912DC866564"
+	$"9A58A7970C5639A48AE654647577913EC0FE753E47BAF8091259994582A318D9"
+	$"DD33BA440AA8CC47911CA42E1983076B69F6AB796124DA57C02CBF65BD53E31F"
+	$"C4E4F85DE1516FA5496B0C3A978CBC477312C96FE19D26E2347B3856D8968EE3"
+	$"5CD42D50C96D6B279AB15AB497335AC904D6E93FEE76AFA4F865B479557ECCAB"
+	$"8C45325C6CB879A6F2629E39937C0638151A710CEFA7DA9B9686112243E540FA"
+	$"A7C21A37C69F0DFECC7FB2BFED83FB576B76697377E0BF11FC4FF126A56AC03C"
+	$"AB1F863658787B4F796133FD9EC1D858DBA47882194408ACFF006870EA016749"
+	$"FF0082447EC949A3B58F8AFC3B7FE33D4EE6D912F757D6AFAE5EE66BACAF9D3A"
+	$"88668151245057CA8D6140C90B2245121B76FC17FF0082B47FC106F49F077C32"
+	$"F147C61FD97DF57D46CFC3F6575AC6B9F0EAF99F5033D8DB47BEE1B419E73732"
+	$"417F6D6E26922B5702DAEE189614681C3347F86FE33FF82A6FFC151FE3978D35"
+	$"1FDA234FFDA73C6DF0ED64D5BFB67C35E06F0C0B7B2F07F86AC84D25D68FA5CD"
+	$"A3ADBC8BAB3476AD68B7655922925F3CC496B046895FDB1FFC1217F6F0D5BFE0"
+	$"A47FB08DF78DBE29E97636BF123C1977E21F863F1512C91A4D2F51D7744B694A"
+	$"6AF6A9CAC91DF5AAC373226E62D3078E75693CC32007F9B87ECFDA84915A78BB"
+	$"C0D7A80A78735817DA6C725BA40134DD69E7925B51000462CF58B3D41B2F874F"
+	$"B4C70ED021527E86B9B9B4D3ED65BABCB8B6B1B2B588C93DCDCCB15B5ADB4318"
+	$"F99E59A5648A1891472CECA8A07240AC5F8BDE1AD37C11FF000503FDADFC1DE1"
+	$"88A25F0BE8BE37F17DB5B7924BC36C13C5F34F696D04A3E474517978802C7024"
+	$"8227914131969BE44F8F3FB3F7C6FF008B7753795F14B451E1D13BBE9FE0E1A7"
+	$"5FE87A5DAC618989AFAE6D67D465D62E427DFB9BD898249C5ADB4119217F867C"
+	$"41E19C96B78B39F65F8FCFF03C3596626AE0F32AD8AC551C5621FB6CC30786C4"
+	$"62A187A386A5387B7AB88A956B7FB556C2D18C27CCEAB7C94E5FF551F43FF1CB"
+	$"C4ECBFF67DF851C5BC2BE1371578DDC7192E0788B8272CC8723CCB21C9D3CBB8"
+	$"4B89338C9B21C466D99E799861B13FD9781C9F0B97E5CA391E5B9EE6556BE1BD"
+	$"8AC0420B118DA1CE7C67FDB8BC3FA00BCD03E1443078975850F0BF8A2E958F87"
+	$"ACA507696D3E0F925D65D412527DD0D806552A6F636207E6478BFC6BE2AF1EEB"
+	$"33EBFE2FD72FF5DD567E0DC5F4CCEB0443EEDBD9C036DBD9DAA63E4B6B58A285"
+	$"4E5826E2C4FD0DAE7EC5BF1E747331B6F0FE97AF43182566D1B5DD3D9A503385"
+	$"4B6D424B0BADE40E4187603C7987827C775CF831F163C38586B3F0F3C5B68118"
+	$"AB48BA2DEDDC2081924CF6515C43B71F307F33610548621813FD17E1F65BE16F"
+	$"0EE1E34F85B36C8B1D8FA94D471198D4CCF0389CDF13749C94EF523530F49FBB"
+	$"7C361E8D0A29A4E74E552F37FE31FD2FF8D3E9E5E32E715F19E3CF879E2AF0BF"
+	$"09E0B173AF9470660B81F8A726F0EF25E494E34AAE1D470B5F079C6369A94D47"
+	$"3BCDB31CD330946752187C5D2C23A787A7E6745589ECEEED58ADD5ADC5B32B6C"
+	$"659E0961657C13B08915486C02769E7009C7155EBF5A528C92945A927AA69A69"
+	$"AEE9AD19FE7BD5A5568CE54EB53A94AA45DA54EAC254E7169D9A946694934D35"
+	$"66B747EFF7FC1AE3FF0029D7FD867FEEE67FF58F3F682AFF005FAAFF00205FF8"
+	$"35C7FE53AFFB0CFF00DDCCFF00EB1E7ED055FEBF54CCC28A28A002BF003FE0E7"
+	$"EF8C3FF0A83FE08A9FB5C0B5BBFB2EBBF144FC29F83DA0EE8FCC8AE7FE135F8B"
+	$"1E0D3E2CB4971756B247E77C3AD2FC69E4491FDA36DE2DB79D6B2DA9B8DBFBFF"
+	$"005FC4CFFC1EE3F18A1D07F63FFD8CFE0189A58EF3E28FED1BE2DF8AC238CA2A"
+	$"5C69DF047E1B5E7856F2399848B2BC6B7DF1E748996111C9034D14534A526B7B"
+	$"5DC01F841FF06757C17B3F893FF056BBEF88DA8DA7991FECF3FB327C5BF88DA3"
+	$"5EB4713C76BE28F16EA3E0EF82F6D02BBC52BC37379E15F89DE3268DE16B776B"
+	$"7B5BB8DA731BBDB5CFFAA2D7F06BFF00063EFC149ACBE1F7EDF5FB465F58C525"
+	$"BF89BC65F05BE0A785B522ACB35A4DE07D13C69E3AF1ED8C6EB745258B504F88"
+	$"5F0DE79565B24681F4C84DBDD482E2E618BFBCAA00FF002BFF00F83C5FE37C3F"
+	$"12FF00E0ACBA6FC31B0D4659ACFF00674FD9A7E14F80355D2C5C2C96B61E2EF1"
+	$"A5FF008AFE32EA17A2DD2697ECF7BA9784BE22F8122BA32476D2CD69A6E9AC61"
+	$"68560B89FF00B18FF835EBE14587C04FF8223FECE9E26D7925D0EEBE28DFFC68"
+	$"F8F7E2F97508CC30DB58EADF117C4FA3787F565FDCC733D8DDFC32F05F83F575"
+	$"99D652E970ED0492DAFD9C9FF37FFF0082DFFC6FB9FDA1FF00E0ADFF00F0501F"
+	$"8953CFF6A863FDA4BC75F0D348BB1224B1DE7867E064D6FF0003FC277903C714"
+	$"23ECD77E19F877A4DC5AABC7E7476F2451CEF2CCB24AFF00E9ADFB53447FE09E"
+	$"5FF06EB7C46F066B375FF08F7893E03FFC13034CF80916A3690697A74F6DF16B"
+	$"55F815A47C0FD0F566818C9A736A57BF14FC43A7EA37A99BA7D4351B99F6FDB6"
+	$"EAE879C01FE611FB2169B7DFB787FC15E3E001F155AC923FED45FB7D782FC5FE"
+	$"3D82001A68745F88BF1CED7C67F10658566376AF2596857FAEDCC6B3BCF1B340"
+	$"1669590BC95FE8BBFF00075EFED91F173F640FF8265F87EE3E037C52F881F07B"
+	$"E29FC68FDA4BE1AFC34D3BC75F0AFC6DAFFC3CF1FE83E19D2F40F1BFC4EF125E"
+	$"68BE2CF0B5EE99E21D36DAF26F00E8BE1AD5D74AD52C66BDD3FC472E9F74F71A"
+	$"5DD5FDA5C7F173FF00069F7C16BCF8B3FF0005A1F81BE258ECFEDBA4FC02F86F"
+	$"F1BFE34F886368A592286CC7C3ED4BE13689792B4513AC3F62F1B7C58F0A5CC1"
+	$"2CD25BC5F6C8ADA3F35E4923B6B8FCF2FF0082ABFEC5DFB6EFECA5FB4A78ABC7"
+	$"7FB717C198BE09F8E7F6ABF1DFC5AF8EDE1CF0EBFC54F83DF13B52BEB1F12F8F"
+	$"B50D635CBDBC97E1378F7C711E99141AC6BED636F3EB874A3ABCF6F7CDA64774"
+	$"B617FF006600FED0BFE0CEAF8C7FB63FED3A7F6E3F8CDFB4F7ED4DFB4DFC7DF0"
+	$"AF83C7C17F863F0DB4AF8D9F1E3E25FC57F0DE9DE20D67FE13CF157C41D434CD"
+	$"17C79E28D7EDF49D72C74ED3BE1F5B45AA58C16F34D61AE5FDA34AF1EE41FDBE"
+	$"D7F93B7FC1BE9FF0476FDB87E3D7ED67FB08FEDE563F01E5BAFD8BBC0FFB4769"
+	$"1F10B54F8CB79F107E13E9D04777F02BC5177AA79B63E03D4FC7569F13F578AD"
+	$"BE22F852C7C3D1DE691E0ABEB53A9473C91CE6DAC2FAE6DBDEFF00E0F35F8D5F"
+	$"F09EFF00C14F3E19FC23B0D47ED1A4FC06FD96FC0FA6EA5A6ECFF90778EBE22F"
+	$"8BFC6FE39D6A6F30C68CDF6FF055DFC353E5879A38FECC1D5D649668A300FF00"
+	$"4D7F88BF137E1BFC1FF08EA9F103E2D7C41F047C2EF01E89F66FEDAF1B7C45F1"
+	$"5E83E09F08E91F6DB98ACACFFB53C49E25BFD3346B0FB5DE4F05A5B7DAEF62F3"
+	$"EE668A08B7CB2221ADF0B7E2C7C2CF8E3E04D0BE297C14F897F0FF00E307C32F"
+	$"147F69FF00C233F117E16F8CBC39F103C09E22FEC4D6350F0EEB3FD85E2EF09E"
+	$"A5ABF87F57FEC8F10691AAE85A9FF67EA171F60D634CD434CBAF2AF6CAE608BF"
+	$"C823E1DFECBDFF00056BFF0082C3FC1CF829E06FD97BF669F89DE39FD963F634"
+	$"F865A4FC27F86BE1CD3FC45E1AF02FC10D13C5F1591F10FC62F1668FE26F899A"
+	$"F7C3EF03F8C3E307C50F1FEA9AE78F7C73068D7BAF78DF45D37C45E10F075EC9"
+	$"2787B48F0789FF00AE2FF8297FED4BF187FE084BFF0006FB7EC1FF00B267C24B"
+	$"997E137ED71F193E197863E11EB9AA69DA969F1789FE106A379E0897E23FED57"
+	$"E2DF04EB1A0497166DE32D13E2378D20F03E83E28D26E45C69173E376F1E689A"
+	$"EC3E24D1747BBB800FEB0FE2F7ED97FB207ECFBA94DA3FC7BFDAB3F66DF823AB"
+	$"DBFD97ED1A57C5EF8E7F0C3E1AEA507DBA082EACBCEB1F19F8A345BA8BED96D7"
+	$"36D716BBE25FB4417104D16F8E58D9BD27E177C66F83FF001C3C3EFE2DF82BF1"
+	$"5BE1AFC5FF000AC773F6293C4DF0BBC75E17F881E1F8EF3C98AE7EC8FAD784F5"
+	$"4D5B4D4B9FB3CF0DC790D7225F2668A5D9B24463FE3C1FF04E0FF822D7EDF7FF"
+	$"00058583E317C53F80EFE09FEC0F03F8927B6F1D7C5AF8F3E39F11689A778B7E"
+	$"256BBA75E78B6FBC3BA76B5A7F86BC6FAFF8ABC6F7914F65A97882EAEAC96D34"
+	$"E9FC53A05FF89B5AD3E2D6E2BB3E25E1AF1D7EDE1FF0448FDBB7C45A2687E24D"
+	$"6FE097ED23FB3E78DF46D33E20F84F49F14DCEA5E04F1EE976A749F16D8785BC"
+	$"7567E17D6AD34AF88BF0B7C75A0DEE93AAB6937974AB79A36AF6B7B01D1B5C86"
+	$"0B8B000FF6D5AFF25BFF0083B3BE355DFC58FF0082CFFC64F09C97115DE99FB3"
+	$"D7C29F81BF057429E0BAB6BB83EC971E04B4F8D3ABDBC6D6CBFB9974FF00177C"
+	$"63F12E9D7D6B3C92DCDB6A569790CCD11516D07FA9DFECDBF19B48FDA3BF676F"
+	$"807FB436816B2D8E85F1E3E0B7C2CF8CDA2D8CEB224D67A47C50F03685E37D36"
+	$"D66499526496DECF5C861916545915D087556040FF00157FF829D7C654FDA13F"
+	$"E0A2DFB717C66B5D4E5D5F47F1F7ED53F1CB57F0B5F4D24D23BF8222F887AFE9"
+	$"BE04815EE02CBE5597836C742B181192258E1B78E38E08235486300FDB2FD9D7"
+	$"FE0D17FF0082937ED31FB3FF00C10FDA3BC11F19BF624D0BC15F1F7E127C3AF8"
+	$"CFE0DD1FC65F12BE39D978B34EF09FC4FF0008E91E35F0DDB7892CB40FD9C3C4"
+	$"9A2D96B69A2EB765FDA767A66BFAC5A5ADD99608B50B958FCC6F64FF00882A7F"
+	$"E0A9BFF45F3F600FFC3A7FB457FF0042AD7EE3FC32FF0083C63FE092BF0A7E1B"
+	$"FC3EF85DE17FD9F7F6FF00B7F0CFC36F047853C03E1D83FE155FECEE3C8D0BC1"
+	$"DA0D8787748870FF00B574AE3CAD3F4EB74C3CB2B7CBF348E72C7EDFFD897FE0"
+	$"E96FD823F6F8FDA93E11FEC8BF047E067EDAD63F13BE336AFAD693E1AD47C6FF"
+	$"000E3E08E9FE10D2D3C3BE14D7FC6DAEEADE23BEF0D7ED11E2CD76CF48D2BC39"
+	$"E19D5F50BDB9D3BC3BAB4D0C36CD235B794B24B1807EBD7FC1373F653BFF00D8"
+	$"7BF60EFD953F650D6F50D1356F147C14F837E15F0B78E355F0C5CDEDE786352F"
+	$"8893DBBEB9F11AFF00C317BA9E91A06A97BE1BBBF1CEADE20B8D02F355D0B46D"
+	$"56EF4892CEE353D2EC6FE4B8B68BEDBAFE2F7FE0F62F8C50786FF617FD953E06"
+	$"4534B06A7F163F69FBBF1FB88CA84BAF0EFC1BF867E28D2B54B398190318CEBB"
+	$"F173C257C02C2E3CEB088B4D08023B8FE477FE0981F0DBFE0A9BFB7A7ECF7F16"
+	$"3FE099DFF04FDD065D1FE1078A3E268F8D1FB597C4883C432F803C357FA3F88B"
+	$"C1FA4F81BE1F7803E31FC416959FFE1042FE0DF186A9E1FF00865E1EB2D5359F"
+	$"887AA6A1E23D5752F0E788748F010B9F0E007FABDF853F6EBFD88BC79F10DFE1"
+	$"1781BF6C7FD95BC67F1622D5CF87E4F861E14FDA17E11F88BE21C7AF09DED4E8"
+	$"8FE0AD1FC5F79E244D5C5CC725B9D35B4C17A27478BC9F314A8FAA6BFC4E3FE0"
+	$"A71FF049BFDAD3FE0935F13FC17F0D3F6A2B1F026A30FC49F0FEA5E23F875F11"
+	$"3E16788F53F147C3CF1A5A683796961E24B3D26FF5FF000EF843C496BABF86AE"
+	$"752D246B3A66BBE16D1EEA08359D26F204B9B2D42DEE1FFD24BFE0D69FDB3FE2"
+	$"F7EDA5FF0004ABF0EEAFF1C7C5BA97C40F1FFECFFF00197C77FB37CDE3BD7E5B"
+	$"BBCF1578A7C3BE12F0D7803C7BE0EB9F166AF773CD26BFAE68BE16F899A4F850"
+	$"EBEEB1DF6ABA6F87B4EBAD7A6D53C4AFAD6B9AA007F46134D0DB4335C5C4D15B"
+	$"DBDBC524D3CF34891430C31219259A69642A91C51A2B3C923B2A22296620026B"
+	$"E3F9BFE0A23FF04FEB6F174DF0FEE3F6E8FD8EADFC796F2C904FE099BF69BF82"
+	$"9178BA19E294C12C33786E4F1B2EB31CB1CEAD0C91BD92BA4AA63601C15AFF00"
+	$"336FF83833FE0BA3F197FE0A2DFB457C48FD9CBE037C47D6F44FD83FE1BF8B6F"
+	$"3C09E0CF0A781B519EC74DFDA3F52F0CEAD15ADDFC57F1E4FA35FDC1F1E786FC"
+	$"45E26D346B1F09BC3D7ECBA2695E15B7F0AEBD2786AC3C7379AD5D9E26EFFE0D"
+	$"60FF0082B9E9BFB287883F6AAD67E19FC37D18F877C10FF112E3F674BFF1DDF1"
+	$"FDA5EEFC2B6FA78D6F5092D3C1167E17BBF0843E24D334159B54BCF87FAA7C42"
+	$"D37E2234F6D37866D3C2975E3630F862500FF5B6D3353D375BD374FD6746D42C"
+	$"756D1F56B1B4D4F4AD574CBBB7BFD3753D36FE08EEAC750D3EFAD6496D6F6C6F"
+	$"6D658AE6D2EEDA596DEE609639A191E375637ABFCB33FE0D58FF0082ABFC69FD"
+	$"9B7F6E1F85BFB0EF8D3C6FE25F157ECABFB50EA57DF0F344F01EBDE20D4351D0"
+	$"BE0F7C5CD423D73C47E07F197C37D1EF56F6DF403E35F17CD3F83BC75A268326"
+	$"81A6F891BC676DE32D78EABAC782F46B69BFB9DFF82E37FC1587C39FF0492FD8"
+	$"DF50F8BBA7E97A478C3E3F7C4ED5EE3E1BFECE3E01D6641268FA8F8EA4D2EE75"
+	$"2D47C6BE32B0B5D4F4CD6AEBE1DFC3AD2E24D57C491E8B34775AB6B5A8784BC1"
+	$"8752F0F378BE2F11E9201FAA3F137E307C25F829E1C7F187C65F8A3F0EBE1278"
+	$"4629443278A7E26F8DBC35E02F0E47336310BEB7E2AD4F4AD312539188DAE839"
+	$"C8C0E6BCDBE0F7ED8BFB237ED0F7E74AF801FB53FECE3F1CF54115CCE74DF83D"
+	$"F1BFE197C4DBF10D982D7731B3F05789F5BB8F2AD4293732797B2000994A806B"
+	$"FC803E167C17FF0082A1FF00C17EBF6B7F16EA7A4DD78DFF00698F8CD736D278"
+	$"83C79F10BC77AEC3A17C32F849E16BFBEBFB8D374FB9D52E56D7C17F0C7C22F7"
+	$"A350B5F057C3DF09E9D651DD35BDFDB7847C2D742C75016FDBFF00C1473FE088"
+	$"5FF050BFF8240587C37F8C7F1BA2F045E78235BF16E8BA5F847E38FECFFE3FD6"
+	$"F5AD17C2BF13E1B1BAF15E89E1FBBBCD5FC3DE02F1D7857C5D6B0685A8EA9A2E"
+	$"AEBE1D8748B8BAD0AF24D07C437773640800FF00656A2BF938FF0083557FE0AF"
+	$"3F15BFE0A0BF003E29FECE1FB4FF008BF52F1FFED11FB2CFFC22DA8695F143C4"
+	$"33C33F89FE2C7C18F18BEA7A7E8979E29BC57377E20F1BFC39D77449BC3FE29F"
+	$"176A11417BE24D17C47E02BED5EE35DF17378B3C41A8FE2BFF00C1DABFF0591F"
+	$"897E27F8EDAE7FC1317F674F88F7DE1BF835F0D3C3FA42FED537FE0ED41EC2F7"
+	$"E277C51F12D8C9ABCBF09358D7F4ABE97FB53E1DF813C25A97878789BC3114D6"
+	$"76DA9FC45D57C49E1EF1AE957775E00D256DC03FBBDD37F6F8FD85B59F8876BF"
+	$"08B47FDB4BF64CD57E2BDEDF0D2ECFE18E9BFB467C1EBEF88777A999CDB0D3AD"
+	$"7C176BE3197C49717C6E55ADC5A45A6BDC19C18BCBF3015AFE53FF00E0F70F8C"
+	$"D6DA07EC73FB1B7ECFC06CD43E2A7ED23E28F8B492AB3ABBE97F033E1A6A7E13"
+	$"BFB47DB728925B4B7FF1FB45BA92292D2E01B8B1B49567B578425CFF002DFF00"
+	$"B147FC1B37FF000545FDBA3F674B3FDA7BE1DF83FE16FC33F877E28D0DBC49F0"
+	$"AB4EF8E7E38D5FC0DE32F8CBA03ACA74FD6FC05E1ED33C21E28FB0689AF79426"
+	$"F0C6BBF11EF7C03A2789F4AB8B0F12E81A8EA3E16D4F4DD72EFE0DFDBBBF6A2F"
+	$"DB0BE22F877E02FEC5BFB63AEBF178E7FE09CD17C5BF807A6DA78C3509355F19"
+	$"E911DF78C6C1F50F0C789B547B9D4535693C169E18D2FC17E1CD52C755BDD225"
+	$"F03F87BC2B65A497B2D3E3D475200FEEF3FE0CAAF8356BE14FF827C7ED23F1BA"
+	$"E74D96CF5EF8C3FB53DF78521BD923B4D9AB7823E11FC34F049F0FDCC3345BAE"
+	$"DA2B6F17FC41F88F6060BB655866B69A5B68516EA49AE3FB09D7F5FD07C29A26"
+	$"A9E24F146B7A4786BC39A1D8DC6A7AD6BFAFEA565A3E89A3E9B691B4D77A86A9"
+	$"AAEA335B58E9F636D12B4B7177773C30431AB3C922A826BF0B3FE0DE6F07F873"
+	$"F654FF0082137EC99E26F8917DA47823434F851F153F691F88BE2ED621FEC3D3"
+	$"AC7C21E37F1FFC42F8B36BE2EF10DCDC3B85B1D17E15DFF87566D6246114DA1E"
+	$"8D6D7B1A456C638D3FCF8BFE0A83FF000539FDB1FF00E0B99FB6B41F097E16CF"
+	$"F1035FF833E22F8B707817F641FD95BC33713697A3DFA4BA9DD787BC13E30F16"
+	$"F87BEDB068FA9FC52F13585E4FADF897C5BE2BBCBAB7F035B6B3AC68BA6EB3A3"
+	$"782F4C93001FEAA7E02FDBFBF610F8A3E291E08F865FB6B7EC93F11BC6845BE3"
+	$"C21E03FDA3FE0E78BFC507ED6F0C76B8F0FF0087FC67A86AC7ED324F0476F8B4"
+	$"FDF3CD0A47B9A4407DE752F863E03D5FE29F837E35EA1A11B8F89BF0FF00E1FF"
+	$"00C4BF85BE11F137F69EB117F647813E30788FE13F8B3E22E85FD8D06A31787E"
+	$"FF00FE122F107C0EF85BA87F69EA7A55EEB1A47FC22FF65D0B50D32CB5BF115B"
+	$"6AFF00E4B9FB617FC1B25FF053EFD8A3F656D63F6B7F89FA1FC17F167823C19A"
+	$"441E21F8A9E09F857F11754F16FC4DF84BE1D79A0B6BCF1078BB48BCF07685E1"
+	$"8D6748D127BA81BC4177F0D7C5FE3E1A2E9C6EBC41A8243E1BD2F57D62C3FA05"
+	$"FF008345FF00E0AFFF001AFE2B78DFC55FF04D5FDA4FC75E29F8A363A3FC3B9F"
+	$"C7FF00B2E78DBC5FAA5D6BDE24F0868BE0436D63E32F833A96BDA9DC5DEB1AC7"
+	$"85A1D0350D2B5EF8656B77298FC0BA5F85BC4DE16B6B997C3F79E10D17C3401F"
+	$"D74F8B3FE0981FB06F8F350D6B59F16FECEBE1BD6F5CF107803F6BDF85BAA788"
+	$"2EBC45E3C8FC4527813F6F0F1F78CBE277ED51A15A7882DBC590EB3A5FFC2C9F"
+	$"1A7C45F881A969DA9E977D65ACFC34B1F1CF8BFC3BF09F50F03786BC49AC6917"
+	$"9F7BB743F43FCA9A9D0FD7FA0A79E411EB4015E8A3A51401FE0C9F0F7E27DBF8"
+	$"0A17866F877F0F3C60CD7D25F25FF8AF45B8D4355B7F320B683EC96B72B7F1DA"
+	$"C76482DDA68E292C26759EE2E1FCD2B26C1F59F85FF6E3D1F450914FF04FC33A"
+	$"74691AA96F0CDDDB58176C9321114BA41DAB267F8A795F7333BB48786FCF7A2B"
+	$"E3B3DE01E15E259CEAE7396D4C554A8EF29C731CCF0FAE9AA861B194A92DB6E4"
+	$"B2BB6926DB7FD25E14FD2E7C7EF04F0B85C0F86FC6B83C8705838A852C3D5E0C"
+	$"E05CDDB845B928D5C5671C358FC7D4D5ABCDE2FDA351845CF96114BF5DF46FDB"
+	$"E7E145D044D57C39E31D171F29F2ED34CD4618D5546DDA60D42190AE70A00801"
+	$"0031C0C286F4DD2BF6C2F805AA88F3E31934C790E047AAE8DAADA9419C169244"
+	$"B59A040BD79972C3940C2BF0EEBB8F077C34F1F7C409C5BF837C27AD6BEDBD63"
+	$"69ECAD185944EDBF02E3519CC3616C3F76F96B8B98D46D6C918AFCCF36F013C3"
+	$"8A546AE2AAE3734C928534E53AF2CDB0D1C2D25BF354A99961EBA4BBB9565A5F"
+	$"5EA7F6F787BFB5ABE9A78ECCF019060786B813C50CDB1738D2C2E554BC3ECEAB"
+	$"E79984FDD5ECF0983E0BCE32B954AAFA46865D52CE5FC36AD13F76348F8D9F08"
+	$"B5EDA34AF891E0DB967255636D7AC2D652C06E23C9BB9A0941008C8280E59475"
+	$"6507D02D356D2F508D66B0D4B4FBE89DB624B69796F731BBF1F2ABC323AB37CC"
+	$"BF2824FCC38E457E5A7813F604F16EA5F67BBF1FF89F4EF0F5AB3234BA5E8AAD"
+	$"AAEADE51DACC8D772A45A75ACBB4B282AB7EAAE3E65207CDF707C39FD9AFE13F"
+	$"C336B5BBD1B429351D62D1B7C5AD6BB7736A37A9203912C30B3269D6B264025A"
+	$"D6CA1F9F732EDDEC0FF3AF1770EF86D937B5A79171A6699D62E09A850C3E5143"
+	$"158553E8AAE66F1797D0E47D6A616962DAFE46D34BFD9AFA3B78C7F4D8F12BEA"
+	$"18CF15BE8CFC0BE19F0FD774E789CD738F10F35C873D961A4E3CF5301C110E1F"
+	$"E30CD562A0B99C7079FE3F87A33D13C5C12529FD11FB127ED4FAB7EC11FF0005"
+	$"0FF0BFC6D48AF6EBC29ACFD824F12D8592C8D7575E19D4E08B4AF111819E3486"
+	$"5B9D3F50B4B6D52CEDE39649D49740D1EFB641FD167FC16B7F673D7FF6FB8FE0"
+	$"7FFC1447F620B8B3F8D6743F06B784BE22FC3EF0E5F47378817477B8B4B9B0D5"
+	$"B49B3778524B8B1749ED6FF4DB89DAE9E44FB39B732C56FF006BFE58BE33F812"
+	$"EBC5BA15A6AFA1C464F15784A69F54D1E14F291F55B77882EA5A034B2C722A2E"
+	$"A51C50CB6E594A0D46CEC4B98D374A9EA3FB277ED6DF117E1AEC5F01FC44F15F"
+	$"81AE092B7F6BA3EB173A3133A388E48AFADA19E2B5678630D1DC99504998A484"
+	$"388E6745FEA9F05B8B70DC49C1980C13AABFB4F87A851CAB1D42526EA2A1462E"
+	$"9E5F895CDACA957C2D38C39936A35E8D6868A31BFF0080FF00B4D7E8F79D7829"
+	$"F498E2EE248E02AAE06F18734CCBC40E15CD614547072CCB36C42C6717E4729C"
+	$"12A54F1D9567D8BC462161F49ACA732CA710EEEBCB97EF4FD88BF612FDA4BE3B"
+	$"FED2DF0BBE267ED13F0F7C57FB3EFC04F829E2BD23C79E3EF19FC4BB5B3F0C5F"
+	$"DFC9E17B84D474FD0F41B6B9B8967925BCBBB78BED1286890B66DE08649640D0"
+	$"7F5D7A5FED0965F103E2C78A3E2AD9ADC596997D6B69E0DF0258B0305D5A781F"
+	$"4ABB59E1BD9D18ACB1CDABC896B3C30CB04320B28EDBED0B35CDECF0C5FCC5F8"
+	$"6BF6AFF19FC437B3B8F1DF8F7C41E316B5659201E22D66E6FED629022CB1C9F6"
+	$"1F322B333792A19248ED639629E1052E137023E8FD5FE2F7877C69E07F107C3F"
+	$"F13F8AAFF40B0F883A16A9E149AF745F13C9E15F127D9B54B748EF64F0AEA6D2"
+	$"C57B63ADC68C56D6E2CD99E399E467B5893CCAFD78FF003B4FE932EFE3C9B8B2"
+	$"FB2FDB250628A611B3481E4508A62732891252B007204998C45BA331A8C44517"
+	$"E3CF1CF89FC05F13BE1D7ED31FB2FF00C41D66D3C3DE01FDAB7C2DA9E9DA3F89"
+	$"A768E3B0F0C7C41D4ED96310EA970638DEDACB5BBAB75BAB7BB8D9208AE2E752"
+	$"B5B8B976FB2C63F267C6DE20F09F89FE1EF80FC0FACF8C3C79A5E85F0DB5AF01"
+	$"78934BD674FF001FEA9A0EBFA8DC7C3548E1D2DFC5DE278676BAD774BD4A3B28"
+	$"8F88ADEEC11AC4FBA7BC68E7265839DF1CFED0B69AB59CF756DA858DF5A5EF9B"
+	$"246F6F71F6CD3EE374EFB92DDE29E4B3DAB322AB3192488B88CF98A9B2D4807E"
+	$"306B5FB157FC141BE0AEBBA87C061FB36FC47F1B5D45772E91A2F8AFC1B609A9"
+	$"F83BC4BA6F9925A695AC2EBC2E1134DB4BD83C8965FB6289AD3812B7D9C453DC"
+	$"7F4CBFB3978BFC23FF000429FF00825BF8A3C35F18BC4DA35F7ED49F18F51D7F"
+	$"E20DE7C38D02FED6FAF20F15F896CFECF65A3C4914C5E3834683ECB1EB171730"
+	$"0B58E24B996E2449EEA3B45FC7AF1AFEDB9F17FC0F612E9DE0CF8B5E37F0FD84"
+	$"4256B7B1D33C49388A0DCAFE4ADBC72CD31B24292492836C2DEDE38F7C023445"
+	$"603F13FE3FFC5FF1BFC69F1A8D21B5ED6BC6BE30F105D1B76D5359BD9F5196D2"
+	$"D8BC6B73A9DF5E5E9BD36F61A642D2DDCB044A124C086DA057621B9F178BC360"
+	$"70B88C6E32B53C36130946A6231388AB251A74685183A952A4E4F68C211726FB"
+	$"2D2ECF5F87F20CEB8AB3CC9F8678732CC5E739FF001066582C9F25CA70149D7C"
+	$"6E6599E6388A784C160B0B4A3ACEB62311569D2A6AE97349393514DAB5F0A759"
+	$"D7BE2278FF00E317C62F134D2DCEABE37F154D24F727788EE7519AE6EF59D7A5"
+	$"512C6B2384D47524B48DD6492211DAED43BCC84F75E2EF8B3F0DBC06EF0F8B7C"
+	$"69A068B7691894D85CDFC2DA8B29DDB36584264BB62FB5B60F27E6C13F741236"
+	$"3C25E1FD23C0DE1DD0BC296771188ECADBECD14B70D14375AADE92D73A85F3C6"
+	$"1879B777D752CF7D7423DE449339CEDC1ACBF1C7C2CF87DF11ED4DB78CFC27A3"
+	$"EB6DB0A457D3DAA45AADA8C607D9356B7F2B51B60382522B9589F6A896375016"
+	$"BFCEEE23E22CA38AF8E734CFF3C86690C9B30C5B549659F5758F86070D0A784C"
+	$"1B8471ABD8CA7F57A1075612704AAB92524958FF00B26F05BC1CF113C00FA2AF"
+	$"02784BE1762380F13E25F08F0ED396612E36FED8A9C255F8AF3BAF8AE21E24A5"
+	$"89ADC35386694F0CB39CDB114F018AA746B4EA6069D0A95A8CA555CD7CC5E2CF"
+	$"DBBFE12E8DE6C3E1BD3FC49E2EB952CA9341651E91A6330DC031B8D4E58AF8AE"
+	$"E504EDD34865652AC79DBF3278AFF6F6F89FAAF9B1785742F0E7852160025C4B"
+	$"14BAF6A2982F97592F3C9D3C3382995934D9957690A4925ABD27E247EC0819AE"
+	$"2FFE16F898203BA48FC3FE29762A38E20B4D62D6DD9B9FF967F6DB63C9C49720"
+	$"7CF5F06F8E3E15FC41F871726DBC67E15D5B445DE522BD9ADCCDA65CE0ED0D6B"
+	$"A9DB19AC670D91B424E5C13B5915C328FE8DE00E15F037368D2793FB0CE730E5"
+	$"8B784E22C4D4798A92D64A595D5FABE12BA5F6E787C2D7A2B6551A7AFF008C1F"
+	$"4BBF1EFF006A7F87D5F1F4FC4779A786BC1EEA55A74F887C1CC93074F83AA539"
+	$"3E4A7528F1DE05671C43954AA277C3E1F37CF72ACC9EB39612328DE2BE37F8AB"
+	$"F107E23C8AFE33F13DFEB491CCF7115B48B6F6D650CAF9DCF159D9416D6C8704"
+	$"80DE516C772724F9F51457F41E130583CBF0F0C2E030986C161695D53C361285"
+	$"2C350A77777C9468C614E377ABE58ABBD59FE3E711713711F17E6F8ACFF8B33F"
+	$"CEB89F3DC74A32C6E75C439A63B39CD7172845460F13986635F138BAEE114A30"
+	$"F695A5CB14A31B2491FBFDFF0006B8FF00CA75FF00619FFBB99FFD63CFDA0ABF"
+	$"D7EABFC817FE0D71FF0094EBFEC33FF7733FFAC79FB4157FAFD5749E20514514"
+	$"0057F9A8FF00C1ED7F13357D57F6E9FD91BE0DCF248740F01FEC9B3FC4CD3622"
+	$"22F25357F8B5F187C7FE16D6E44603CE324965F057C3EB28909882C509880769"
+	$"B3FE95D5FC5C7FC1DFDFF04BBF8C1FB517C28F833FB70FECF9E0ED6FE22789FF"
+	$"00666D0FC4BE05F8D7E04F09E8DA9F88FC69A87C20F136B5A5EB3E1EF1D78774"
+	$"2D222B9D4750D33E17788E4F135C78EADF4FB1BFBAB3F0B78C27F1A5E9D33C31"
+	$"E05F136A11807DC1FF00068FFC29D23E1DFF00C1187E15F8BF4D96C64BCF8EFF"
+	$"001A7E3E7C56F1025A4D2CB3C3ABE8FE3A9BE07C316A6920096D7C741F835A24"
+	$"D1C309689B4D9B4FB827CE9E551FD03FED09F1A7C29FB37FC05F8D5FB4278EDA"
+	$"51E0BF81BF0A3E20FC5CF152C1BFED53681F0EBC29AB78B755B6B358E1B99A5B"
+	$"EBBB3D266B6B1820B6B9B8B8BB96182DEDAE2692385FFCAB7FE08E9FF0726FED"
+	$"15FF00049DF853A9FECEB7DF067C23FB4BFECF52789759F19785FC1FAD78CF56"
+	$"F86BE37F01F887C45369F2EBD6BE16F1EDA683E38D2E3F08EAF3DB5EEAF77E1B"
+	$"D4FC07A8CD1789753BBD6B4FD66C63B9D4F4FD4F4BFE0AE7FF000734FED4DFF0"
+	$"547F8497FF00B36E83F0ABC23FB2F7ECE3E21D4B46D5BC73E0BF0E78B354F88D"
+	$"E3CF8892787F52B7D6F46D13C61F116FF43F0769F2F84B4ED774FD2BC410E87E"
+	$"1FF01F87EE2EB59D2ECE7D5B56D4ECA18B4F8803F24BFE09FF00F05BC5BFB6C7"
+	$"FC1457F65AF83D7367A9F8C35AF8E7FB4D7809BC7D35AC56C6FA5F0B5E78D2DB"
+	$"C55F177C5B7318885B25B681E08B3F1778BB5731DB3A4561A65E3C3693144B77"
+	$"FF00481FF83BEFE34BFC30FF00823C7893C0311899FF0068EFDA17E08FC23B88"
+	$"8F92D30B0F0E6A7ACFC7E96EA349219A558A2BFF00829A65BCD3C0D6C51AF218"
+	$"64B929726D2EFF002DFF00E0D31FF8228FC4FF00859E2D6FF829FF00ED55E06F"
+	$"107C38D693C3FE26F06FECA1F0C3C73E1CBCD07C64FA678C3478348F14FED05A"
+	$"8E99AAC76DAB787B47D7BC2BA96BDE02F86D6D7F696D7BE2BF0E6BFE2DF18FD8"
+	$"D3C27A8F80B5DF13E27FC1F0BF195534EFF827F7ECF761A9CA5EE2F7E3A7C65F"
+	$"1668E1E648516CE0F87FE08F87DA9C918FF47B896537DF136D6176FDF59A433A"
+	$"AFC97CF900F1BFF83203E0ADA6ADF1CBF6F2FDA2AE6DE58EFBE1FF00C28F843F"
+	$"05744BA92D6E4437569F183C5FE26F1CF8A2DED6F72B66F2E9F37C0EF0849A85"
+	$"AED96E625D4B4D973045362E7F383FE0EF4F8DF6FF0015FF00E0B0BE27F02D9C"
+	$"FE6C3FB387C00F82FF00072E16391DEDFF00B535AB1D73E3ADEC8A3CA8E13729"
+	$"0FC67B2B0BC785EE5964D3D6D279D66B46B3B3FEA2FF00E0CCBF834FE04FF825"
+	$"F7C4AF8ABA869915BEA7F1D3F6A9F1E6ABA5EA8121136A5E07F87FE0DF00F817"
+	$"4882491374EF169DE34D3BE23889267558DEEE7314082479EE7F831FF82D8EB1"
+	$"E3AD73FE0AE5FF000519BDF88B6D7D69E2083F6BBF8D7A3E9F16A305D5BDC3F8"
+	$"17C3DE32D47C3FF0BAE638EF259666B1BDF867A67846F34B9D185ADCE9B3DA5C"
+	$"D8C50D8CB6F0C601FEABFF00F0439F8190FECEBFF048DFF827F7C348FCD59E6F"
+	$"D9CBC1BF1435682789619ACBC45F1E4DEFC76F13E9B2A200BE6697E22F891AA6"
+	$"9CEE0B195AD4CA5DCB976FF2DFFF0082F27C5F9BF691FF0082CC7EDF3E2FD1EC"
+	$"E4BEB887F684BEF829A55AE9968D34DAACBF00B45F0F7ECF160DA7DBDABDD3DF"
+	$"C9AB37C358A6B492D8BBEA6D751DC431235CAC2BFE879FF043AFF82E29FF0082"
+	$"9AFC1AFDA87C73E2EFD97748FD953E167EC55E03F8416D36A7E1FF0088B7FF00"
+	$"11B41F139B9F0AFC51D63C75FD89693F80BC14DE14D23C0FE1DF879E1AB8D37C"
+	$"31F68F155FDBD9F88E18AEF5FBA296EF2FF9C3FF00C1373C25AEFEDB7FF0581F"
+	$"D936CBC5D69FDBFA87C6CFDB6BC13F137E265AEF58FF00B4F421F1353E2C7C56"
+	$"3E6A7D9447E6F8674CF13CBE644B1B27DE860670903007FB02FEC31FB2A783BF"
+	$"61FF00D8FF00F675FD93BC0D069A9A2FC0EF85BE1AF06DF6A1A4D99B0B5F1478"
+	$"C52D4EA7F113C792DA1E62D4BE227C40D47C4FE3AD67E54126B1E22BE9447187"
+	$"11AFF3D3FF0005BCFF00839E7C0FFF0004D3F8A3E23FD937F66BF859E1FF008F"
+	$"DFB51F87FC3FA45EF8D3C43E33D7353B0F839F05B5CD7ED9358D27C3BE28D1FC"
+	$"3E2C3C51F127C527C3B2E99ABEABE19F0F78A7C11A768F65E24D25AE7C6D26B9"
+	$"63AC785EDBFAC3AFF189FF0082F9FC1EF8B9F067FE0AF9FB77699F1874FD5EDB"
+	$"52F1F7C7CF1C7C61F026A9A958476B67E22F847F14B5ABCF16FC31D43C3F796C"
+	$"F3586B1A4693E14BEB1F074D7F65733496BAF785F5BD0F594B0F12E8FADE9560"
+	$"01FBF3F0E7FE0A0BFF0007757FC14F7C2EFE2CFD96BE1B6BBF0D3E1178E34C95"
+	$"F49F17780BE0E7C18F819E00D6741BA46B0B8D53E1DFC5FF00DA6AE6E3C43AB5"
+	$"BC332DC347AEFC3BF1FEA1AB5AEA16D73069D7C9756AF6B1FF00219F1F3C21F1"
+	$"DAF7F6AAF8BDF0E3E31F88B52F8A5FB48C5F1DBC69F0DFE22F896EFC65FF000B"
+	$"0351F1CFC5FD37C73A8783FC417ABE3CBBBEBA4F169D67C556B702CFC4926A12"
+	$"DB6AD04D05F25C9B6991C7F5B09FF078DFEDBDE3EF815E0AFD9CFF00674FD893"
+	$"E167877F6A9D7B44D0FE17F86BE23F826EBC49F10749B9D7EF74A83C31A55C7C"
+	$"1FFD9774DF075AA5878B9750782EBC0DE18D4BC6BF113C2969A9A69DA55EF827"
+	$"C51A3C72E8D79FCFEFFC114BE1C4DFB43FFC1613F607F0EF8A3549354B8D43F6"
+	$"A9F037C54F11DFF88257D5A6F11CBF0B3569FE34EB16BADCDA8DBEA6FAACBE29"
+	$"7F05DCE9DA8B5FA4ADA8BEA730BABA80CD25E4401FEB7FF12F50F0E7FC13DBFE"
+	$"09C9E3AD43C2B3F97E15FD89BF62DF10BF8524FB0D845249A47ECEDF046E93C3"
+	$"71C3A539FECD375736FE11B182D74A1BAD65B9962B18D5D1D54FF8EE7FC12DFF"
+	$"0063CD2BF6FBFF008280FECBBFB22788751F14E91E14F8CBF114E99E37D57C10"
+	$"74F8FC5DA6F803C33E1FD6FC73E3EBEF0E5CEADA56BBA4D86AF69E0DF0BEB93D"
+	$"96A9AAE87ACE99A54C8BA96A1A4EA3696B359CDFEA23FF000735FC6AFF008529"
+	$"FF000459FDB0AE6D351FECFD7FE2869DF0EFE0AF87D366EFED2FF8591F137C27"
+	$"A578C34EDC639162F37E19C5E399F7B28CFD9BCA8E48A5923913FCC5FF00E093"
+	$"9FB7E685FF0004C7FDB63E1F7ED95ABFC0CFF8683D43E1A786FE21E95E17F037"
+	$"FC2C96F857F64D77E20783357F015C788BFE1285F027C450DF60F0D788FC4563"
+	$"FD98FE1B75BBFED4F305EDABDB21700FEF63FE20A9FF0082597FD17CFDBFFF00"
+	$"F0E9FECEBFFD0AB5F6FF00FC13C7FE0D9DFD81BFE09ABFB507853F6B5F829F11"
+	$"FF006A9F1CFC4DF04E81E31D03C35A77C64F1D7C26D7BC21A70F1C787EF3C2BA"
+	$"CEAE9A7781FE07FC3CD624D5D340D4B54D36CA4975F6B08A2D4EE9E6D3EE6616"
+	$"F25BFE10FF00C4739FF58BAFFCDD9FFF00247AFD35FF0082477FC1CF1AEFFC15"
+	$"63F6CEF0BFEC95A47EC0DFF0A734FD4FC13E3EF1EF8A3E277FC3512FC46FF844"
+	$"B42F056886E6DE6FF8435BF679F009D63FB6BC4D7BE1DF0C7C9E29D3DB4FFEDC"
+	$"FED431DEA593D95C007E17FF00C1EDFF0019AE75FF00DB23F637FD9FC7CFA7FC"
+	$"2BFD9B7C4DF16524474748F55F8E5F13354F0A6A168E16E5DA3B98B4FF00805A"
+	$"1DD49149696EDF67BEB49567B949952DBFA66FF83573F66DD17E017FC11C7E01"
+	$"78A53418F49F1B7ED23E21F88FF1E3C7B78DE5CB75AB3EADE34D5FC19F0F6E0D"
+	$"C82D20B13F0A3C17E06BCB5B1DCB0D9DDEA1A94AB0A5D5E5E4B3FF00075FF074"
+	$"17C5D4F8B7FF0005ADFDAE16CB518F52D07E1847F093E11686E914D0B5A3F837"
+	$"E10F8264F17E9D309657124963F12355F1B5B8961482192148996266DF3CDFEA"
+	$"A5FB0EFC1797F671FD8BFF0064BF8017567F61D43E0BFECDBF04BE186B103456"
+	$"714EDAEF823E1BF86FC3DAF5D5E8B08A1B39752BED66C2FAF754BA82355BCD46"
+	$"E2EAEDB73CCCC403F810FF0083DC3E314DAF7ED85FB1A7C0313452D97C2EFD9C"
+	$"7C59F1584719767B7D4FE377C49BEF0B5EC5391234492BD87C07D1E710F971DC"
+	$"2C32C534A5E19ED76FEC5FFC1147C29AE7ECBFFF0006ADFC71F8D5E0F8AE6D7E"
+	$"2078D3E007FC142FF699D3E111ABDC278A7C2DE1BF89BE0AF05CF04496D2193E"
+	$"DBA2FC1EF096A36AAC978F225DC4082185AC5FC88FFC1D05F1753E2DFF00C16B"
+	$"7F6B85B2D463D4B41F8611FC24F845A1BA45342D68FE0DF843E0993C5FA74C25"
+	$"95C49258FC48D57C6D6E258520864852265899B7CF37FA797EC35FB31E91E06F"
+	$"F825E7ECB5FB2578FF00428ADECAD7F628F859F07FE29E871452225DEAFAEFC1"
+	$"CD2742F8A6A6DF5786E1A29757D7B53F125D4F6D7D6AF14535E490C964B0AFD9"
+	$"5403FCA83FE0DEFF00837E0BF8F1FF000598FD82BE1FF8FED2C750F0D5B7C57D"
+	$"73E25BD8EA53CD0D8DE6B9F043E1A78E7E35F846D6E560962FB64571E2DF87DA"
+	$"1C474AB932E9FAC971A4EA96B7BA6DEDD5A4FF00ECC75FE29DF15BE157ED7DFF"
+	$"00042DFF0082946922F74EB9D03E32FECB9F16E0F1C7C26F19EBFE1AD7B4EF87"
+	$"FF001B3C13A36B5776FA1F8C348B75BED3AEBC43F0B3E2A786E3BDD13C49A7E8"
+	$"DE218EF2DACB53F12F82AFB57D33C49A5EA6963FB6BFB73FFC1E15FB62FED45F"
+	$"B3DEA5F04BE01FC15D0FF635F1378BF4DD3F4CF1BFC70F017C5FF17F8A3E27DA"
+	$"436F7F15F6A4DF08756B2F0FFC3E97E155CEB515B43A45C6AB35CF8D3C41A6E9"
+	$"173AAFF616B5A5EB375A7EB5A4007FA0EF84FF00E0993FF04DBF0178ABC33E3A"
+	$"F02FFC13E7F620F05F8DBC17E20D1BC59E0EF18F84FF00650F80DE1CF15784FC"
+	$"55E1CD46DB58F0F789BC33E21D1FC0367ABE83E20D0B57B3B3D5346D674BBCB5"
+	$"D474BD46D6DAFAC6E60B9822957F834FF83DB3E2678A755FDB8FF643F839773D"
+	$"CB7827C09FB28DEFC4CF0FDAB42EB690F8A7E2CFC5EF1CF85BC613C1706668E5"
+	$"B9B9D27E0B781A3BA85608DE08AD6CDDE69D6E634B7FB83FE0D3AF0C7FC14F7F"
+	$"6A6F8B1E38FDB87F6B0FDAD3F6CDF88BFB25FC3FF0B7897E1E7C22F0C7C64FDA"
+	$"6BE37F8BBC17F187E356B9716BA56B9AF59F817C5BE2FD6B40F197833E13785D"
+	$"3C47A7EA3AAEB1A7C5A65BFC4CF11F860F84EF753F10F803C616FE19FA23FE0F"
+	$"04FF008262FC57FDA6FE0B7C1FFDB93E03F85757F1DF88FF00659D23C53E0FF8"
+	$"D9E08F0BF87AE35EF175F7C16F14EA7A66B5A67C42D2ADF4B12EB37BA47C24F1"
+	$"141AE5D78CB4EB5D3F561A7F853C6DAAF8F6EA5D03C37E05F15EA17401F597FC"
+	$"1A19FB3FF82BE16FFC1233C29F18B46D2F4D4F1AFED39F16FE2C78DBC6DAFC46"
+	$"DE7D62F2CBE1D78DF5DF839E13F0FDF5CA66E6DF4CD0ADBC11AB6ADA4E8F70C2"
+	$"2B5BAF15EB5AB5BC4875F9E59FBBFF0083B4BC7BE10F07FF00C115FE36F87BC4"
+	$"A964FACFC55F8AFF00B3F780BE1F35DDEC5693C5E2FD3BE29687F142F5F4C824"
+	$"05F53BD3E02F86FE378E4B2808963D364D435227C8D3E607F8A7FF0082357FC1"
+	$"C95F1EFF00E092FF000A35EFD9DF55F827E1FF00DA7BE005E78A759F1BF853C2"
+	$"3ABFC44D5FE1978C7E1EF88FC436F691EB969E15F1AAF85FE226930783757BFB"
+	$"24D7EF7C2B71E069B6F88AF75AD62C356B0B9D7354FB4FCA5FF053DFF82B4FED"
+	$"A1FF0005BEF8F1F0C746F1178264B2D0B45D5CF84FF678FD95FE09E95E25F17B"
+	$"378AFC6B7F6BA7ACF0D9C10DFF008A7E27FC57F16C89A4787E1BCB6D2ED9248A"
+	$"D6D34CF097853446D47568F5600FD99FF83267C39E2BBAFF008280FED55E2DB3"
+	$"8EF8F81F44FD8EAFFC39E229A3890E9A9E2BF14FC6BF84DA9F8323BB98C8248E"
+	$"FA5D23C1FE3C6D3E2585D26821D4DDE489A18D66FE71BE19DBE8DFB78FFC1533"
+	$"E1F5AFC45BEB993C3FFB66FEDFDE14B7F1D6A77B7F756378FA37ED13FB455847"
+	$"E27BEBBD503ADEDA5CB5978C2FAE27BF122DD5BCA5EE378993757FA727FC1B8D"
+	$"FF00048EF107FC12B7F637D65FE325B58C1FB547ED37ABF873E217C70D36C2E2"
+	$"DEFA1F87BA4F8734BBEB3F86DF069F56D3B51D4345F105F780A0F1078AF59F10"
+	$"EBBA41FECF7F1778E3C49A2E97A86BFA0685A26BFA97F9AFFF00C14FBF645F8D"
+	$"7FF04BDFF82907C60F8697B16AFE0ED47C0DF17EEFE2DFECF1F10F4AB5BAD32D"
+	$"75FF00879A878AA6F197C21F881E11BD911ED8DF6956A34EB1D6ADF4EBBD4A0F"
+	$"0B78EF41D7FC2F2DFDDDDE853CCE01FED51A6699A6E89A6E9FA368DA7D8E93A3"
+	$"E936369A6695A5699696F61A6E99A6D8411DAD8E9FA7D8DAC715AD958D95AC51"
+	$"5B5A5A5B4515BDB411470C31A468AA3FC6DFFE0E17F1DF86BE2AFF00C16A7F6F"
+	$"BD6FC090DB4DA7DA7C65D23E1C4B0692B34EB378C7E14FC3CF03FC26F1BC6232"
+	$"64964D4A5F1DF837C40B7F146083AA35CC7022A6C41FBC47FE0F16FDBDBF683F"
+	$"85BE1DFD9BFF0067CFD88FE1FDBFED9FF14EDAC3E1AF873E28F833C4FE2EF1ED"
+	$"B6A1E38F144306850EB3F0C7F67B93C311DED9F8BCDEDCCFA8F84ACBC45F13FC"
+	$"75E1ED2F58FECE975ED0FC51A358DF695A9FF343FB147C01F12FC51FF82B67EC"
+	$"D7FB3A7C51D462F1DF88B5CFDBC7E1E780FE2F6B906BF73E2C87C509A57C6EB0"
+	$"B7F8AFE208BC52D2B5D789A2D4B4ED3BC4BABA6BD25C09B5A4906A125CA35CB4"
+	$"CA01FE95DFF057DD1F59FD887FE0DB5F8D9F0A3C3B6E2EAF3E10FEC5DFB3E7EC"
+	$"A92C7692DD6A11AE85AD6A1F07BF66AF11DCC774F2A5D5CDB5A786F5FD52EDAF"
+	$"2E1D99ADE16B9BA4997CD8DFFCC4BFE09D7E29FDBDFE1D7ED35A17C57FF826D7"
+	$"81BE2B78DBF6A0F85FE16F17788B4597E0E7C02B6FDA3BC5DE10F08F8834B3F0"
+	$"DBC5FE287F015F7C3DF899A7D9E91369FE3B4F095EF896FBC3261D3E6F155A58"
+	$"43A85A5EEAB6AB37FB28FEDFFF00B29E9DFB717EC57FB4C7EC99A86A96DA0CBF"
+	$"1CFE1278A7C19A0788AFA19EEB4FF0CF8D64B51A9F803C4FA8D9DA95BABED37C"
+	$"37E38D3BC3DAE6A3A7DB4915C5FD969F3D9C33C12CEB327F90B7EC77FB55FED7"
+	$"5FF042DFF8284EA7E394F8736DA1FC69F83973E2EF83DF1A7E097C53D3F55B1D"
+	$"27C5DE10D756D06BDE17D4EE34CB8D3F56B5B6BC92CFC39E3DF87FE30D0EF27D"
+	$"2E7D4F49F0778A56DFC5DE0DB9BAD0FC4001FAD7F163F6D9FF0083B9FE38FC2C"
+	$"F897F057E28FC1CFDBFBC51F0CBE307C3FF197C2EF88BE1AFF008759787B44FF"
+	$"00848BC09F103C3BA9784FC5DA17F6CF877F648D23C41A47F6BF87F56D434FFE"
+	$"D3D0B55D3358B0FB47DAB4CD42CAF6282E62DFFF00836B7FE09F3FF0504F819F"
+	$"F058AFD98BE287C62FD8D3F6BAF81FF0B7C37A07C7D5F1A78EBE2AFECE1F17BE"
+	$"1D781E3B4D6BF67DF89BA0687A56AFE2BF19F84743D12CA4D47C5DAA787469B0"
+	$"3DEB5CDEEA70DA5ADBC0E65668FA5FDB47FE0F21FDBEBE38E95E0FD1FF00640F"
+	$"879E0DFD86BFB22F4EA5E30F134379E0EFDA57C65E3175D3E4B38B44B59FE2B7"
+	$"C22B1F04F863C2CD737336AB776D6BE01D47C5735F59E8D15AF8CEC74CB7D674"
+	$"FF00107F52DFF06DF7C58FF82BCFED4FF043C6DFB5BFFC14BBE347883C4BF0C7"
+	$"E2858F876D3F652F877AD7C1FF0080BF0BAF35DF0B07B9D47C43F1C6FE2F867F"
+	$"0AFC15E2D7F0FF0089B3A3E8DF0C175AD52DF4DF106851F88FC650685AA787F5"
+	$"CF00F89EE403FA614E87EBFD053E989D0FD7FA0A7D0046EBDC7E3FE351D58AAF"
+	$"401FE01F4514500765E13F182F84A496E62F0BF84F5FBC7756866F14E9275A86"
+	$"CC2EC20DBD8CB711D9349B901DF750DCA8059563524B57BA2FED8FF1C2DED12C"
+	$"74ED57C3DA3DA4447916FA4F85747B386045E0450C4B0344B185F976943C0073"
+	$"9008F9668AF0732E17E1DCE6B47119BE4D97E69560D384B30C3C318A9D925FBA"
+	$"862154A74D3515754E3152FB49B6EFFAD704F8F1E32F86B9754CA7C3BF12B8BF"
+	$"813015E328E26970867189E1CA98BE7A93AADE3713944B098AC64D4E72709E2A"
+	$"B569D3568D3946318A5F485DFED6DF1FEEF77FC57D716DB8A906D34AD161DBB4"
+	$"0185034F618619DC18302496C06008D5F05FC5DFDA83E28788EC7C29E17F1F78"
+	$"9AFB54BF9B78F224B5B2B6B38467CEBCBFBAB5B2416B616EAC5E676063501424"
+	$"6F208D0F85F813C07E27F891E24B0F0AF84F4F7D4355BF7C0C964B5B4817066B"
+	$"DBFB80AEB6B676EBF3CD33038036A2BC8CA8DFB81F037E06F86BE09F86574CD3"
+	$"426A3E20BF4493C45E2296255B9D42E07CC2DADFE50D6FA5DAB1296B6C3E6700"
+	$"4F72D24EC4AFE4BE24E75C01E1E65CA8E1785785F15C458BA4DE5B972C9B2D6A"
+	$"8C7E058FC7B8505529E129CA2D5382946AE32AC1D2A4E30857AF43FD07FA14F8"
+	$"65F4BCFA63F194F30CF3C7BF1D723F0738771F4A3C6BC633F12B8D14F32AF1F6"
+	$"788970A70A46BE6F2C2E2F883174670962F152A35B05C3D82AD4F30CC29D7C45"
+	$"6CAF2BCD3AEF869E0CD4FC11E19834CD77C55AD78CF5F9E46BCD675ED6EEE4B9"
+	$"92E2F6600C905844F85B3D32DDB725A5BAAEF20B4B3319242A9C57C41F84D77A"
+	$"86A6DE32F01DDDB68FE290DE76A3A7CEA534AF1194520199E22ADA7EA8DF2E2F"
+	$"955E1BA6448EF5137BDE47ADF12BE3B7C31F8531483C57E24B44D5150345E1FD"
+	$"3986A1AECDB86632DA7DBB3496B13F69EF0DBC18E4487A57E7A7C50FDBB3C67E"
+	$"205B9D2FE1BE99178374E9331FF6D5E795A9788A54C805ADD5D4E9DA76F01BA4"
+	$"1793A2B031DC452286AFC1BC3DE1FF0014735CFE1C51C3746A65D3C45594F119"
+	$"BE369430193E228D59C655683C32A51863304ED14B0D81C2D5A747929BA4A84E"
+	$"9539C3FD67FA6078BBF410E01F096BF811E3666384E33C364F97D0C3E53E1DF0"
+	$"CE3B15C59E24E559965F42A51C0E690CEE78FA989E1CE2583A95AA54CE78AB3F"
+	$"CBF15997D63191C7CF33C3E371B87C4FDA9E0EF8F3AE783EF6DFC3BE2EB2D4BC"
+	$"39AE47004363A9C722799E5996369AC2F21692C6FE02F346AB35B4F32345279A"
+	$"55461D7D77E21788BE14FED07E1CB3F0F7C46BDD6AC6E348B87BFF000A78B7C2"
+	$"F7F6E9E21F0AEA3306FB55C595AC973058EB567731C6B6FA96973DD59C8C89E6"
+	$"D9EB36336C78FF009F5D4FC4FE23D6AF25BFD5F5ED6353BD9E76B996EAFB52BC"
+	$"B999E76209977CB3310FC000AE36AAAAAE15401D2E99F14FC77A5002DBC41772"
+	$"28712017456E086041243B8F3013B546EDFB902811B264E7FB9B031C74709423"
+	$"9954C2D5C72A71589A983A7568E1A756CB9E546956A95AAC20DDED19D49BF3E8"
+	$"BFE55789E7C33533ECD27C1B87CF70BC312C657964B86E25C5E031D9ED1C03A9"
+	$"2FABD3CCF1995E0F2FC0627171A5CAAB55C2E0B0D4675399C28C23647EBC7FC3"
+	$"3B7846E122B6F15FED79E3BF13F84E0751FF0008C689A1F8B2DB5CB8B54CC46D"
+	$"5E5F14EB6FE18D34DC26F56BC865D78D92833C5637EC6D9A4FA18FC6FF0006F8"
+	$"0BC2BA5F827C0B145A0F847C39650D8689A62EA0B766DED6330CB34B717B298E"
+	$"5BFBB9A50F73A85E6C8C4B753BB2DADBC4AC4FE0EC9F1C7E22C8A55B59072180"
+	$"263762A59590901E565CED661CA90412AC0A920F21ABF8F3C5DAE6F1A8EBB7D2"
+	$"C6EA51A18E53045B1B3B97643B32ADB9C1562405778C011B14AEB3C13F5EB52F"
+	$"897E33F8B5AB3687E09B637486575BDD62EAE56D746D32316F0EE91E79246BDB"
+	$"B30B3425A0D3A0BA96789DA3DECBF680BEDFF0E7E1AE9BE00B1998DD3EB5E23D"
+	$"442B6B5E22B98521B8BC6077ADB5AC08CE2C74D85CE61B44924666025B99EE26"
+	$"0AEBFCFDD8EB5AC699796FA869DAAEA3637D692ACD6B796979716F736F2A1CAC"
+	$"90CD148B246CBD8AB0E323A122BEBDF871FB6F7C51F097D9EC7C5A96BE3DD250"
+	$"AA34BA89FB1EBF145B90314D52DD3CBBB748D5B6FDBED66965727CDBA05B7AFE"
+	$"17E2EF06F885C5985FABE459B606B64D171A9572084659762713529BE6A6EB63"
+	$"2AD6AD471EA124A70A556780A119A8D4F6352AC2138FFAADFB3ABE923F43FF00"
+	$"A3EE7F2CE3C57E03E2BC0F8958875B099778B788AB438C721C87038A83A188A5"
+	$"9670D6032ECBF34E15962284E543179860F0DC5F9B6228D4C4E1E398E072EC4D"
+	$"7C14FF00543E25FC38D0BE28785EF3C35ADF9F6CF2033E95ACD8B18755D0B538"
+	$"C66DB52D3AE1591D2589C01343BD62BBB7325B4E0C721C7E3FF8B3C63FB457EC"
+	$"FDE2CB8F096A1E3AF13DBB58AEED35EE2FE6D4F46D5B4A2D24769A858C1A91BB"
+	$"81A0930E5A3DBE6DBDC0961980915F77E957C38FDAC3E0F7C44FB3DAAEBBFF00"
+	$"08A6B73B4712E8FE2A3069CF2CF203FBAB4D404D269B75F300B18FB4C33CA594"
+	$"2C018955EB7E36FC19F0E7C6EF07B68DA83456BAB5A07BDF0C78823412C9A6DE"
+	$"C918C6590EE9F4DBD511A5E40AC5644115C460CD04247E11C15C438EF0EF357C"
+	$"37C7FC3F39F0E63EB5F1184CE32D8E2165F5A5683CCB010C452AB4F118792715"
+	$"8C8619D48D6A715568B956A6A157FD60FA4EF841C2FF004C7E018F8D5F446F17"
+	$"B0D87F19B84B2E6B28E21F0DB8DAAE4F2E30CBA85F110E0AE2DAF94E6182C665"
+	$"39BD271A93E1DC4E751C257CB71952780CC634B2DC5CF1180FCDFF000EFEDDFF"
+	$"0018749DA9AD58F857C4F12AA296BAD3A7D36EC85DA19BCFD32EA083CC60A7E6"
+	$"6B4750CEC4A37CA17DBB4DFDBD7C0FAED93699E3CF86BA8A5B5D288AEE2B2B9D"
+	$"3B5FD3A442804864B5D462D39CAEFDC5176CAC01519DCA58FE7078C7C21E20F0"
+	$"1F88F53F0AF89EC24D3F58D2A7686E21704C72A7586EAD652AA27B4BA8CACD6D"
+	$"3A80248D8642B8645E66BFA6713E13786B9DD2A38EC3E4785C3AAF0A789C2E3B"
+	$"24C5E27031942718D4A55A82C1D7861651945C6709AA325AA945ABB6FF00C3AC"
+	$"8FF683FD36BC2FC6E65C2D9CF8A59F66D3CAF118DC973DE16F14320C9B8AB114"
+	$"B1585AB53098FCB7369F126575F882955A35215B0B8AC34F32A524D4E9558B71"
+	$"4A3FA0DE25D0FF00631F8AF23DCF867C5F71F09F5EB9762167D2AFADB479AE24"
+	$"2E544FA6DD07D3A14679031361A8D8C602AA295DA633F3B78A3F674F1CE8F14D"
+	$"A8F85EE741F897A0A190A6ABE02D56D75D9FCA8D03B35CE8B6F236AF6CEA8774"
+	$"8A2D67441F379ACBCD781558B5BBBBB1996E2CAE6E2CEE133B27B59A4B79933C"
+	$"1DB2C4C8EB91D70C33DEBDBCAF85B39C85469659C5D99E3F050568E0789E851C"
+	$"E79125F0D1CC283CB731A7D147DB623174A9ADA83D9FE63C79E3C786DE2D4EAE"
+	$"3F8E7E8F1C11C29C4D59F355E29F02F33CCBC34962AAB69BAD9A708E6B4B8DB8"
+	$"331AE5273A95DE599470F63F17524FDA6694F492FDFBFF00835E209ADBFE0BBB"
+	$"FB0F5BDCC32DBCF0BFED371CB04F1BC5344EBFB1E7ED0419248E40AE8EA782AC"
+	$"A083C115FEBEB5FE427FF06C0EA7A86ABFF05DEFD862E753BDB9BFB958FF0069"
+	$"7845C5DCCF71398D3F63DFDA11955A5959A47C33BB1676662CC49249AFF5ECAF"
+	$"B4A7CFC91F6AA0AA72AE754DB9414ADAF2B9463271BED78A76DCFE64C5AC2AC4"
+	$"D75819E22A60D5497D5A78BA54E8E26546FEE7B7A746AD7A51A8969254EACE2D"
+	$"ABA693E545145156738514579FFC59F8A5E04F81DF0B3E25FC6BF8A5AEFF00C2"
+	$"2FF0CBE0FF00C3FF00197C52F88BE26FECCD635BFF008477C09F0FFC39A978B3"
+	$"C5DAEFF6378774FD5FC41ABFF64787F48D4350FECCD0B4AD4F58BFFB3FD974CD"
+	$"3EF6F6582DA500FCEDFDA37FE0887FF04A1FDABFC53AF78E7E38FEC3DF06F5FF"
+	$"001AF8AAEA7BFF0013F8BFC2707897E12F8A3C47A9DD3BC977AC6BBAFF00C20F"
+	$"10F81355D5B5BBB924692F35BBFBBB8D5AEDF6BDC5E4AC88574BF67BFF00822C"
+	$"FF00C12ABF65AD77C33E2AF827FB0CFC09F0EF8BBC1975677FE14F19F88FC3F7"
+	$"BF13BC69E1ED4EC140B2D634AF187C53D4FC69E25B3D6ED580960D6E2D517558"
+	$"EE07DA56F05C7EF6BDBBC09FF050DFD8F7E27FC47FD9C7E11FC3CF8BDFF099FC"
+	$"46FDAC3E0041FB547C11F0B787BC01F14352BDD5FF00678BCD2D353D3BE2D78E"
+	$"6E2DFC14FA7FC16F096AEEE341D0EEFE35DDFC3C9F5CF1B07F87DA45BDEF8E63"
+	$"93C3ABF027EC53FF000528FDB1BF6A8FF82A5FED6BFB217C48FD92BC2DFB337C"
+	$"04FD957F67BF879E29F10E9FE2EF887E06F89FFB4843F197E2E6B5E1FD73E18C"
+	$"7E31D6FE0AFC56F1E7C19F0BF85BC5BF0ACF8DB5B8FE1FE9ABE28F14E952687E"
+	$"1DF11EA3E3D4B2F15C3E19B200FDCDAFCC9FDB63FE08E7FF0004E4FF00828AFC"
+	$"48F0CFC5BFDB23F67AB9F8C7E3EF06F822D7E1D7867587F8CFF1FF00C0367A4F"
+	$"842CF5ED7BC4D0E9B07877E17FC54F04F8664B97D6BC4BABDD5DEB571A3CDAED"
+	$"FC52D9D8DF6A771A7E93A45AD8FC01FF000513FF0082BB7ED77F0B3F682FDA93"
+	$"E067FC13EBE057C08F8AB67FF04DDFD9B74EFDAD7FE0A07F103F689D73E23F87"
+	$"B47D13C1FA8784EF7E27699F013E0EE9FE11874796F7E3278A7E10591F88DE1F"
+	$"F1C5F5F78A7E1DDBDAFF0068F86F53D397C4FA2DC69973C27C77FF0083893E1C"
+	$"7C16FDAABFE09FFA5F8EB51F865F01FF0062BFDA2BFE09E5E16FF82847C7DF1D"
+	$"FC68D03C6DE22F8CBA2F847E3C41A8785BF679F869F03B44F84BE22F11DD78B7"
+	$"E26DAFC4A1A64FF15FC3567F0C7C7715A7C3383C51E34D2357D3B46F09F88B59"
+	$"D2403F7B3F658FD957E01FEC53F033C19FB35FECC7E008BE18FC15F87D2F8966"
+	$"F0978363F11F8BBC5CFA6CDE2FF15EB7E36F114D37897C7BAFF8A7C5FAB4BA87"
+	$"897C45ABDF89359D7F507B286E22D32C0DAE936361636BF2B7ED8BFF000476FF"
+	$"0082687EDF5E2EB7F885FB57FEC93F0FFE257C428ADA0B2B9F885A5EADE39F85"
+	$"DE3ED6ACED2DAC2C74FB5F1478DBE10F8AFC05E28F175B69361A65969FA241E2"
+	$"8D57578B44D3E392C3495B2B4B9B9866F8EFF6AEFF0082B3FC5BF883F15BF661"
+	$"FD947FE08F7E1DFD9EFF0069AFDA1FF69CF809E28FDAE2D7E27FC71D67E2169D"
+	$"FB37FC32FD997C31AEDF784F47F19F884F82E0D07C47E2AD5FE2878FB42F12FC"
+	$"33F0EE91A0F896C754F03F8B74CB2B9F1E68B6FA2EB36D7311F0E3FE0A49FB7C"
+	$"7EDD5FF04E4FD8C3F6A6FF0082727ECABF07CFC57FDA824F1927C4FF0016FED4"
+	$"DF10EDB47FD993F65DB4F83BE2BF147807E236B3E34D3BC1DE36D23E3BFC46B1"
+	$"F1E78DFC17ACE93F086D7E19786B5BBAD374195FC57F145FC31269B69E1BF120"
+	$"07DC9FB37FFC129FF608FD917E017C72FD983F675F81327C34F825FB48D8F897"
+	$"4DF8CDE13B1F8ADF1AF5CD4BC5D69E2EF05C9F0F75D483C73E2AF88FAEFC40F0"
+	$"AC971E129A6D36CEE7C1BE29F0F5CE8D3CB26B1A2CDA7EB6EDA89F09FD987FE0"
+	$"81DFF0498FD8D7E39F813F694FD9BFF64D8BE1E7C6AF8692F8826F0478CA6F8D"
+	$"FF00B4878D53449BC51E14D77C13ADCC3C35F10BE3078AFC21A84B75E1AF12EB"
+	$"3610C9AAE817CFA74D751EA7A69B3D5ACAC6FADBD37FE092FF00B6FF00C49FDB"
+	$"F3F651BAF8C9F15FC0BF0FFC2DE33F087C64F8B1F02B53F19FC15F13DD78C7F6"
+	$"78F8F177F073C40BE12D5BE3B7ECE1E21D5269FC417FF04BC6FE208359B3F08F"
+	$"FC24B2DC6B30CFA0EAB03EA1AC58C763AD6A3FA6D40057C77FB5E7FC13F3F62F"
+	$"FDBD7C39A4785FF6BBFD9D7E1DFC6FB1F0F4B2C9E1CD4FC496179A6F8BFC342E"
+	$"377DAEDFC35E3EF0C5F685E39F0F58DFB149352D3B46F1158D86A52C16B35FDB"
+	$"5C4B696AF0FD8945007E727EC8BFF048BFF826D7EC25E2283C69FB2BFEC89F0B"
+	$"7E18F8F2CEDAF6CF4EF88B731F887E20FC4AD26CF53B1934BD52D345F88DF13F"
+	$"5DF1A78E345B6D574D9A7B0D560D2B5FB38B53B49E7B7BE4B88A7955FE69F82F"
+	$"FF0006EB7FC11D3F678F8B7F0E3E3AFC18FD91AFBC09F15FE1278CB40F1FFC3F"
+	$"F1769FFB48FED657D3E85E29F0CEA306A9A4DEC9A66B3F1DB52D0F5AB11736EB"
+	$"16A7A0EBFA66A9E1FD7B4D96EF47D774BD4B48BEBDB19FF6C68A00F927F6CFFD"
+	$"85BF65AFF82847C27D33E077ED79F0CEE7E2C7C2CD23C6FA47C45B2F0A41F107"
+	$"E277C3988F8BF41D23C41A1E93A95E6ABF0A7C67E07D7753B6B3D3BC51AD2AE8"
+	$"BA9EA977A149793DAEA93E992EA9A56937963F96FF00F10B8FFC10A3FE8C67FF"
+	$"003667F6C3FF00E882AFDFEA2803F007FE2171FF0082147FD18CFF00E6CCFED8"
+	$"7FFD1055F5DFEC5BFF000460FF0082697FC13CBE2B6B3F1BBF63EFD9AA2F847F"
+	$"1435FF00026ADF0D354F1449F173E3C7C4379BC15AE6BBE1AF126ABA443A47C5"
+	$"4F8A1E37D02C65BBD63C21E1FB83ABD86956BADC50D94D6106A5169DA8EA7697"
+	$"9FA8745007E297C4BFF8376BFE08E7F18BE33F8EBF684F895FB1F7FC255F17BE"
+	$"25FC49F117C5CF1BF8B2EFF681FDA92D63D77E2078AFC4977E2DD7B5A93C39A6"
+	$"FC6DB2F0A595B5EEBD7B73749E1FD3343B2F0DD95BBAE9761A45AE950C3631FE"
+	$"D6D145007E257C58FF008373BFE08D7F1C7E2DFC45F8EBF157F63AFF0084C3E2"
+	$"9FC58F881E29F8A3F107C4F77FB427ED51629E22F1C78D35FBDF13F897569340"
+	$"D23E3869FE19D3EDB50D6B50BBB84D0B48D1AC3C3D616F22E9BA6E9567A64305"
+	$"9C5FB6B451401F347ED3BFB1B7ECADFB6878434CF027ED57F00FE197C77F0C68"
+	$"77D71A9F87ACBE21F862C759BBF0CEA5791456F7BA8785B5A2916B9E18BEBEB6"
+	$"861B6BFBBD0352D3A7BEB68A3B6BB926811631F9DDF0FBFE0DD6FF00822B7C32"
+	$"F13FFC25BE1CFD80BE14EA5AAFF6B2EB5F64F883E23F8A7F16BC33F6C5B95BA1"
+	$"0FFC215F157C7FE33F06FF0064995423681FD83FD84F6C5ACDF4D6B36680FED4"
+	$"51401474CD334DD134DD3F46D1B4FB1D2747D26C6D34CD2B4AD32D2DEC34DD33"
+	$"4DB0823B5B1D3F4FB1B58E2B5B2B1B2B58A2B6B4B4B68A2B7B68228E186348D1"
+	$"545EA28A00FC8EFDA0BFE0839FF0485FDA83C4FABF8D3E2FFEC29F082EBC59E2"
+	$"0D5EFF005FF10F887E1E5C78DBE07EABE21D7B55B917BAB6B7AFDDFC0FF167C3"
+	$"A935BD5F56BEF3350D5752D50DDDEEA7A85D5F5FDF4D71777F7B35C7BFFEC89F"
+	$"F04C0FF827F7EC1D35DEA1FB26FECA7F0A7E10788EFA2BEB6BBF1D586957BE28"
+	$"F899369DA93C325EE8CDF143C75A878A3E220F0FDC496F048DE1D5F13AE86B24"
+	$"48F1E9E8CA0D7DE5450015F2B7ED5DFB0FFEC93FB72784347F037ED6BF007E1D"
+	$"FC74F0EF86EF6F352F0C47E34D21A5D63C2B7DA8C56F06A773E14F1469B3E9DE"
+	$"28F0C49AAC167650EAC741D634E1AA4765649A80B95B3B6117D5345007E6DFEC"
+	$"71FF000482FF00826CFEC03E26BAF1BFEC99FB26FC3FF861E3CBAB6BBB25F883"
+	$"7FA9F8D7E267C42D3AC35085EDF52D3B41F1E7C5AF14F8EFC5DE1BD3753B791A"
+	$"DF54D3BC3FACE9965A9DBEC82FA0B88A38D17C93F67EFF00820A7FC1277F65BF"
+	$"DA03C23FB527C0CFD94FFE10DF8EFE05D6F5EF12785BC7979F1CFF00693F19C9"
+	$"A6EB9E26D1F59D075AD4E4F0E78F3E31789FC23A95CDDE99E20D5E246D5740BE"
+	$"5B3B8BA5D42C56DB51B5B3BBB7FD7FA2800AF8A3F6B6FF0082717EC31FB76269"
+	$"B27ED6BFB307C29F8D9AB68BA44DE1FD13C5BE25D09AC7C7DA1E8334D7974FA2"
+	$"689F117C3973A2F8EF47D205EEA17BA845A6E9BE22B5B38353BA9B538218EFDC"
+	$"DCD7DAF45007E427C00FF820AFFC121BF663F14E97E35F847FB0AFC24B6F1568"
+	$"9726FB45D6BE21DF78EBE37DDE8F7E1FCC8751D2FF00E177F8C3E2245A7EA567"
+	$"2812E9DA8DA450DEE9B2AA4BA7CF6D222B0FD75D8DE9FA8FF1A9A8A006A82073"
+	$"EBFE14EA28A002ABD58AAF401FE01F451450015D7F81BC09E26F88DE23B1F0BF"
+	$"8534E92FF53BD62598874B3B0B64E67D4353BA5478EC6C2DD7E69AE6601012B1"
+	$"A079648E37E42BDA3E0A68BF15FE28F8E3C0FF00B3FF00C229671E2BF8D1E3CF"
+	$"097C3FD0B4AD3EE23D224F10F897C5BAE59F87FC3D63ABEB48A9711E94BA8EA5"
+	$"0F9FF69B85D36CE069EF6E62DB1BC838F1EB1EF0B563963C2C71B25C946A6355"
+	$"5961A8B93B3AD52951B54AFEC93738E1E35287B79254DE228293AB1FA3E13970"
+	$"9D3CFF002FADC6F0CF6BF0CE1EABC466782E1A96068E7399D2A29D48E5983C76"
+	$"62E783CA9E6138C70B5738AB84CD1E574AA4F1B4F27CD6A518602BFDF7E1CF18"
+	$"7C00FD90FC333E896DAC45E35F8877B12C9E2197C3E2DEFF0052BEBD8F3B2C26"
+	$"BE0E2C745D26CE52E90594B71F695DB25D4F6B3DDC8D9F963E26FED9BF153C74"
+	$"D7363E1F9E3F01E852F991A5BE892CADACCB03FCA45DEB4FB25DCC8395B182CD"
+	$"577BAEE906187EBF9FF8357BFE0AD2FE21F1DF83CF85FF0067D93C79E08F0AC7"
+	$"E366F0143FB43F81EF7C73E2BF0FDC2388B53F0BF86AC9EE7549ACE6D454E890"
+	$"EA7AFC3A069573AE30D36DF509670FB7E7BF1DFF00C1BE1FF052CF871FB2A7C4"
+	$"AFDAE3C53F0FFE1AC1E0DF831A5DE6B3F187E1D69FF177C1FABFC6AF85B61A64"
+	$"16D7DABA78EBC01A6DD5C9D035AD1B4ABBB7D6756F09DD6ADFF097D8E96E2E66"
+	$"D014FEEEBF3EC9FC2AE1CC16615B3CCEFDB715F1162AAFB7C4E6B9E2A75A0AAE"
+	$"96FAA65D15F53C352A4A30861E128579E1E9C634E8D58D38C60BFAFF00C46FA7"
+	$"D78D1C4BC21977857E17BCBFE8FF00E0DE478159564BC03E1754C565D8A965EB"
+	$"99CDF10719D59FFACB9E6618DA952BE2337C5D3C4E5787CE3155EB63330C057C"
+	$"5D5AB5EA7E275C5C5C5DCF2DD5D4F35CDCCF234B3DC5C4AF34F34AE4B3C92CB2"
+	$"3349248E492CEECCCC49249350D7EC6FEC67FF000428FDBF7F6DDF853E1BF8E1"
+	$"F0FBC3BF0AFE187C29F1F78913C1FF000B3C61FB41FC54D03E125AFC5EF13BCD"
+	$"7B6E345F85DA6EAC977AEF8C2E9AE74FBDB781EC34BFB2DF4F6B731E9D7176D6"
+	$"D7222F35F00FFC11B3FE0A17F127F6DAF881FF0004FEF0C7C09BE97F688F8513"
+	$"34DF132D2F35AD26D3C05E07F0E343657565E36D7FE2135C3F86A1F07EB165A9"
+	$"69D79A0EA96F777336B915EC30E95677778B35AC5FA624A29462928A49249249"
+	$"24AC924B4492D125A247F1054A93AB39D5AB39D4A95272A952A54939CEA4E6DC"
+	$"A739CE4DCA53949B94A526DC9B6DB6D9F979457F6EFF00B10FFC114F40FD827F"
+	$"617FF82A9FED69FF00050EF83DFB327ED1BA7F82BF67EB63FB2FF8BFC39E2DF0"
+	$"BFC73F87D078C2DB49F1AE9FADEB3E16D5B4B963167ADD878DB59F056817C6EA"
+	$"C6D6EEDB51D1EE60B4678C1966FCF9FDB23FE0968DE18F80DFF04B8FD92BE09F"
+	$"FC13EFC51E1AFF008286FED5FE15B0F1EEADF12A0F8EB6DE3F5F8B5E1BD3FC21"
+	$"06A9E25BE7F055AF8A25F0F7C2DD1ED6F7C4B65ADEA175AFE97A5368DA368377"
+	$"05CDD2C965740B20FE63A8AFDADFDABBFE0815FB7D7EC87FB3E7C44FDA63C6C9"
+	$"F017E237C33F835E26D3BC21F1ACFC0BF8D9E1BF8A7E23F83BE20D42F74DD2CE"
+	$"9BF11342D220826D16EB4CD5B59D234DD6AD6096FAEF489752B4BBBFB7874B93"
+	$"EDE3DA3C25FF0006C5FF00C1527C4FA5FC1BD7AFF40F803E03D03E3C786F46D7"
+	$"7E1C6ADF113E3E7837C28358D53C4BA4D8EB7E1AF0247A4DEEEF105D7C40D774"
+	$"DBD7BBB1F0BE93A46A7762DF4DD566B87852CBF7801FCF5515FA4DA27FC1237F"
+	$"6FFF0011FEDC5E21FF008277689F00B5DD43F6A0F09DDA9F1278622BED353C35"
+	$"A2786E4B5B1D46DFC7FA9F8E26B98BC3365E00BCD2F53D3750B4F135C5FC76B7"
+	$"097D6B631A1D6251A68F49FDB6BFE089FF00B6FF00EC21F06FC1BFB427C4ED3F"
+	$"E12FC49F829E34F1837C3EB5F893FB3DFC52D1BE30786346F1B996EADEDBC31E"
+	$"20BCD0ADE06B1D4AFAF2C351D3AD1ADE2BDB37D574FBAD2A5BB8751115ACA01F"
+	$"9215ED3F0EBF682F8AFF000C24893C39E2ABD974B4DAAFA0EB0C756D1DA31B7F"
+	$"7715ADE190D970B80F6125ABAE4FCC43303FBD1FB2AFFC1B39FF000514F1CF8C"
+	$"7F66BF157C55F00FC29F08F863E20F8B3E1D78E3C49F043C63F183C21A3FED01"
+	$"73F011FC63A143E3AF1A37C2796EBFB67FB2F4DF0FDD4E6FEC4DC26B368F711D"
+	$"B5E69F6972C22AF7EFF82B07FC12C751FDAEBFE0AF9F1FBF664FF825E7ECD3F0"
+	$"8BE137C20FD933E137C36D33E3178874B9FC3FF087E0A780F5CB8F0ECDE32F11"
+	$"F8ABE25F8CF569E1D174FD66E5B5F4D1A1895AE756BFB0F0D1B88EC644B1D42E"
+	$"22E0CC72BCB737C2CF059AE030998E12A7C787C6E1E96268B7D25C956328A9AD"
+	$"E338A528BD62D3499F57C19C77C6BE1D67986E26E02E2CE21E0DE20C23FF0067"
+	$"CE386B37C764D9842374E549E27015E854A942A592AB87AAE742B46F0AB4E706"
+	$"E2FF009FEF887F1CBE1DFED09E1DB7B3F1F686DE03F88BA3C327FC23FE32D315"
+	$"F53F0FDEEE605B48D76148CEAF676175C18658E2D456C2EF3742486DDEE209BE"
+	$"3260558A9C6549076B2B2E41C1C3292AC3D19495239048E6BF48BF6FFF00F825"
+	$"37ED71FF0004DA87E14EB5FB42691E01D63C01F1BF49BCD5BE167C57F843E3CD"
+	$"2FE257C32F18AE9B1DA5C6A163A678A34B8AD90EA169697F617FE4CB6B1C3796"
+	$"17B05EE9D71796C5E44FCDCAE1C838772FE1AC354C0652F134B2D7565570D97D"
+	$"6C44F1387C04A6E52AD0C0CABF3E22950AB393A8F0F3AF528D29F33C3C28A9D4"
+	$"52FACF16FC64E2EF1BB3BC1F16F8830C9731E36A782A780CE78C72FCA70D9367"
+	$"1C5B4B0B4E8D0CBB13C51432B586C9F1F9AE5F85A31C1D3CE30F95E0F32C6E15"
+	$"53A79B623319E1B0B5281451457BA7E507EFF7FC1AE3FF0029D7FD867FEEE67F"
+	$"F58F3F682AFF005FAAFF00205FF835C7FE53AFFB0CFF00DDCCFF00EB1E7ED055"
+	$"FEBF5400514514005709F14BE1E787BE2EFC31F88DF09FC5D6763A8F853E27F8"
+	$"13C5FF000F3C4FA7EA7A4E95AF69B7DE1EF1AF87F50F0DEB567A8687AEDA6A1A"
+	$"26B36375A6EA77305DE93ACD85EE95A8C0F259EA169736934D0BF7745007E197"
+	$"FC1173FE0967F16FF606F0978ABE207ED63E3AF865F137F6A4F167C31F807FB3"
+	$"AE9D7FF082FBE216ADF0BBE16FECD9FB2E7C35D0FE1A7C2DF879E01BDF89B6FA"
+	$"678812FBC657DA56AFF17FE2EDC69BE19F07787B5AF89DE2DD425D37C3915B69"
+	$"76B7D7B4BE1E7EC39FF050BF803F19FF00E0B17FB62FC0FF00167EC93AB7ED47"
+	$"FB777C5BFD9A66FD9ABC2BF1C3C45F187C53F03BC29F06FF0066DB293E1E6997"
+	$"1F1B352F007C3CF875E3CD37C6DE20F853E24F16BE9FE11F02DAF8AF44F09789"
+	$"74BF05E9377E3FF1AE9C9AF6BF79FBB545007F2C3FB4BFFC11A7FE0A3FF1E3E2"
+	$"4FED1FAEF853F698FD95BE137853FE0AB7F037F639F067FC1552EB4CF0AFC54F"
+	$"11F8A7E1EFC40FD98BE1ADB7807C4F67FB09DA5F4563A7EAFF000A3E27E9F36B"
+	$"9E1FBDD3FE3C6AFA7F8BEC7C3FA9DD5DAEB06FEEA1B4D2E2F8C9FF000476FF00"
+	$"828AFC2CFDAE7E26FED39FF04DBF8A7FB24FC3FB6F0DFEC6DFB3DFFC13A3F643"
+	$"F07FED3FAF7C48F1ED97C1CFD947C21F0CAE2CFE27EB168FA1FC0ED4F58D0FE2"
+	$"DF863E27F843E1B4BF08E6F18F89BF681D3BC57E1DF14FC68D5FE266B9696DA9"
+	$"7843E1A68FFD51D1401FC9E4BFF0407FDACBF64FF0E7ECD2FF00F04D3FDA6FE0"
+	$"B786FE24785FFE09F7F10BFE09B1FB4378C7F68EF0C78F1B4F4F861F17FE3B78"
+	$"97F696F1E7ED03FB3E68FE066F105F68DF1A2C7E3078F7C6BAA7857C19E3FD73"
+	$"55F01DB686FE19D225D56D8E8F7D75ABF4BFB46FFC11EFFE0A25E01FD9D3F621"
+	$"FD833FE09D7F117F644B8FD863F66DF863AB43FB417C2AFDACFE20FED29E11B2"
+	$"FDB1BE30F8C3C43E2AF10F8CE4F8B5A1FC05F086ADE3A6F82D7FE27F11EB5F11"
+	$"A6F84FA47ED07A5FC3EF166BDE34D43C0BE3AF87FAEFC3AF03F86B4DD57FA9EA"
+	$"2803E49FD86FC15FB47FC38FD99FE1DF80FF006A8F0DFEC93E0AF8A7E10B6BFF"
+	$"000E43E07FD86FC31E3BF087ECCFE0AF01E897D3699F0EFC31F0EF42F88AF1F8"
+	$"8EC6DB4BF085AE951DFDA2E99A1E8DA6DF34DA4687A5AE97A75B5EDF7D6D4514"
+	$"0051451400514514005145140051451400514514005145140051451400514514"
+	$"00514514005145140051451400514514005145140051451400557AB155E803FC"
+	$"03E8A28A002BF75BFE0DB7F865E11F88BFF0581FD96B55F1EF887C31E19F07FC"
+	$"20BBF187C6BD5F51F176ADA568BA31B8F00F857529BC3B03DEEB1716F682E5BC"
+	$"597FA0CD6B106695E5801012359268BF0A68A00FF414FF00826EFED51E01F15F"
+	$"FC1573FE0BE1FF000548F1FF00C48D0ECF40F827F0DBE287C3CF82AFE20F1F68"
+	$"F60DAF68DE1DD43551A1E89E14B2BCD42D67D5ADE5D13E0C682346FECCB4789E"
+	$"EB5E8A4B76373752893E00FD94FE33D97C03FF0083667FE0A6DF1CFC57E3DD17"
+	$"57F8F1FB7FFED0F7FE085D2AFBC696379E36D6F4AF10EB5E1CF0678A35DB9D05"
+	$"EFE5D696E1A3D43E296AD7DA95CDB46750B56864919956DA59BF8EAA2803FD5E"
+	$"FE240F07FC43F867FF0004DDD5BF66FF00833FF04CFF008B1FB0FF00C05F80FE"
+	$"0CF1FE83FB4FFED41F1A26D2EDFF0065EF13F84341D2EEAC352F0E781343D674"
+	$"CD5E5D55AC743D2E55BB8CC77FA66B56DA847AD5DE8CB6AB1DC7E7AFECABFB50"
+	$"4DFF00053CF813FF0007015C7ECEBF11FE01E89FB787C7ED6FC3DF0ABE1F6AFA"
+	$"3F8B66F869A2F8EFE06F823C0961F0EBC33E2BF036ADF112EADBC59A3786BC4F"
+	$"A5C5F126E6CAF3556B55D0F5DD774DB8D5E6D31A786F13FCE5C5EDE0B43602EE"
+	$"E458B4FF006A6B213CA2D1AE7608FED06DB7F9267F2D563F38A799B005DDB401"
+	$"4DB7BAB9B4677B5B89ED9E48A48247B79A4859E0994A4D0BB46CA5A295095923"
+	$"6251D49560471401FE803E28F80FE18FD8F7FE084BFB25FF00C1346F3F68DF83"
+	$"7F13BE29FEDA9FF0505F855E0AF8C937C2CF8BBE0EF177857E1F68DE22F88CBE"
+	$"38F897A15AEA767AC1B09BC3FE11D07E1ADB685E25D7A46B2D1EF3C47A8DC84B"
+	$"B36BA8E9AEFF0067FC4BF067ECADFB7EFF00C1797E37693E24F88DE17F1E687F"
+	$"F04E6FD833E1A7873F66FF00835A6FC6F1F0DBC15F17FE2BF8C74ED7BC5FAADA"
+	$"5EFC46F056B7A76A0FE1DD022F13784BC3BE2DD2F48D46E2C2D6F7CA935DD227"
+	$"B3D3352D3EFBFCCA2A6B7B8B8B4992E2D679ADA78F77973DBCAF0CC9BD591B64"
+	$"91B2BAEE46646DAC32ACCA72091401FE92BFB5E4EEDFF048DF057EC8707853F6"
+	$"2CF861FB4D7FC145BFE0A21F05BE057C52F831FB077893C3DE21D0347B2F14FC"
+	$"58B1F12EBF1F8B357D335CD7350F1B78D63F0B7C3DB4D2BE2278CEEAFEEFEDF7"
+	$"9AE41A7CDA85CBAF993FB37FC14F7F610F1BFED49FF055EFD873E329FDA4BE07"
+	$"780BFE09FBFF0004F0F0DF822F3E3147E24F8E3E17F0BEBDF07BC6FF000C7C4F"
+	$"A978F756D3353F05DCDDDB6A90F88BC75E19D37E1F58D9F886E521D363D06C64"
+	$"7B99AD20B348F54FF3B3FD857F6AED47F61CFDACBE0AFED63A37C3DF0C7C52D7"
+	$"7E08789E7F17F87FC17E31BED5B4EF0EEA1AF2E8BAA69BA3DEDF5D689341A8A3"
+	$"E857FA841AED90864D8F7FA75AACCAF0975347F6D0FDACBC79FB6D7ED47F1D7F"
+	$"6A7F1F69DA67867C51F1E7C6F71E33D7BC2FE1AB8D45BC39A47EE6DAD34BD174"
+	$"E1A8DCDC5E5CD868F63656B6D6925FCB35C131199D848EC6803FD14BF612FF00"
+	$"8284FC05FDB67F6B1FF82E37C7BFD982DFE0FF00C4CFDA03C53E17F849F083F6"
+	$"67F869F183C656FF000B747F8F3F063E167C3BD6FC2CD7635ED58DB6A365E1AF"
+	$"1D78E66D76F75330FD9E6B2D22E7C232EAC34A139B8B2F957E38FED5DF0BFF00"
+	$"65CF13FF00C130FF00E09EBFB42F857FE09BFF00B3D7C2CF883FB657C32F8FDF"
+	$"1FBF67FF00D92FC49E26F16E9FFB3FB781FC4E75CF0D4FF167C5779AB5EF81E1"
+	$"B0F18FC484F0CCFAE490DADADDDC58F87F5ABD791F458DAF2FBFCEDEDAEAE6CA"
+	$"78EEACEE27B4B9889315C5B4D2413C44A952639626491095665255812AC41E09"
+	$"1513BBC8ED248CCEEECCEEEEC59DDD8966666624B33124B312492492726803FD"
+	$"44FC25FB1A78F2E7FE0E3DF1BFFC1483F68BFDAABF678F0BFC09D07E1C5ECDFB"
+	$"30786A1FDA07C1EDE31F1F78424F867A5FC3B5D36DBC2326B76F75A17847C2F7"
+	$"9E22D53C41E27BA9A3FECBD6B5AD46CA4D3C5FA6A37D796DE5FF00B01FED05A2"
+	$"FED5BFF04FFF00F8295F897F673F877FB32FED61FB4B7ED23FF0510F8D5AFF00"
+	$"C6BFD9FBF690F8A1A67C32D0BC5BF06759F13E83A478165D775096EEC2F752F0"
+	$"B68BF0B348D126D0239668F4BBFBB8BC4960B349771C9A4CDFE68135C5C5C795"
+	$"F689E69FC8852DE0F3A5797C9B78B3E5C116F66F2E18F736C89308993B5464D3"
+	$"ED6F6F2C5DE4B2BBB9B392489E0924B59E5B777824C7990BBC4E8CD14981BE36"
+	$"251F0370381401FD4F7FC1C89FB5B9D5344FD93BFE09D9A32FEC5F0F877F655D"
+	$"0AEFC65A9F863F62CBBF1CEADF0FFE1178A3C63A4DBE9C3E0FCDAE7896F2EB41"
+	$"D46E7C396314DA84C9E1961F641A9DB45AB5BE97A81934AB4FE5628A2800A28A"
+	$"2803F7FBFE0D71FF0094EBFEC33FF7733FFAC79FB4157FAFD57F902FFC1AE3FF"
+	$"0029D7FD867FEEE67FF58F3F682AFF005FAA0028A28A0028A28A0028A28A0028"
+	$"A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028"
+	$"A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028"
+	$"A28A002ABD58AAF401FE01F45145001451450014514500145145001451450014"
+	$"514500145145001451450014514500145145007EFF007FC1AE3FF29D7FD867FE"
+	$"EE67FF0058F3F682AFF5FAAFF205FF00835C7FE53AFF00B0CFFDDCCFFEB1E7ED"
+	$"055FEBF540051451400514514005145140051451400514514005145140051451"
+	$"4005145140051451400514514005145140051451400514514005145140051451"
+	$"4005145140051451400514514005145140051451400557AB155E803FC03E8A28"
+	$"A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28"
+	$"A0028A28A00FDFEFF835C7FE53AFFB0CFF00DDCCFF00EB1E7ED055FEBF55FE40"
+	$"BFF06B8FFCA75FF619FF00BB99FF00D63CFDA0ABFD7EA800A28A2800A28A2800"
+	$"A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800"
+	$"A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800"
+	$"A28A2800A28A2800AAF562ABD007F807D1451400514514005145140051451400"
+	$"514514005145140051451400514514005145140051451401FBFDFF0006B8FF00"
+	$"CA75FF00619FFBB99FFD63CFDA0ABFD7EABFC817FE0D71FF0094EBFEC33FF773"
+	$"3FFAC79FB4157FAFD50014514500145145001451450014514500145145001451"
+	$"4500145145001451450014514500145145001451450014514500145145001451"
+	$"4500145145001451450014514500145145001451450014514500155EAC557A00"
+	$"FF0000FA28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A"
+	$"28A2800A28A2800A28A2803F7FBFE0D71FF94EBFEC33FF007733FF00AC79FB41"
+	$"57FAFD57F902FF00C1AE3FF29D7FD867FEEE67FF0058F3F682AFF5FAA0028A28"
+	$"A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28"
+	$"A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28"
+	$"A0028A28A0028A28A0028A28A002ABD58AA5BCFA0FD7FC6803FC0528A2BFA0AF"
+	$"D87FFE0929F013F6BAFD883E047ED4DAA7C46F8A7E0192CFF6DAF8CBF0B3F6D0"
+	$"F18BEADE18B9F85DF07BF649F805FB3C58FED25F123E28E83A54FF000EE3D734"
+	$"BF1FC7E13D4F4CF0E787E4D4BC59E32F0DEADE2BD6B41D353444BED49F4DB400"
+	$"FE7D68AFEA8FF683FF00822E7EC31FB29FC67F8A5FF0B87E247ED3937C01F1DF"
+	$"ED69FB0FFECD7FB0CDB699E32F865A3FC53F8A5A3FC6FF00871F03FE387ED3DF"
+	$"11FC7BAEA7C12F17E81A8F86FE077C30F8C3A6685A1EADE04F0245A7EA5F1435"
+	$"7D1341B93A9C5657F0DE77FE3AFF008376BE0BF87BC29FF0509F0F685E3CF8F9"
+	$"AB7ED2DE04F881F19A4FF82747C0EFED9F87D73AC7C59F81DF03FF00693F861F"
+	$"B326A5F103E34C117C3CB2BDD66F3E25FC51F89C9E05F86D2F838FC37D267D67"
+	$"C1DE24D72F3ED1A4B41650007F23B457F53C7FE0883FB247C6CB1FDB3BE0C7EC"
+	$"73F133E3CFC49FDA87F637F8CDFB02FECC5E20F15EB9E35F877AA7C04F16FC60"
+	$"F8FF00E26F12783FF69DF1CDAE8DA57C1AF0E788F46F839F08BC41E08F1F45E1"
+	$"D9E4F889A9EA9A7E91E06D67C43E22D575CD2AEB4C9AE2A7ED7FFF00046FFF00"
+	$"827FFECD9A6FC4DFDA83C2DF1B7F68CF881FB0268DFB027C2FF8CDF053C793F8"
+	$"8FE19E93F113E3BFED87F1EBE2BFC64F857F06FE15F86B578BE13DCF86AD3E1B"
+	$"EA163F067C4DF167C6B6B1785354F1AF83BE1D5B27F696A516A77D09B700FE5B"
+	$"28AFDEAFD81FFE09D1FB26FC46FD80F5CFDB9BF6B61FB4AEB72F88BFE0A01F04"
+	$"7F61AFD9F7E16FC02F1BFC2EF023FC4DF1778CF48D1FC5BE3AB6D62FFE22FC3B"
+	$"F1B5DABDAF85B5779B41D53449ECA05BFD1B54D3AE2DAE49BAD4742FB7FF006B"
+	$"BFF82357FC1397E0EF803FE0B6107C2BF1FF00ED5F77E2DFF825CDFF00ECE375"
+	$"E17F8A9E3CF14FC2397E17F89FC49FB40DEDB697A7FC0BD4BC2FA4781F4EF117"
+	$"88757D0F56BA9340D43C7965AE786A69FC44FA7C27C25A4DA69B1C7F10403F93"
+	$"6A2BFB04F8C9FF000403FD87BF66DF801F1FFE1D7C67FDAC7C2B61FB76FC1AFD"
+	$"90DFE39CD6B07ED87FB3169723FED353785745F1AF85FF00648B7FD8DEF347B9"
+	$"F8E53E95E3AD135CB4D37C29F16355F1EE8D79E2AD62F743D6344F08DAE87AA6"
+	$"9F63ACFD77FF0004E1FD82FF0060FF00F82727FC1463E2BE857DA97C78F8A3FB"
+	$"5E7FC1253F628F895FB6DFED25F1A755D67C0ABFB21DDF8DEFFE03DA43AB7C13"
+	$"F0A781EC3C232F8CEC5BC07A2FC66D2BC5BE1DF881AC7C473ACEA5E25F0278DE"
+	$"DAE3C25A60D36D174500FE1028AFEC87F68BFD808F8EFE21FEC8FF00007F6A7F"
+	$"8B3FB547C59F803FB237FC133FC39FB647ED2725C7C4BFD933E0E7C2BFD9D7F6"
+	$"9DFDB43C537DE28D53E145E7C71F89DA17C39D17E10FC34F8A7F10342D36EF56"
+	$"F17EBBA3FED35F1F3C557C208BC17E00F155F5DDFDCF8757E3FF00FC1043F601"
+	$"FD9F35DFDB77E2A7C4CF1E7ED4BA57C00FD93FFE09FDFB29FED2BAF7833E1DFC"
+	$"4AF849E32F1B785FF69DFDA8BC59F113C3DA1FC0187E266B1F05B4FD03E25780"
+	$"E14F03E973E9FE35B6F02782355B4D3FC69A2EB3ACA4B6D1C306AC01FC6ED15F"
+	$"D75695FF000408FD93BE2EFC54F813F147C2BF16BE247ECDDFB20F8E3FE0999A"
+	$"47FC1443E2F782FF00685F8B7F05F47F8ADE014F10788AE7C1DF0F3E1FD97C72"
+	$"F10786BC23F0BBC33E1BF8C1AB4963A97873E297C41F00C5A1786F49D2BC4377"
+	$"AAD85E5D5E699A169F91F14FFE08ADFF0004E6D0BC61E29FDA13C35FB4AEB3AB"
+	$"FEC67FB3FF00EC436BFB55FED4DF0CFE08FED1FF00B3FF00ED43F15742F899AD"
+	$"FC41D43E1E7C35F80BF0DFE3DF827C3DA27C35783E2C5F5A8BFD3BC61E25F035"
+	$"D49A38D3AF6DADAC75A5D774E9F4100FE4B28AFEFBEEFF00E09D1FB357ED25FF"
+	$"0004F8FF008271FEC91F0EFC77E3FF00D993F634F157823F6A1FF82CCFED153F"
+	$"C6DF1EFC34D2BE257847C23A468FF0EFE167C2AF0B5E7C53F12E91E02F8591BF"
+	$"891BE2A6B1E1EF097C65F1AF846C7C37A4FC38D166F17EAF657A211A76B5FCD6"
+	$"7FC160BF62BFD8CFF648BFFD9735DFD903E34681E3EB7F8DFF000CBC55E22F8A"
+	$"7F0BF44FDA6FE0CFED6E9F073C53E14F135B689A49B6F8CFF04FC3DE10F0F6B9"
+	$"A17C41D12EA2D734BB6BFF000D59DF59EA1A76BB1C5773D9982C34A00FC63A2B"
+	$"FA41F88BFF0004B6FD88BF67AF859E18F801F1A75FFDADFC4DFF00050AF8ADFB"
+	$"157C3DFDAB7C1FE30F83DA5F84FC45FB327C39F8A9F1B7588ACFE047ECC1F133"
+	$"C31FF0895DF89EC6CFC536B72B6BE3CF8E5A8FC48D0BC35E1DD567D2EF341D23"
+	$"51B25934CD67DB7E257FC11B3F601F08D9FF00C14B3F65DF0E7C49FDA4B5AFDA"
+	$"C3FE0991FB1ADC7ED33F163F6A1BFF0010FC39B3FD963C69F18BC3DE1DF0C6B9"
+	$"ADFECE1E12F84BFF00083C3E3FD3B4FF0010CFE2397C25E13F15EB5F129BC433"
+	$"78DF45D6A5974A9B47D22DF4CF12007F2A3457F63BA97FC10CBFE099FE00F117"
+	$"ED2BF00FE28F8F3F6D7D0FE327EC9FFF00049AF06FEDE5FB43FC57D3FC61F02B"
+	$"55F869F0E7E36AE83A77883C51F07BC33F0DA7F873E1DF1378A13C5D69AC5B5E"
+	$"781FC39AF78E344D56DACF4DB9D16E3C61A9EA9AE699AD58FE3D7FC1587F621F"
+	$"D97FF651F869FF0004E5F8B3FB36CDF1B7408BF6D3FD9374EFDA1BC59F0B3E3B"
+	$"78BFC13E3AF157826DF52BEB0B2F086BDA7F893C13E07F87D6573A27C41D39F5"
+	$"0D5ED6DEE3C3EBE4CB613CD672DBDB5D2E8FA5007B37FC1AE3FF0029D7FD867F"
+	$"EEE67FF58F3F682AFF005FAAFF00205FF835C7FE53AFFB0CFF00DDCCFF00EB1E"
+	$"7ED055FEBF540051451400514514005145140051451400514514005145140051"
+	$"4514005145140051451400514514005145140051451400514514005145140051"
+	$"4514005145140051451400514514005145140051451400567D68567D007F80BD"
+	$"7D69F0FF00F6E8FDAB3E15FECAFF0017FF00629F87DF17750F0B7ECCDF1EFC4D"
+	$"61E2FF008B5F0DF4EF0D7824CBE2FD734E6F0AB4324DE38B9F0D5C7C45D274DB"
+	$"91E09F0BC5AAE81A078B74AD035BB6D292D759D32FEDAE6F62B9F92E8A00FB07"
+	$"F692FDBE7F6B9FDAF3C49F06FC59FB447C65D4FE21EB9FB3F7833C3BE00F83B3"
+	$"1F0D781FC2963E08F0BF8566B59F45B6B1D17C11E18F0D6897FA9C6F61A72EA1"
+	$"E24D674ED4BC4BAE43A5E956FAE6AFA8DBE97A7C56DF48FF00C3ED3FE0A843F6"
+	$"9EF1A7ED971FED55ACC1FB4AF8FF00E074DFB37F88BE26DAFC35F82B69731FC1"
+	$"89FC47A3F8C1FC1FE19F0CDB7C368BC17E06957C5BA0E9DE2887C4FE08F0DF87"
+	$"7C616DE2217DAD5BEBF16A5ABEAF737DF95B45007D6FFB387EDD9FB587EC8DE1"
+	$"3FDA03C13FB3AFC60D4FE19F87BF6A3F031F871F1CA2D3BC3BE0BD6755F18F84"
+	$"1AC3C4FA59B0B3F12789FC35AE7897C197E2C3C67E27B65F10F80F57F0C78915"
+	$"357B82BAB078EDDA1F421FF053FF00DB9BFE115FD91FC0B2FC71377E0BFD8575"
+	$"75D7FF0065DF09EA1F0D7E10EA5E1DF877AD45299AD753D5347D43C017361F13"
+	$"6EF4F67B85D2E5F8B3078E8E950DEEA56DA6FD96DF53D422B9F81A8A00FB7746"
+	$"FF00828D7ED91E1FF08FC18F01E95F176DA1F08FECFBFB4BDE7ED85F0A3449FE"
+	$"19FC22D42DBC3FFB485F6ACBAE5C7C4DD564D43C057575E35BDFED24492DF40F"
+	$"1DCFE25F08D9DBA269F67A041A7AADA8A5E3AFF82867ED85F12BC0BFB4DFC36F"
+	$"1AFC607D6BC1BFB647C6DB3FDA27F694D33FE104F865A75CFC4EF8BDA76B371E"
+	$"21D37C4B77ADE93E0BB0D7FC39A769BACDD4F7DA77833C1DAA7877C0D6323ECB"
+	$"4F0D430AA46BF17D1401FA6FFB427FC1627FE0A1DFB517C33D6FE147C63F8F16"
+	$"FAC7877C676BE03B5F8A5AD786FE177C22F87FF11BE35A7C2E934F7F86EFF1B7"
+	$"E2A780BC0BE1BF88DF159BC15FD91A33E869E34F13EAD6E979A469BAC5E4377A"
+	$"E5B2EA67B2F8A5FF0005C8FF00829C7C63F0DFC54F0A78E7F684D16F349F8EFF"
+	$"000A74CF833F1D26D37E047ECF3A2EBFF19FC13A469B6DA3582FC4DF16E99F0A"
+	$"EDBC59E2CF115AE8F69168F65E2CD475B7F11E97A3CB7DA4691A969FA6EA9AA5"
+	$"A5E7E4B51401FAAB0FFC16BFFE0A4DFF0009FF00ED31F13754F8F5A0F89BC59F"
+	$"B5EF877E13F86BE3EFFC259F01FF00678F12785BC6365F02B4B4D1BE0F5DD9FC"
+	$"3CD57E155CFC3CF09EADF0F2C15CF87B53F09785B44BA875495BC4574F75E248"
+	$"AD757B7FB774EFF8384BF683B5FD90FE37E8FAF6BFACFC46FDBF3F694FDAC7E1"
+	$"AFC49F8DBF1BBE217C27F813AEFC14F1AFECCFF09BE02E9BF08FC23F05BC43F0"
+	$"9AE3C3F37827C5376BA968D6DA8EA306ADF0C61D1AE61D42F3C43F6C1E3DB487"
+	$"C4777FCE6D1401FA67E1DFF82C1FFC142341FDA1FE2BFED3B7DF1D21F1C7C4AF"
+	$"8E7E03B6F859F16F4BF897F0DFE177C42F853E37F865A74F6175A1FC3EBDF829"
+	$"E2AF06EA5F09F4AF08F86AE74DB49FC2FA37873C1FA2DB7870B6A3168E2CEDF5"
+	$"BD761D4E6F0AFF00C1633FE0A23E14F8C5F16BE392FC78B3F13F8CBE39FC31D1"
+	$"FE0D7C50D13C7BF09BE0CF8E7E13F893E18F85D54F82FC1517C0CF137C3ED4BE"
+	$"0C683E1BF02CEA6E3C19A2786FC09A4695E1EFB4EAB6563649A5EBFE20B0D53F"
+	$"31A8A00FD57B5FF82D97FC14AC7C56F0EFC62D73F683B1F19F8ABC3BFB3747FB"
+	$"209D2FC69F077E077887C05E27FD9B63D4E5D64FC2BF1EFC38BBF8703C0FE3FD"
+	$"2E6D5267BCBAD77C61A16B3E30BB936A5CF88A5854455E19F177FE0A47FB67FC"
+	$"769BE304BF14FE30C7E278BE397C35F86FF06BC75627E1D7C29D234CB2F849F0"
+	$"8BC53078CFE1C7C34F86BA6E87E07D36CBE0B7827C31E21805DDBF87BE0E41E0"
+	$"4D3F50B6B8D434BD661D474AD5353B2BBF86E8A00FD27F8A3FF0578FF82857C6"
+	$"1F80BA0FECDDE37FDA0F5097E1A68DE1FF00869E14BF9BC3BE0BF879E0DF887E"
+	$"37F0D7C17BE8352F83DA17C4AF8B7E12F0A68BF143E21E97F0C350B68351F075"
+	$"9F8B7C5BAAC3A76AD147ADCCB75ADC516A29A7FB40FF00C1633FE0A1BFB4EF81"
+	$"EE7E1DFC5EF8E3A66ABE19D7F59F01F893E24C7E1CF845F05FC07AAFC71F11FC"
+	$"307B56F006B5FB40EBFE08F87DA06B7F1CE7F0A8D3F4C3A6587C50BFF14688B3"
+	$"E9963A84DA54DAA44F7D27E62D1401FA01E3FF00F82A4FEDDFF147C41FB6078A"
+	$"FC77F1DE5D7BC4BFB7AF873E1E7843F6AED71BE1BFC21D3F53F8A3E16F85561A"
+	$"7697E05F0FC177A4F802C26F87DA4693A6691A569F7763F0BDBC156FE20B2D3A"
+	$"CED7C489ABC16F122F847ED1DFB57FC7EFDAD759F863AF7ED03E3D1E3CD47E0C"
+	$"FC16F01FECEFF0C0C3E15F05783AC7C1DF067E18FF006AFF00C20DE05D3348F0"
+	$"1F873C31A43D8682DAE6ACF1DFDE58DD6B57B2DF4D2EA7A9DEC9B1D7E76A2803"
+	$"F7FBFE0D71FF0094EBFEC33FF7733FFAC79FB4157FAFD57F902FFC1AE3FF0029"
+	$"D7FD867FEEE67FF58F3F682AFF005FAA0028A28A0028A28A0028A28A0028A28A"
+	$"0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A"
+	$"0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A"
+	$"002B3EB42B336CDFDC7FFBE0FF0085007F80D514514005145140051451400514"
+	$"51400514514005145140051451400514514005145140051451401FBFDFF06B8F"
+	$"FCA75FF619FF00BB99FF00D63CFDA0ABFD7EABFC817FE0D71FF94EBFEC33FF00"
+	$"7733FF00AC79FB4157FAFD500145145001451450014514500145145001451450"
+	$"014514500145145001451450014514500145145001457E077C63FF008298FED5"
+	$"7F103F683F8A1F0AFF00628F86115EFC35F8032EBF6BF163E295EFECBBE2BFDA"
+	$"C75D167E1CF8B3F10BE0378ABE224DF08B41FDAFFF0062EF881A67C3AF0B7C6E"
+	$"F80BFB4A7C2BF0CF86FE03E9BFB637ED29F1AFC43F007E2AEB7E1AFD9DBC1DE0"
+	$"98BE01789BF69DFA13E247FC148BE307807F631FDA2BE3C69DFB1C6B7E3CFDA2"
+	$"3F644F177C41F871FB4DFC00D17E35FC30F06F817E12EBFF000F3E11DB7C74BE"
+	$"F89B7BF1DFE31DE7C31D2BC51F0035BF841E25F85FF14741F14783BC25AEFC4C"
+	$"7F097C56F0CD8EADF09F49F17683F10BC3DE0C00FD6DA2BF8D4F127FC1C09FB7"
+	$"B5AFC0EFD85747D5342FF826E7ECC7FB487ED1FF00B1BF8EBF6F4F89BF193F6C"
+	$"BF147C5FF86FFB1C4DF083FE16B78EBC27F087E10FC09D2FC2DE3DF127C4FF00"
+	$"16FED11E2FF87BA6F837E206B5E107F157882EADE1D516D747D06F5F5F58FC27"
+	$"A5E3FF00F83953E337C56F855FB18EB3FB31F85BF62EFD94BC57FB417ECA5F14"
+	$"BF6B0F895F143FE0A61F11BC71A07ECEDA75AFC1DF8D1F113F675F14FC09F829"
+	$"A8FC26D4748F18FC4BF8C9AC7C43F869AFF8BBC33A4470AEB173F0E2EBC2BBBC"
+	$"1D36BDE24BF8BC2A01FD8CD15FC7378FFF00E0E54F8CDF15BE157EC63ACFECC7"
+	$"E16FD8BBF652F15FED05FB297C52FDAC3E257C50FF0082987C46F1C681FB3B69"
+	$"D6BF077E347C44FD9D7C53F027E0A6A3F09B51D23C63F12FE326B1F10FE1A6BF"
+	$"E2EF0CE911C2BAC5CFC38BAF0AEEF074DAF7892FE2F0AFF451FF0004C6FDB7B4"
+	$"DFF828EFEC29FB3DFED9FA6F81EFBE1B0F8CFE1FF1349AB781EFB518357FF847"
+	$"BC55E00F1FF8B7E16F8CED34ED5ADD63FED3F0FCBE2DF046B779E18D42E6DAC3"
+	$"51BCF0E5CE9771AAE99A5EA725DE9D6A01F78D15F8A7E19FF838B7FE08A9E2CD"
+	$"63C0DA1E97FB7E7C2DB5BDF887E11F13F8DB409FC4DE17F8B1E0BD1F4FD1BC23"
+	$"75E3AB3D56CBC73E21F18FC3DD0740F861E2EBB97E1DEBEFE18F007C4AD4FC25"
+	$"E3CF1B5AEA1E05BEF06786F5FB2F8A1F0D2E3C5BEB6BFF0005B6FF008259B7EC"
+	$"86FF00B76FFC35FF008213F65E5F89327C1D1E3C97C2BF13E1F10CDF15611677"
+	$"137C3DB5F8472F8193E335E78B60D1AFED3C5D3E896BF0FA6BE87C0130F8892C"
+	$"29E0557F10A807EA8D15F9C1E35FF82BB7FC137FE1E7EC83E09FDBCFC57FB567"
+	$"812CBF654F88FABE9DE1DF03FC4EB0D27C6FE20BBF1278A35296F62FF84434FF"
+	$"00875E1DF0AEABF14CF8CB493A5EAF2F8A7C1F378262F137836DB45D72F3C59A"
+	$"568B69A2EA935A7E627C5AFF0082D67C4AB6F83DFF000551FDA07E1878EFF640"
+	$"F007C03FD98FE24FEC53F0EBF629FDA0FE3DF82FE3678CBE0B7C4EB9F8E5F0EF"
+	$"E11FC4BF8B379F12AE3F65FF001E7C5AF8CBE3BB9B9F0DFC4CB6D43E19E9BF0F"
+	$"3E08FC3D4F07E9FAEF822EFC77A8F89E55F89D65F0CC03FA5AA2BE04FDA33FE0"
+	$"A91FB00FEC93F1DFE177ECCBFB457ED39E04F861F1CBE31C56B3F817C07AB5A7"
+	$"8A753B996D751BF1A5E9179E2BD6BC3BE1ED63C35F0E2C75FD484B63E1ABEF88"
+	$"FACF852D3C4D776B7D068136A32585EADBF09FB5FF00FC163FFE09B5FB047C68"
+	$"F0B7ECF9FB5B7ED33A6FC1EF8B5E32F08F87BC77A1786EFF00E1AFC66F14D837"
+	$"847C53E24F10F84B44D6F56F187813E1D78A7C13E1BB6B8D73C29AF43731F893"
+	$"C45A4DCE976562BACEAB05968B7963A85C807E9B515F9AFF00B4D7FC160FFE09"
+	$"A7FB1D78CBE0DF803F68FF00DADFE1DFC39F157C7CF0FE8BE2FF00863A79B0F1"
+	$"978B6D751F05F892FACB4FF0EF8E7C4DACF817C31E27D0FE1BF8135FB8BE2DA2"
+	$"F8DFE256A5E11F0AEAB69A6788F50B1D5E7B0F0AF896E749E93F68AFF82A6FEC"
+	$"15FB2B7C5FF855FB3E7C68FDA2BC1BE1BF8E5F1D3C3EBE24F841F0D2DC6A3A96"
+	$"A3E36D3EFA5B9B3F0CB3F8A6D6C9BE1DF81E2F1DEAF6B3E83F0FF52F89DE33F0"
+	$"4687E33D721B8D3F41D56F24B2BE36A01FA09457E0E7C15FF82DEFC08F843FF0"
+	$"4E0FD897F6C1FF0082ABFC55F86DFB30FC4FFDAF7C23A978B343F05F83BE1E7C"
+	$"45D522D6F4FB8D575AD5FC3DACF82BE187C3FF00127ED2DF1123F042FC3B9BC1"
+	$"3AA5F78D75BD765B25BCF14F87BFE12AB2F86FE28F1869BF0D348FDB1F877F11"
+	$"3C09F16FC09E11F89FF0C3C5DE1FF1EFC3CF1EF87F4BF15782FC69E15D52D75A"
+	$"F0E789BC39AD5AC77BA5EB1A3EA96524B6B7B637B6B2C72C52C521EA51C2C8AC"
+	$"AA01D9515F9DDFB417ED79AE7C2FFF0082827FC13E3F648F0FFC48FD9DB45D37"
+	$"F69ED37F6A4D67E22FC36F883E1DF8E9AB7ED05E33D2BE12FC271E31F01DFF00"
+	$"ECF9AF7803C3FA8FC14F095B68FAF69DE22BEF8A527ED03AF78707887C276034"
+	$"EF851FDB1E2EB5BEB28FC6BE10FF00C179FF00E0915F1E3C79F01FE187C2AFDB"
+	$"77E1B789BE207ED29ADEA3E18F845E139BC3DF133C3BAC6ADE27B1D66EFC3D6B"
+	$"E18F16DBF8A7C0DA20F857E24F14EB76834DF879A07C577F04EAFF00136EB50D"
+	$"0D3E1DD9F8A3FE122D04EA401FAED457E72F81BFE0AE3FF04E2F893FB60F88BF"
+	$"60AF03FED5BF0FFC43FB56F85F52D7342D4FE195AE9FE3186CAE3C4DE18B482F"
+	$"3C4BE0FF000FFC49BDF0CDB7C29F16F8DFC3D1C9730EB9E09F0A78E35AF15E93"
+	$"7FA2F8A34BBFD1EDF52F09789ED348FD1AA0028A28A00FF007A28A2800A28A28"
+	$"00A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A28"
+	$"03F7FBFE0D71FF0094EBFEC33FF7733FFAC79FB4157FAFD57F902FFC1AE3FF00"
+	$"29D7FD867FEEE67FF58F3F682AFF005FAA0028A28A0028A28A0028A28A0028A2"
+	$"8A0028A28A0028A28A0028A28A0028A28A0028A28A0028A28A00FC0AF8D3FF00"
+	$"04C9FDAA3C0BFB407C4EF8A3FB15FC50FB0FC34F8F973ACDFF00C57F85D71FB5"
+	$"4F8C7F647D7CDAEB9F17FC7FFB40789BE1CCFF00183C35FB227ED99F10F55F86"
+	$"DE2BF8E3F1DBF692F8A7E1FD7BE04EA7FB1D7ED1DF0775BF8FFF00167C39A1FE"
+	$"D0BE36F00DD7C06F0AFECCBEEDF1D3F602F8F9AFFF00C1383F6E9FD9E3E1EFC5"
+	$"1F047C40FDB1FF006EFD37E226A3F183E32F8FAF3C4BF07FE166BDE3CF8BBE0E"
+	$"F067C10D7A6D2F41D0BC3DF1EB58F87DF0DBE1B7ECE7E0CF0AFC2BF877E05D2B"
+	$"4AF13EB3AE7873E1EF876D3C61E381E38F1578BBE2E37EBFD1401FCD2FED7BFF"
+	$"00048DFDBCBC61F053F628F807FB2D7C6DFD8DB50F01FECEBFB1B7C35FD93759"
+	$"9FF6ABF81769E20F1E7C15F885E03F09E93E0CB1FDBA7F637F8BDE08F005DFC6"
+	$"7F871FB51F85346D36DDFE1FDA2FC45F0A781F41D674BD1BC4F630E93E2BB6FE"
+	$"DD8F8CFDA13FE0881FB59F853E007EC87FB2BFEC19F16FF63B4F82FF0001FF00"
+	$"67AD43E0AEB2FF00B597C06B5D5FE237C24F8D3E2AF13EB9E2DF18FF00C1427F"
+	$"643F8A7E09F08F887E327C29FDAC13C49E28D7BC4FE0CD12DBE2C685F0EFC23E"
+	$"233A66B5A23E9DAFE9F06BE9FD46D1401FCB97ED09FF000440FDACFC29F003F6"
+	$"43FD95FF0060CF8B7FB1DA7C17F80FFB3D6A1F057597FDACBE035AEAFF0011BE"
+	$"127C69F15789F5CF16F8C7FE0A13FB21FC53F04F847C43F193E14FED609E24F1"
+	$"46BDE27F066896DF16342F877E11F119D335AD11F4ED7F4F835F4FD76F841FB1"
+	$"06ADFB1DFF00C13022FD857F63DF13787F48F889F0E3F65FF889F0DBE0E7C44F"
+	$"1D5BEA1A5F866F3E3EF8AFC2DE2AD4A3F8AFE36B0D360F18EA1A3E91E26F8D7E"
+	$"25BEF885E29D2F47B3F1236916DAAEA161A3D8EA91DADADA4DFA2F45007F2F9F"
+	$"B377FC1097E2B7C11D2FFE0887F0835AD6FE0278ABF678FF00827A7883E3DFED"
+	$"0DFB5C68577AAEBB7FE24F8C7FB5FF00C4DF0DEB1AAFC32F1C78034EFF00852B"
+	$"A3695E2FF0FF00C0FF0089FA8C36DE06F10FC40D67C15E2DB3F87569A4DADE69"
+	$"FAA6B5E1AD2D65F993C4FF00F06F47EDABAAFC1EF811F1934EF8B5FB34A7FC14"
+	$"5BE1FF00EDBFFB707EDB3F142DE3F8B1FB60FC3DFD983C79E37FDB66FF00E1FE"
+	$"91E233E18F8B1F02AE7E13FED6BF0EAFBC13E11F849F0E754F0CCFE0DD774169"
+	$"3C4161AE787FC4575E23D1F5DBDD725FEC7A8A00FE4E356FF820F7ED4BF0F7C2"
+	$"5FB10FC7CFD9CE5FF827FE9DFB747ECC1FB497ED1BFB56F8F3C0FF001663FDB4"
+	$"3E277EC7FF00137E317ED4DE03F845E0BF1C78DF5BF187C72F8C1FB467ED39E2"
+	$"3F893E03BBF835E0FF0019F82FE248F10782C6A5E3CD274FF1BA782FC19E288A"
+	$"7D52E3D5B44FF82247ED1BE1FF008151FC21B9F8AFF0A3C7F37C4BFF0082FCD8"
+	$"FF00C152FF00686BAF1478A3E20F842C7C45FB34DAF8FAC35AD43C03A558FC29"
+	$"F007833C2FE29F8C1E22D07C0DE02D5F52F03F893C0BA2FC10D2FC65AB78924F"
+	$"0BDEE8979E0EF871E30D33FA71A2803F913FDBE7FE0885FF000520FDB7BE3B7E"
+	$"D0D378AFC7FF00B005D7ECE3F1CBF6ADF84DE3ED6B55F0D37ED27FB3AFED2BE3"
+	$"CFD96BC13FF087430FC18F8E1A9FC15D35FE12FC71D6FE14E8BF0EBC3BA37C1D"
+	$"D5FF00685F097C7BD7741D6FC49E38F1AFC35F881FB3ED95FC1E007F09F1EFEC"
+	$"A7FB4A7FC1557F6D3FF82CBF8EBF629F8D5F06FC009E2AF8DA9FF04A6FDA3BC5"
+	$"5FB4AF83BC5FE3CD67E177ECB3F0DFE147C0AF0FFC5AB5FD8E8DB784E393C2FE"
+	$"37D67E2B787FF68187E22781359D6AC7E1D7C4CB4F19786BC4BA36BFF0F3C63A"
+	$"068BF1535CFED8A8A00FE3F7E337FC1BA1FB447843E3EEB3AC7EC89F123E0278"
+	$"E7F676F8D1FB34FECA5FB277C7BF0AFED6BF19FF006F4F865E2C83E177ECC5F0"
+	$"2FC05FB362B58F87BF602F8BBFB377843E3D58FC44F86BE0AB1D6BC61F0F7E35"
+	$"EAB69E167F17584D6DE1DBDF0BE89E2BD4D749F44F8BDFF041EFDAAFC1DF13FF"
+	$"006C483F62DF1B7EC6DE1AF815FB707FC13DFE1FFEC59F10DBE2A786FE26C3F1"
+	$"ABE0B5AFECFBFB20A7ECF1F093C19FB3BF8B758D17E3D4DA47C11F8A5E21F077"
+	$"C2DFF85F917C46F10F8F7E24C5E09D09B59F0BF89356F8B5E15F02F8DB49FEAF"
+	$"A8A00FE52BF6ABFF0082137ED623C5DFB08FC63FD8B7E2D7C11D57E2BFECA3FF"
+	$"0004EDF849FF0004E9F1768FFB407C64FDB57F674F0A788BC0FF000AADAFA6B4"
+	$"F895E13F887FB0578EBE177C6887C49AB5E6A9ACE8DAE782BC43E28B8F87DAE7"
+	$"87F588AE6F7478B56D02C5AEFEFBFD8F7E0D7ED7DFB0EFC6FF00D903FE09FBF0"
+	$"4BE197ECC1A3FF00C13B7E1B7ECAFF00113E247C75F18F83FE1B7ED6F6BE20F0"
+	$"E7C7BF14FC58F897AD47E07F847E3CF8D3F1DFE29F8660D03C75E2CF1C697E30"
+	$"B0F0C6B9F107E3A7C48D0343F057C529BC6B65F0AFC37E38F80BFDA7FB754500"
+	$"7E377ED53FB0B7ED4BF157F6F4F1B7ED7BF087C61F06F42B3F0DFF00C126FF00"
+	$"685FD94BF66C7F1BF8C3E2C9F107827F6D3F8B5F1097C43E1AF897E21F045978"
+	$"7BC45F0CF4CF849A7785F4CD1F4BF11F8B3C336B71F143589A6B9D2F5EF0C78C"
+	$"346F0E7810F86FE12F845FF0425F8B9F0A7E007FC112BF65AD27C71F06B4FF00"
+	$"84BFB087ED4927EDD7FB6C6BBA46A3AFDB7C49F8B1FB51F83DEE7C65F09DFE13"
+	$"6A507C29D3F43F1BF8034FF1AF8A7C5DF0FF00C4979F1534BF0678F63F825A2F"
+	$"C3BD2F43D763D6B46BA89BFA7EA2803F96FF00D86FFE08A3FB69FECA1E27F80F"
+	$"FB2FEB5F15BF612D63FE09B7FB297ED37ACFED6DF0CBC59A77ECC3E19F1AFEDE"
+	$"3F187E24A6AF26B9E0CD33E2CEA7F18FE1C78D3E107C33D73C3D2EAADE1B7FDA"
+	$"1BE0B5DD9FED01A6F80BC0DE18F097803C55E03B6D574FB9F877FBA3FB14FF00"
+	$"C37D7FC2ACD7FF00E1E2FF00F0C81FF0BB7FE1606ABFF08B7FC314FF00C2E8FF"
+	$"008559FF000AB3FE11CF0AFF00627F6FFF00C2F4FF008AB7FE1607FC25BFF09C"
+	$"7F6AFF00677FC539FF0008E7FC22BF64FF00899FF6BD7D7F4500145145007F80"
+	$"3D14514005145140051451400514514005145140051451400514514005145140"
+	$"05145140051451401FBFDFF06B8FFCA75FF619FF00BB99FF00D63CFDA0ABFD7E"
+	$"A8A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A"
+	$"28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A"
+	$"28A2800A28A2800A28A2800A28A2800A28A2800AE57FE1274FF9F36FFBFE3FF8"
+	$"D5145007FFD9"
+};

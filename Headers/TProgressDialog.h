@@ -16,10 +16,14 @@
 #define __TPROGRESSDIALOG_H__
 
 //	Includes
-#include <scsi.h> 
+#include <scsi.h>
+#include <Entry.h>
+#include <FilePanel.h>
+#include <NodeInfo.h>
 #include <Window.h>
 #include <MessageFilter.h>
 #include <Volume.h>
+#include <StatusBar.h>
 #include <String.h>
 #include <StringView.h>
 #include <netdb.h>

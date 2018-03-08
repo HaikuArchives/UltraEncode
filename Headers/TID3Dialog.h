@@ -15,6 +15,8 @@
 #define __TID3DIALOG_H__
 
 //	Includes
+#include <MenuField.h>
+#include <TextControl.h>
 #include <Window.h>
 #include "id3tag.h"
 
