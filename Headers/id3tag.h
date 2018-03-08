@@ -19,10 +19,12 @@
  * USA.
  */
 
-
 #ifndef __ID3TAG_H__
 #define __ID3TAG_H__
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #define TAGLEN_TAG 		3
 #define TAGLEN_SONG 	30
@@ -46,8 +48,12 @@ typedef struct ID3_struct
 
 void	resize_tag_field (char *);
 bool 	get_tag_genre (int *, int);
-bool	write_tag (bool, char *, ID3_tag *ptrtag);
+bool	write_tag (bool append_flag, char *fn, ID3_tag *ptrtag);
 bool	read_tag (FILE *, char *, ID3_tag *ptrtag);
 bool	tag_file (char *, ID3_tag *ptrtag);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* __ID3TAG_H__ */

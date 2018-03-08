@@ -1,5 +1,6 @@
 #include <stdio.h> 
-#include <Bitmap.h> 
+#include <Bitmap.h>
+#include <Window.h>
 
 // KnobSwitch.cpp 
 // 

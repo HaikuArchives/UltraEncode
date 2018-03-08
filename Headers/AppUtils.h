@@ -16,6 +16,8 @@
 #define __APPUTILS_H__
 
 #include <Bitmap.h>
+#include <NodeInfo.h>
+#include <TextControl.h>
 
 //	Enums
 typedef enum

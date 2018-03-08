@@ -41,7 +41,7 @@ TRefFilter::TRefFilter(FilterType filterType) : BRefFilter()
 //
 //
 
-bool TRefFilter::Filter(const entry_ref *theRef, BNode *theNode, struct stat *theStat, const char *mimetype)
+bool TRefFilter::Filter(const entry_ref *theRef, BNode *theNode, struct stat_beos *theStat, const char *mimetype)
 {
 	//	Create BEntry and traverse to get source ref
 	BEntry entry(theRef, true);

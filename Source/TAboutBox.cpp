@@ -9,8 +9,11 @@
 //-------------------------------------------------------------------
 
 // Includes
+#include <Application.h>
 #include <Resources.h>
+#include <Roster.h>
 #include <TranslationUtils.h>
+#include <Window.h>
 #include <Debug.h>
 #include <Button.h>
 

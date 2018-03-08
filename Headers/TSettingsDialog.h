@@ -15,7 +15,11 @@
 #define __TSETTINGSDIALOG_H__
 
 //	Includes
+#include <CheckBox.h>
+#include <FilePanel.h>
+#include <MenuField.h>
 #include <Window.h>
+
 #include "TProgressDialog.h"
 
 //	Forward Declarations

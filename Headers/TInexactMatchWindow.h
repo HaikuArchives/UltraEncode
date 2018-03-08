@@ -25,6 +25,7 @@
 #define MATCH_INVOKE_MSG	'maIN'
 
 //	Includes
+#include <ListView.h>
 #include <Window.h>
 
 //	Class Definition

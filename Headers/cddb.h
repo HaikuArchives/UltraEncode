@@ -7,22 +7,23 @@
 
 #include <Application.h>
 
-typedef struct  {
+struct cddb_toc
+{
 	int32 min;
 	int32 sec;
 	int32 frame;
-} cddb_toc;
+};
 
-typedef struct
+struct cddb_track_info
 {
 	uchar track_num;
 	char track_name[64];
 	struct cddb_toc start;
 	struct cddb_toc end;
 	struct cddb_toc length;
-}cddb_track_info;
+};
 
-typedef struct
+struct cd_info
 {
 	char disc_title[64];
 	char disc_artist[64];
@@ -30,6 +31,6 @@ typedef struct
 	struct cddb_track_info track[100];
 	int32 playOrder[100];
 	int32 shuffleIndex;
-}cd_info;
+};
 
 #endif

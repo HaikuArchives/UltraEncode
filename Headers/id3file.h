@@ -22,11 +22,19 @@
 #ifndef __FILE_H__
 #define __FILE_H__
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 int add_to_log (char *);
 int id3_read_file (char *, unsigned long, FILE *, char *);
 int id3_write_file (char *, unsigned long, FILE *, char *);
 int id3_open_file (FILE **, char *, char *);
 int id3_seek_header (FILE *, char *);
 int strip_tag (long, char *);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* __FILE_H__ */

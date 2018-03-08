@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <MediaFormats.h>
-#include <Encoder.h>
+#include <private/media/EncoderPlugin.h>
 #include <string.h>
 
 #include "MP3Encoder.h"
@@ -168,6 +168,77 @@ status_t MP3Encoder::GetCodecInfo(media_codec_info *mci) const
 	return B_OK;
 }
 
+
+//---------------------------------------------------------------------
+//	Accepted Format
+//---------------------------------------------------------------------
+//
+//
+
+status_t MP3Encoder::AcceptedFormat(const media_format* proposedInputFormat,
+									media_format* _acceptedInputFormat)
+{
+	status_t err = B_OK;
+	media_format* out_fmt;
+	
+	if (!proposedInputFormat) 
+	{
+		FPRINTF(stderr, "B_BAD_VALUE\n");
+		return B_BAD_VALUE;
+	}
+	
+	
+	if (proposedInputFormat->type != B_MEDIA_RAW_AUDIO) 
+	{
+		proposedInputFormat->type = B_MEDIA_RAW_AUDIO;
+		proposedInputFormat->u.raw_audio = media_raw_audio_format::wildcard;
+	}
+			
+	proposedInputFormat->deny_flags = B_MEDIA_MAUI_UNDEFINED_FLAGS;
+	proposedInputFormat->require_flags = 0;
+	out_fmt->deny_flags = B_MEDIA_MAUI_UNDEFINED_FLAGS;
+	out_fmt->require_flags = 0;
+	
+	*out_fmt = s_wavFormat;
+	if (proposedInputFormat->u.raw_audio.frame_rate <= 1.0) 
+	{
+		out_fmt->u.encoded_audio.output.frame_rate = 44100.0;
+	}
+	else if (fabs(proposedInputFormat->u.raw_audio.frame_rate/44100.0-1.0) < 0.01) 
+	{
+		out_fmt->u.encoded_audio.output.frame_rate = 44100.0;
+	}
+	else if (fabs(proposedInputFormat->u.raw_audio.frame_rate/48000.0-1.0) < 0.01) 
+	{
+		out_fmt->u.encoded_audio.output.frame_rate = 48000.0;
+	}
+	else if (fabs(proposedInputFormat->u.raw_audio.frame_rate/32000.0-1.0) < 0.01) 
+	{
+		out_fmt->u.encoded_audio.output.frame_rate = 32000.0;
+	}
+	else 
+	{
+		FPRINTF(stderr, "BAD FRAME RATE (%g)\n", proposedInputFormat->u.raw_audio.frame_rate);
+		return B_MEDIA_BAD_FORMAT;
+	}
+	out_fmt->type = B_MEDIA_ENCODED_AUDIO;
+	out_fmt->u.encoded_audio.output.channel_count = proposedInputFormat->u.raw_audio.channel_count;
+	out_fmt->u.encoded_audio.output.format = media_raw_audio_format::B_AUDIO_SHORT;
+	out_fmt->u.encoded_audio.output.byte_order = 0;
+	out_fmt->u.encoded_audio.output.buffer_size = 0;
+	out_fmt->u.encoded_audio.frame_size = 0;
+	out_fmt->u.encoded_audio.bit_rate = 128000.0;	//	should be set from parameters
+
+	m_format = proposedInputFormat->u.raw_audio;
+	m_format.frame_rate = out_fmt->u.encoded_audio.output.frame_rate;
+	m_chunkSize = 1152*2*m_format.channel_count;
+
+	if(_acceptedInputFormat != NULL)
+	{
+		_acceptedInputFormat = out_fmt;
+	}
+	return B_OK;
+}
 
 //---------------------------------------------------------------------
 //	Sniff

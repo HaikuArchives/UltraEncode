@@ -16,6 +16,7 @@
 
 //	Includes
 #include <Window.h>
+#include <MenuField.h>
 #include <Message.h>
 
 //	Forward declarations

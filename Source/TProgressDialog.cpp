@@ -27,12 +27,14 @@
 #include <Path.h>
 #include <NodeInfo.h>
 #include <scheduler.h>
+#include <Roster.h>
 #include <Screen.h>
 #include <StatusBar.h>
 #include <StringView.h>
 #include <MediaFile.h>
 #include <MediaTrack.h>
 #include <Menu.h>
+#include <MenuBar.h>
 #include <MenuField.h>
 #include <MenuItem.h>
 #include <ListView.h>
@@ -60,7 +62,7 @@
 #include "TFrameBox.h"
 #include "TCDDBInfoWindow.h"
 
-#include "TMP3Writer.h"
+//#include "TMP3Writer.h"
 
 #include "TProgressDialog.h"
 
@@ -805,10 +807,10 @@ void TProgressDialog::MessageReceived(BMessage *message)
 				cd_info *newInfo;
 				ssize_t numBytes;
 				message->FindData("cd_info", B_RAW_TYPE, (const void **)&newInfo, &numBytes);
-				LOOP("TProgressDialog::MessageReceived CD_INFO - returned from FindData newInfo = %08x, size = %08x\n", newInfo, numBytes);
+				PRINTF("TProgressDialog::MessageReceived CD_INFO - returned from FindData newInfo = %08x, size = %08x\n", newInfo, numBytes);
 				if (numBytes == sizeof(cd_info))
 				{
-					LOOP("TProgressDialog::MessageReceived CD_INFO - Calling SetCDInfo\n");
+					PRINTF("TProgressDialog::MessageReceived CD_INFO - Calling SetCDInfo\n");
 					SetCDInfo(newInfo);
 				}
 				
@@ -1320,7 +1322,7 @@ int32 TProgressDialog::CDWatcher()
 				if(ioctl(m_CDID, B_GET_MEDIA_STATUS, &media_status, sizeof(media_status)) >= 0 &&
 				(media_status == B_DEV_NO_MEDIA || media_status == B_DEV_NOT_READY)) 
 				{ 
-					LOOP("TProgressDialog::CDWatcher() - Busy or empty drive. -\n");
+					PRINTF("TProgressDialog::CDWatcher() - Busy or empty drive. -\n");
 					close(m_CDID); 
 					m_CDID = 0; 
 					release_sem(m_CDSem); 
@@ -1329,7 +1331,7 @@ int32 TProgressDialog::CDWatcher()
 			
 				if (ioctl(m_CDID, B_SCSI_GET_TOC, &m_SCSITOC) < B_NO_ERROR)
 				{ 
-					LOOP("TProgressDialog::CDWatcher() - Could not read CD TOC. -\n");
+					PRINTF("TProgressDialog::CDWatcher() - Could not read CD TOC. -\n");
 					close(m_CDID); 
 					m_CDID = 0; 
 					release_sem(m_CDSem); 
@@ -1342,7 +1344,7 @@ int32 TProgressDialog::CDWatcher()
 				//	Clear out old title list
 				if (m_TitleList)
 				{
-					LOOP("Clearing title list -\n");
+					PRINTF("Clearing title list -\n");
 					for (int32 index = 0; index < m_TitleList->CountItems(); index++)
 					{
 						track_info *albumData = (track_info  *)m_TitleList->ItemAt(index);
@@ -2165,9 +2167,9 @@ bool TProgressDialog::StartExtraction()
 			end.f = m_TOC->track[(m_CurrentTrack-1)+(m_TOC->first_track-1)+1].address.f;
 		
 			//	Dump status
-			//LOOP("TProgressDialog::StartExtraction() - minutes: %ld\n", end.m - current.m);
-			//LOOP("TProgressDialog::StartExtraction() - seconds: %ld\n", end.s - current.s);
-			//LOOP("TProgressDialog::StartExtraction() - frames: %ld\n", end.f - current.f);
+			//PRINTF("TProgressDialog::StartExtraction() - minutes: %ld\n", end.m - current.m);
+			//PRINTF("TProgressDialog::StartExtraction() - seconds: %ld\n", end.s - current.s);
+			//PRINTF("TProgressDialog::StartExtraction() - frames: %ld\n", end.f - current.f);
 			
 			//	Build the READ_CD command
 			m_ReadCommand->start_m = current.m;
@@ -2616,21 +2618,21 @@ void TProgressDialog::SetCDInfo(cd_info *newInfo)
 	if (albumData)
 		strcpy(albumData->title, newInfo->disc_title);
 		
-	LOOP("ALBUM TITLE: %s\n", albumData->title);
+	PRINTF("ALBUM TITLE: %s\n", albumData->title);
 	
 	//	Update track data	
 	for(int32 index = 1; index < m_TitleList->CountItems(); index++)
 	{ 
-		LOOP("TProgressDialog::SetCDInfo #1a\n");	
+		PRINTF("TProgressDialog::SetCDInfo #1a\n");	
 		track_info *trackData = (track_info  *)m_TitleList->ItemAt(index);
 		if (trackData)
 		{			
 			sprintf(trackData->title, "%s", newInfo->track[index-1].track_name);
-			LOOP("TRACK TITLE: %s\n", trackData->title);
+			PRINTF("TRACK TITLE: %s\n", trackData->title);
 		}
 	}
 	
-	LOOP("TProgressDialog::SetCDInfo #2\n");	
+	PRINTF("TProgressDialog::SetCDInfo #2\n");	
 	//	Set status strings in dialog
 	//if (LockWithTimeout(kLockTimeout))
 	if (Lock())
@@ -2644,12 +2646,12 @@ void TProgressDialog::SetCDInfo(cd_info *newInfo)
 		Unlock();
 	}
 	
-	LOOP("TProgressDialog::SetCDInfo #3\n");	
+	PRINTF("TProgressDialog::SetCDInfo #3\n");	
 	//	Update tracks in list
 	//if (LockWithTimeout(kLockTimeout))
 	if (Lock())
 	{
-		LOOP("TProgressDialog::SetCDInfo #4\n");
+		PRINTF("TProgressDialog::SetCDInfo #4\n");
 		
 		//	Clear out old items
 		for (int32 index = m_TracksListView->CountItems(); index >= 0; index--)
@@ -2660,7 +2662,7 @@ void TProgressDialog::SetCDInfo(cd_info *newInfo)
 		}
 		//m_TracksListView->MakeEmpty();
 		
-		LOOP("TProgressDialog::SetCDInfo #5\n");	
+		PRINTF("TProgressDialog::SetCDInfo #5\n");	
 		//	Add new items		
 		for (int32 index = 1; index < m_TitleList->CountItems(); index++)
 		{
@@ -3581,7 +3583,7 @@ void TProgressDialog::ShowFileOpenPanel()
 	else
 	{
 		// Create a RefFilter for a "audio/x-aiff" type
-		TRefFilter *refFilter = new TRefFilter(kAudioAiffFilter);
+		TRefFilter* refFilter = new TRefFilter(kAudioAiffFilter);
 
 		// Construct a file panel and set it to modal
 	 	m_FileOpenPanel = new BFilePanel(B_OPEN_PANEL, NULL, NULL, B_FILE_NODE, true, NULL, refFilter, true, true );

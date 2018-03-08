@@ -16,8 +16,10 @@
 #include <Debug.h>
 #include <Application.h>
 #include <Resources.h>
+#include <Roster.h>
 #include <Bitmap.h>
 #include <TranslationUtils.h>
+#include <View.h>
 
 #include <Directory.h>
 #include <Path.h>

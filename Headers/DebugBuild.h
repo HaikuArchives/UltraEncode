@@ -22,16 +22,15 @@
 #endif
 // NOTE: the PPC compiler requires that this value be either 0 or
 // 1. bool values (true/false) don't work.
-#define DEBUG 1
+#define DEBUG 0
+
+#include <stdlib.h>
+
+#include <MediaDefs.h>				// for media_format
+//#include <Alert.h>					// for BAlert
 
 // Include Be debug support (ASSERT etc.)
 #include <support/Debug.h>
-#include <MediaDefs.h>				// for media_format
-#include <Alert.h>					// for BAlert
-
-inline void do_nothing(...) 
-{
-}
 
 // Define some debug dependent messages
 #ifdef DEBUG
@@ -40,17 +39,17 @@ inline void do_nothing(...)
 	#define PRINTF				printf
 	#define	FUNCTION			printf
 	#define PROGRESS			printf
-	#define LOOP				do_nothing
+	#define LOOP				(void)0
 #else
-	#define MESSAGE				do_nothing
-	#define ERROR				do_nothing
-	#define PRINTF				do_nothing
-	#define	FUNCTION			do_nothing
-	#define PROGRESS			do_nothing
-	#define LOOP				do_nothing
+	#define MESSAGE				(void)0
+	#define ERROR				(void)0
+	#define PRINTF				(void)0
+	#define	FUNCTION			(void)0
+	#define PROGRESS			(void)0
+	#define LOOP				(void)0
 #endif
 
-
+/*
 // Some preformatted debug dumps
 inline void DumpRect(BRect theRect)
 {
@@ -99,14 +98,18 @@ inline void DumpMediaFormat(const media_format& f)
 		MESSAGE("no details available for format");
 #endif
 }
+*/
 
+/*
 // A debug only alert message
 inline void DebugAlert(const char *theString)
 {
 #if DEBUG
-	BAlert *theAlert = new BAlert("Debug", theString, "Thanks");
-	theAlert->Go();
+//	BAlert *theAlert = new BAlert("Debug", theString, "Thanks");
+//	theAlert->Go();
+	MESSAGE(theString);
 #endif
 }
+*/
 
 #endif	// __DEBUGBUILD_H__

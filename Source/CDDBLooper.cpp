@@ -14,7 +14,7 @@
 //---------------------------------------------------------------------
 
 //	Includes
-#include <socket.h>
+#include <sys/socket.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -204,8 +204,11 @@ void CDDBLooper::CDDBHello()
 
 	// Get the user's login
 	char username[256];
+	strcpy(username, "shredder");
+/*
 	if (!getusername(username,256))
 		strcpy(username,"unknown");
+*/
 	
 	// Lookup the user's host name
 	char hostname[MAXHOSTNAMELEN];
@@ -331,7 +334,7 @@ void CDDBLooper::CDDBQuery(unsigned long discID, int32 numTracks, cddb_toc *cdto
 }
 
 
-void CDDBLooper::CDDBRead(const char *category, char *discid)
+void CDDBLooper::CDDBRead(const char *category, const char *discid)
 {
 	FUNCTION("CDDBLooper::CDDBRead()\n");
 	
